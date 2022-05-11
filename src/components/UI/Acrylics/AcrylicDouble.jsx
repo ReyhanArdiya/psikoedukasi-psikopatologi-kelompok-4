@@ -16,17 +16,17 @@ const Container = styled.div`
 
 const SmallerAcrylic = styled(AcrylicSingle)`
     position: absolute;
-    bottom: -20%;
+    ${({ pos }) => pos}: -20%;
     min-height: 67.56%;
     min-width: 82%;
     z-index: 1;
 `;
 
-const AcrylicDouble = ({ children, className = "" }) => {
+const AcrylicDouble = ({ children, className = "", pos = "bottom" }) => {
 	return (
 		<Container className={`acrylic-double ${className}`}>
 			<AcrylicSingle>{children}</AcrylicSingle>
-			<SmallerAcrylic />
+			<SmallerAcrylic pos={pos}/>
 		</Container>
 	);
 };
