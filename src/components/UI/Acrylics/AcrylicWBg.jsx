@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import AcrylicSingle from "./AcrylicSingle";
-import blackAcrylicPaint from "../../../images/content/black-acrylic-paint.jpg";
+import blackAcrylicPaint from "../../../images/content/small/black-acrylic-paint-640w.jpg";
 
 const Container = styled.div`
     align-items: center;
