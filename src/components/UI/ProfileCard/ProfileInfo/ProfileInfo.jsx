@@ -21,9 +21,9 @@ const Nim = styled.small`
 
 const ProfileInfo = ({ name, nim }) => {
 	return (
-		<Container>
-			<Name>{name}</Name>
-			<Nim>{nim}</Nim>
+		<Container className="profile-info">
+			<Name className="profile-name">{name}</Name>
+			<Nim className="profile-nim">{nim}</Nim>
 		</Container>
 	);
 };
