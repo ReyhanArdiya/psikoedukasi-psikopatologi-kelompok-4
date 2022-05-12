@@ -14,7 +14,7 @@ const useBlurToClear = options => {
 	// CMT if the component that uses this hook is rerendered not by useInView,
 	// would it reactive the animation?
 	const { ref, inView, entry } = useInView({
-		triggerOnce : false,
+		triggerOnce : true,
 		...options
 	});
 
