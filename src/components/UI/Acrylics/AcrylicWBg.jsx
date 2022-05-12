@@ -11,6 +11,7 @@ const Container = styled.div`
     width: max-content;
     height: max-content;
     position: relative;
+    ${({ theme }) => theme.others.borderRadius}
 `;
 
 const FilledAcrylicSingle = styled(AcrylicSingle)`
