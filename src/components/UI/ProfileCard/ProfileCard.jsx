@@ -13,6 +13,7 @@ const Container = styled.article`
 
 const ProfileCard = ({
 	profileHeaderOpts: { profilePicOpts, icons },
+	profileInfo: { name, nim },
 	className = ""
 }) => {
 	return (
@@ -22,8 +23,8 @@ const ProfileCard = ({
 				profilePicOpts={profilePicOpts}
 			/>
 			<ProfileInfo
-				name="Wawan"
-				nim={15000120120008}
+				name={name}
+				nim={nim}
 			/>
 		</Container>
 	);
