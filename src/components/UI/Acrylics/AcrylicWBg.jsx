@@ -18,6 +18,7 @@ const FilledAcrylicSingle = styled(AcrylicSingle)`
     width: 100%;
     height: 100%;
     position: absolute;
+    min-height: 0;
 `;
 
 const AcrylicWBg = ({ className = "" }) => {
