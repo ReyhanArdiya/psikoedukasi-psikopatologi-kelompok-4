@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import NoteHeader from "./NoteHeader";
 import NoteText from "./NoteText";
@@ -11,13 +12,16 @@ const Container = styled.article`
     width: 16.5em;
 `;
 
-const Note = ({ children: text, className = "" }) => {
+const Note = React.forwardRef(({ children: text, className = "" }, ref) => {
 	return (
-		<Container className={`note ${className}`}>
+		<Container
+			className={`note ${className}`}
+			ref={ref}
+		>
 			<NoteHeader/>
 			<NoteText>{text}</NoteText>
 		</Container>
 	);
-};
+});
 
-export default Note;
+export default React.memo(Note);
