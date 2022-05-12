@@ -10,13 +10,19 @@ const Container = styled.div`
     background: fixed black url(${blackAcrylicPaint}) center/100% 100% no-repeat;
     width: max-content;
     height: max-content;
+    position: relative;
 `;
 
+const FilledAcrylicSingle = styled(AcrylicSingle)`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+`;
 
 const AcrylicWBg = ({ className = "" }) => {
 	return (
 		<Container className={`acrylic-bg ${className}`}>
-			<AcrylicSingle />
+			<FilledAcrylicSingle />
 		</Container>
 	);
 };
