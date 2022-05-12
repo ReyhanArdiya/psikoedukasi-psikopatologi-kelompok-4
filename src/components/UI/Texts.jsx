@@ -17,7 +17,7 @@ export const TitleCard = styled.h2`
 
 export const Note = styled.p`
 	${({ theme }) => theme.text.note}
-	color: ${({ theme }) => theme.colors.primary[2]};
+	color: ${({ theme }) => theme.colors.secondary[2]};
 `;
 
 export const Text = styled.p`
