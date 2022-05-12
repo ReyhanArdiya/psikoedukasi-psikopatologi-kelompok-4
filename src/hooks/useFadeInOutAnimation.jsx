@@ -14,6 +14,7 @@ const useFadeInOutAnimation = options => {
 	// CMT if the component that uses this hook is rerendered not by useInView,
 	// would it reactive the animation?
 	const { ref, inView, entry } = useInView({
+		threshold   : 1,
 		triggerOnce : true,
 		...options
 	});
