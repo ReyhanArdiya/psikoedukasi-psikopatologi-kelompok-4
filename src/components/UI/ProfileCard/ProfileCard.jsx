@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
@@ -11,13 +12,16 @@ const Container = styled.article`
     ${({ theme }) => theme.effects.dropShadow}
 `;
 
-const ProfileCard = ({
+const ProfileCard = React.forwardRef(({
 	profileHeaderOpts: { profilePicOpts, icons },
 	profileInfo: { name, nim },
 	className = ""
-}) => {
+}, ref) => {
 	return (
-		<Container className={`profile-card ${className}`}>
+		<Container
+			className={`profile-card ${className}`}
+			ref={ref}
+		>
 			<ProfileHeader
 				icons={icons}
 				profilePicOpts={profilePicOpts}
@@ -28,6 +32,6 @@ const ProfileCard = ({
 			/>
 		</Container>
 	);
-};
+});
 
-export default ProfileCard;
+export default React.memo(ProfileCard);

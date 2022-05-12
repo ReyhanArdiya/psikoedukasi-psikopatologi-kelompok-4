@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -26,17 +27,18 @@ const Text = styled.p`
 	color: transparent;
 `;
 
-const TranslateBtn = ({ onClick, children: text, className = "" }) => {
+const TranslateBtn = React.forwardRef(({ onClick, children: text, className = "" }, ref) => {
 	text = text.slice(0, 2).toUpperCase();
 
 	return (
 		<Button
 			className={`translate-btn ${className}`}
 			onClick={onClick}
+			ref={ref}
 		>
 			<Text>{text}</Text>
 		</Button>
 	);
-};
+});
 
-export default TranslateBtn;
+export default React.memo(TranslateBtn);
