@@ -4,12 +4,12 @@ import useFadeInOutAnimation from "../../../hooks/useFadeInOutAnimation";
 /**
  * Helper component to wrap around A component to give it the fade in out animation.
  *
- * @param {*} props
+ * @param {{once: boolean}} props
  *
  * @returns
  */
-const FadeInOut = ({ children }) => {
-	const { ref } = useFadeInOutAnimation();
+const FadeInOut = ({ children, once = true }) => {
+	const { ref } = useFadeInOutAnimation({ triggerOnce : once });
 	return React.cloneElement(children, { ref });
 };
 
