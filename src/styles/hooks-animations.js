@@ -51,12 +51,38 @@ const fadeInOut = css`
 	}
 `;
 
+const blurToClear = css`
+	/* Initial */
+	.blur-to-clear {
+		position: relative;
+
+        transition-property: opacity, filter;
+        transition-timing-function: ease;
+	}
+
+	/* When out */
+	.blur-to-clear.blur {
+		opacity: 0;
+		filter: blur(10px);
+		transition-duration: ${baseTransitionMs}ms;
+	}
+
+	/* When in */
+	.blur-to-clear.clear {
+		opacity: 1;
+		filter: blur(0px);
+		transition-duration: ${baseTransitionMs * 2}ms;
+	}
+
+`;
+
 /**
  * Contains global classNames & styles for animations that are used by our custom hooks.
  * This is cleaner than just using inline styles.
  */
 const hookAnimations = css`
 	${fadeInOut}
+	${blurToClear}
 `;
 
 export default hookAnimations;
