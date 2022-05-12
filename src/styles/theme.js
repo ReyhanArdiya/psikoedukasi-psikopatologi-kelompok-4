@@ -54,9 +54,16 @@ const text = {
 	`
 };
 
+const others = {
+	borderRadius : css`
+		border-radius: 0.2rem;
+	`
+};
+
 const theme = {
 	colors,
 	effects,
+	others,
 	text
 };
 

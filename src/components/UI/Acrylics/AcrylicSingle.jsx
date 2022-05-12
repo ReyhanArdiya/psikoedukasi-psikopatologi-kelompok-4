@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
     ${({ theme }) => theme.effects.acrylicWShadow}
     align-items: center;
-    border-radius: 0.2rem;
+    ${({ theme }) => theme.others.borderRadius}
     display: flex;
     justify-content: center;
     min-height: 41px;
