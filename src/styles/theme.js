@@ -7,7 +7,8 @@ const colors = {
 	},
 	secondary : {
 		1 : "#ADB5BD",
-		2 : "#343A40"
+		2 : "#343A40",
+		3 : "#F8F9FA"
 	}
 };
 
