@@ -3,7 +3,7 @@ import AcrylicWBg from "../../Acrylics/AcrylicWBg";
 import ProfileLinks from "./ProfileLinks";
 import ProfilePic from "./ProfilePic";
 
-const Container = styled.div`
+const Container = styled.header`
     position: relative;
     display: flex;
     justify-content: center;
