@@ -1,10 +1,5 @@
-import styled from "styled-components";
 import AcrylicDouble from "./Acrylics/AcrylicDouble";
-
-const Text = styled.p`
-	${({ theme }) => theme.text.titleCard};
-	color: ${({ theme }) => theme.colors.primary[2]};;
-`;
+import { TitleCard as TitleCardText } from "./Texts";
 
 const TitleCard = ({ children: text, pos = "bottom" }) => {
 	return (
@@ -12,9 +7,9 @@ const TitleCard = ({ children: text, pos = "bottom" }) => {
 			className="title-card"
 			pos={pos}
 		>
-			<Text>
+			<TitleCardText>
 				{text}
-			</Text>
+			</TitleCardText>
 		</AcrylicDouble>
 	);
 };
