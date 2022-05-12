@@ -11,12 +11,14 @@ const Name = styled.p`
     font: 900 1.6em "Lato", sans-serif;
     line-height: unset;
     height: 100%;
+    color: ${({ theme }) => theme.colors.primary[1]};
 `;
 
 const Nim = styled.small`
     ${({ theme }) => theme.text.note};
     line-height: unset;
     text-align: right;
+    color: ${({ theme }) => theme.colors.secondary[2]};
 `;
 
 const ProfileInfo = ({ name, nim }) => {
