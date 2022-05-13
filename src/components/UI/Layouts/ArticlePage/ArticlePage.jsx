@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import GoBack from "../../GoBack";
+import GoBack from "../../Buttons/GoBack";
 import ArticleHero from "./ArticleHero";
 
 const Container = styled.div`

@@ -25,12 +25,12 @@ const Text = styled.p`
 	${({ theme }) => theme.effects.gradientText};
 `;
 
-const TranslateBtn = React.forwardRef(({ onClick, children: text, className = "" }, ref) => {
+const Translate = React.forwardRef(({ onClick, children: text, className = "" }, ref) => {
 	text = text.slice(0, 2).toUpperCase();
 
 	return (
 		<Button
-			className={`translate-btn ${className}`}
+			className={`translate ${className}`}
 			onClick={onClick}
 			ref={ref}
 		>
@@ -39,4 +39,4 @@ const TranslateBtn = React.forwardRef(({ onClick, children: text, className = ""
 	);
 });
 
-export default React.memo(TranslateBtn);
+export default React.memo(Translate);

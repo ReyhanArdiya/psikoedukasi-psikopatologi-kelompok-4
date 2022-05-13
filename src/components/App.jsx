@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
 	${hookAnimations}
 	${cssTransitionAnimations}
 `;
-`;
 
 const App = () => {
 	return (

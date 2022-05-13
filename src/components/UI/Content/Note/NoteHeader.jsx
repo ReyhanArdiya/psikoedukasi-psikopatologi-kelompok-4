@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AcrylicWBg from "../Acrylics/AcrylicWBg";
+import AcrylicWBg from "../../Acrylics/AcrylicWBg";
 import { H2 } from "../Texts";
 
 const Container = styled.header`
