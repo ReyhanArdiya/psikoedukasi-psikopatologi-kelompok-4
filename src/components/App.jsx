@@ -13,9 +13,7 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.div`
 	background: ${({ theme }) => theme.colors.primary[1]};
 	min-height: 600px;
-	height: 100vh;
 	min-width: 320px;
-	width: 100vw;
 `;
 
 const App = () => {
