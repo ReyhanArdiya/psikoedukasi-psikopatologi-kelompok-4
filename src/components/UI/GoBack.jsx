@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import TitleCard from "./TitleCard";
 
-const StyledLink = styled(Link).attrs({ className : "link-read-more" })`
+const StyledLink = styled(Link).attrs({ className : "link-go-back" })`
     text-decoration: none;
 	width: max-content;
 `;

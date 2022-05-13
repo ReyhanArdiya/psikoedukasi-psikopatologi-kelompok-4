@@ -7,6 +7,7 @@ const Container = styled(Section)`
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 
 	/* Background */
 	background-color: black;
@@ -29,10 +30,10 @@ const Container = styled(Section)`
     /* Blur */
     position: relative;
 
-    .hero-title:first-of-type {
-        z-index: 1;
-        user-select: none;
-    }
+	.hero-title:first-of-type {
+		z-index: 1;
+		user-select: none;
+	}
 
 	::before {
 		content: "";
@@ -46,23 +47,23 @@ const Container = styled(Section)`
 		z-index: 2;
 	}
 
-    .hero-title:last-of-type {
-        z-index: 3;
-    }
+	.hero-title:last-of-type {
+		z-index: 3;
+	}
 `;
 
 const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 	${({ theme }) => theme.effects.gradientText}
 	position: absolute;
 	text-align: center;
-    width: 80%;
+	width: 80%;
 `;
 
 const ArticleHero = ({ title, smallImg, bigImg }) => {
 	return (
 		<Container
 			bigImg={bigImg}
-			className="hero"
+			className="article-hero"
 			smallImg={smallImg}
 		>
 			<GradientH1>{title}</GradientH1>
