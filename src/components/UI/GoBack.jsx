@@ -5,6 +5,7 @@ import TitleCard from "./TitleCard";
 
 const StyledLink = styled(Link).attrs({ className : "link-read-more" })`
     text-decoration: none;
+	width: max-content;
 `;
 
 const GoBack = React.forwardRef(({ path = "/", pos = "bottom" }, ref) => {
