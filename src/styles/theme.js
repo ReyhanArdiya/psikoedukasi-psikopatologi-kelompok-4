@@ -71,7 +71,25 @@ const others = {
 	`
 };
 
+const breakpoints = {
+	big(styles) {
+		return css`
+			@media screen and (min-width: 48em) {
+				${styles}
+			}
+		`;
+	},
+	small(styles) {
+		return css`
+			@media screen and (max-width: 47.9375em) {
+				${styles}
+			}
+		`;
+	},
+};
+
 const theme = {
+	breakpoints,
 	colors,
 	effects,
 	others,
