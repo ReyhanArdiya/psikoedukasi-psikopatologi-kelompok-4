@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { H1 } from "../../Texts";
+import { H1 } from "../../Content/Texts";
 import Section from "../Section";
 
 const Container = styled(Section)`

@@ -1,5 +1,5 @@
 import React from "react";
-import AcrylicDouble from "./Acrylics/AcrylicDouble";
+import AcrylicDouble from "../Acrylics/AcrylicDouble";
 import { TitleCard as TitleCardText } from "./Texts";
 
 const TitleCard = React.forwardRef(
