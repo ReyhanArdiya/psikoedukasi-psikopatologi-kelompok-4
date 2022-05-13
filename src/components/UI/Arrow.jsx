@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { css } from "styled-components";
 
 const Container = styled.div`
@@ -78,15 +79,16 @@ const AngleDownClipPath = () => {
 	);
 };
 
-const Arrow = ({ animation = 3 }) => {
+const Arrow = React.forwardRef(({ animation = 3 }, ref) => {
 	return (
 		<Container
 			animation={animation}
 			className="arrow"
+			ref={ref}
 		>
 			<AngleDownClipPath />
 		</Container>
 	);
-};
+});
 
-export default Arrow;
+export default React.memo(Arrow);
