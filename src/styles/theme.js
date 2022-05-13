@@ -19,7 +19,17 @@ const effects = {
 	`,
 	dropShadow : css`
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	`
+	`,
+	gradientText : css`
+		background: linear-gradient(
+			90deg,
+			${colors.primary[2]} 0%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	`,
 };
 
 effects.acrylicWShadow = css`

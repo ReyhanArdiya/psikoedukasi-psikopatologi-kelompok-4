@@ -12,6 +12,7 @@ const Button = styled.button`
 	padding: 0;
 	color: ${({ theme }) => theme.colors.primary[2]};
 	cursor: pointer;
+	user-select: none;
 
 	font-size: 1.3em;
 	line-height: unset;
@@ -21,10 +22,7 @@ const Button = styled.button`
 `;
 
 const Text = styled.p`
-	background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
+	${({ theme }) => theme.effects.gradientText};
 `;
 
 const TranslateBtn = React.forwardRef(({ onClick, children: text, className = "" }, ref) => {
