@@ -32,7 +32,7 @@ const AbsoluteProfileLinks = styled(ProfileLinks)`
     bottom: 6.675%;
 `;
 
-const ProfileHeader = ({ profilePicOpts: { img, alt = "", title = "", pos = "center" }, icons }) => {
+const ProfileHeader = ({ profilePic: { img, alt = "", title = "", pos = "center" }, links }) => {
 	return (
 		<Container className="profile-header">
 			<SqrProfilePic
@@ -42,7 +42,7 @@ const ProfileHeader = ({ profilePicOpts: { img, alt = "", title = "", pos = "cen
 				title={title}
 			/>
 			<StyledAcrylicWBg />
-			<AbsoluteProfileLinks icons={icons}/>
+			<AbsoluteProfileLinks links={links}/>
 		</Container>
 	);
 };

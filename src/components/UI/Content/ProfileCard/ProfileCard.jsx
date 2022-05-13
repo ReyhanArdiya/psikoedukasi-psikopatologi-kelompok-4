@@ -12,26 +12,52 @@ const Container = styled.article`
     ${({ theme }) => theme.effects.dropShadow}
 `;
 
-const ProfileCard = React.forwardRef(({
-	profileHeaderOpts: { profilePicOpts, icons },
-	profileInfo: { name, nim },
-	className = ""
-}, ref) => {
-	return (
-		<Container
-			className={`profile-card ${className}`}
-			ref={ref}
-		>
-			<ProfileHeader
-				icons={icons}
-				profilePicOpts={profilePicOpts}
-			/>
-			<ProfileInfo
-				name={name}
-				nim={nim}
-			/>
-		</Container>
-	);
-});
+const ProfileCard = React.forwardRef(
+
+	/**
+	 * @param {{
+	 * profileHeader: {
+	 * 	profilePic: {
+	 *		img: any;
+	 *		alt?: string;
+	 *		title?: string;
+	 *		pos?: string;
+	 *	},
+	 *	links: [{
+	 *		icon: SVGElement;
+	 *		href: string;
+	 *	}]
+	 * },
+	 * profileInfo: {
+	 * 	name: string,
+	 * 	nim: number
+	 * },
+	 * className?: string
+	 * }} props
+	 *
+	 * @param {import("react").ForwardedRef} ref
+	 */
+	({
+		profileHeader: { profilePic, links },
+		profileInfo: { name, nim },
+		className = ""
+	}, ref) => {
+		return (
+			<Container
+				className={`profile-card ${className}`}
+				ref={ref}
+			>
+				<ProfileHeader
+					links={links}
+					profilePic={profilePic}
+				/>
+				<ProfileInfo
+					name={name}
+					nim={nim}
+				/>
+			</Container>
+		);
+	}
+);
 
 export default React.memo(ProfileCard);

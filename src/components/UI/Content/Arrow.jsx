@@ -79,16 +79,26 @@ const AngleDownClipPath = () => {
 	);
 };
 
-const Arrow = React.forwardRef(({ animation = 3 }, ref) => {
-	return (
-		<Container
-			animation={animation}
-			className="arrow"
-			ref={ref}
-		>
-			<AngleDownClipPath />
-		</Container>
-	);
-});
+const Arrow = React.forwardRef(
+
+	/**
+	 * @param {{
+	 * animation?: number,
+	 * }} props
+	 *
+	 * @param {import("react").ForwardedRef} ref
+	 */
+	({ animation = 3 }, ref) => {
+		return (
+			<Container
+				animation={animation}
+				className="arrow"
+				ref={ref}
+			>
+				<AngleDownClipPath />
+			</Container>
+		);
+	}
+);
 
 export default React.memo(Arrow);

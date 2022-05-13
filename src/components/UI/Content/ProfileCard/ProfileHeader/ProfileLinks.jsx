@@ -26,13 +26,13 @@ const StyledFa = styled(FontAwesomeIcon)`
 /**
  *
  * @param {{
- * icons:[{icon:SVGElement, href:string}],
+ * links:[{icon:SVGElement, href:string}],
  * }} props
  *
  * @returns
  */
-const ProfileLinks = ({ icons, className }) => {
-	const items = icons.map(({ href, icon }) => {
+const ProfileLinks = ({ links, className }) => {
+	const items = links.map(({ href, icon }) => {
 		return (
 			<li
 				className="profile-link"

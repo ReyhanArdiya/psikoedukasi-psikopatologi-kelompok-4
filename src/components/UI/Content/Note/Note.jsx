@@ -12,16 +12,27 @@ const Container = styled.article`
     width: 16.5em;
 `;
 
-const Note = React.forwardRef(({ children: text, className = "" }, ref) => {
-	return (
-		<Container
-			className={`note ${className}`}
-			ref={ref}
-		>
-			<NoteHeader/>
-			<NoteText>{text}</NoteText>
-		</Container>
-	);
-});
+const Note = React.forwardRef(
+
+	/**
+	 * @param {{
+	 * children: import("react").ReactNode,
+	 * className?: string,
+	 * }} props
+	 *
+	 * @param {import("react").ForwardedRef} ref
+	 */
+	({ children: text, className = "" }, ref) => {
+		return (
+			<Container
+				className={`note ${className}`}
+				ref={ref}
+			>
+				<NoteHeader/>
+				<NoteText>{text}</NoteText>
+			</Container>
+		);
+	}
+);
 
 export default React.memo(Note);

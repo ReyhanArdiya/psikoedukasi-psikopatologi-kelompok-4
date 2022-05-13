@@ -8,15 +8,26 @@ const StyledLink = styled(Link).attrs({ className : "link-go-back" })`
 	width: max-content;
 `;
 
-const GoBack = React.forwardRef(({ path = "/", pos = "bottom" }, ref) => {
-	return (
-		<StyledLink
-			ref={ref}
-			to={path}
-		>
-			<TitleCard pos={pos}>GO BACK</TitleCard>
-		</StyledLink>
-	);
-});
+const GoBack = React.forwardRef(
+
+	/**
+	 * @param {{
+	 * path?:string,
+	 * pos?:string,
+	 * }} props
+	 *
+	 * @param {import("react").ForwardedRef} ref
+	 */
+	({ path = "/", pos = "bottom" }, ref) => {
+		return (
+			<StyledLink
+				ref={ref}
+				to={path}
+			>
+				<TitleCard pos={pos}>GO BACK</TitleCard>
+			</StyledLink>
+		);
+	}
+);
 
 export default React.memo(GoBack);

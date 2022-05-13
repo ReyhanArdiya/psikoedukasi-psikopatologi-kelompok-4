@@ -24,6 +24,16 @@ const SmallerAcrylic = styled(AcrylicSingle)`
 `;
 
 const AcrylicDouble = React.forwardRef(
+
+	/**
+	 * @param {{
+	 * children: import("react").ReactNode,
+	 * className?:string,
+	 * pos?:string,
+	 * }} props
+	 *
+	 * @param {import("react").ForwardedRef} ref
+	 */
 	({ children, className = "", pos = "bottom" }, ref) => {
 		return (
 			<Container
