@@ -4,23 +4,24 @@ import styled from "styled-components";
 import { baseTransitionMs } from "../../../styles/csstransition-animations";
 
 const StyledTransitionGroup = styled(TransitionGroup)`
-    align-items: center;
+	flex-direction: column;
     display: flex;
-    justify-content: center;
     position: relative;
 
     /* Target the second one only (so the one that is going to come in), this allows
-    us to use the content height for the height but still have that fade-in-out at the
+    us to use the content height for the height but still have that fade-in-out content at the
     same time effect */
     > *:nth-of-type(2) {
         position: absolute;
+		width: 100%;
+		height: 100%;
     }
 `;
 
 /**
  * To use this transition, pass a different {@link transitionKey} everytime you
- * rerender this component. The choice of having different {@link children} or not is up
- * to you.
+ * rerender this component. The choice of having different {@link children} or not
+ * to transition the content too is up to you.
  *
  * @param {{
  *  children: any,
@@ -39,7 +40,7 @@ const StyledTransitionGroup = styled(TransitionGroup)`
  *		<ThemeProvider theme={theme}>
  *			<GlobalStyle />
  *			<Container id="App">
- *				<SwitchText lang={text.lang}>
+ *				<SwitchText transitionKey={text.lang}>
  *					<Text>
  *						{text.text}
  *					</Text>
@@ -72,7 +73,7 @@ const StyledTransitionGroup = styled(TransitionGroup)`
  *
  * ```
  */
-const SwitchText = ({ children, transitionKey }) => {
+const SwitchContent = ({ children, transitionKey }) => {
 	return (
 		<StyledTransitionGroup
 			className="switch-text"
@@ -90,4 +91,4 @@ const SwitchText = ({ children, transitionKey }) => {
 	);
 };
 
-export default SwitchText;
+export default SwitchContent;
