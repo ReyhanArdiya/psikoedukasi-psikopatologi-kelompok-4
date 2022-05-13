@@ -1,5 +1,5 @@
 import React from "react";
-import useFadeInOutAnimation from "../../../hooks/useFadeInOutAnimation";
+import useBlurToClear from "../../../../hooks/useBlurToClear";
 
 /**
  * Helper component to wrap around A component to give it the fade in out animation.
@@ -8,9 +8,9 @@ import useFadeInOutAnimation from "../../../hooks/useFadeInOutAnimation";
  *
  * @returns
  */
-const FadeInOut = ({ children, once = true }) => {
-	const { ref } = useFadeInOutAnimation({ triggerOnce : once });
+const BlurToClear = ({ children, once = true }) => {
+	const { ref } = useBlurToClear({ triggerOnce : once });
 	return React.cloneElement(children, { ref });
 };
 
-export default FadeInOut;
+export default BlurToClear;
