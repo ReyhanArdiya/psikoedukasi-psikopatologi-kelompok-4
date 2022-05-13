@@ -14,6 +14,8 @@ const blurToClear = css`
 
 		filter: blur(10px);
 		opacity: 0;
+
+		transition-duration: ${baseTransitionMs * 2}ms;
 	}
 
     /* to */
@@ -43,6 +45,8 @@ const fadeInOut = css`
 		filter: blur(10px);
 		opacity: 0;
 		transform: translateY(50px);
+
+		transition-duration: ${baseTransitionMs * 2}ms;
 	}
 
     /* to */
