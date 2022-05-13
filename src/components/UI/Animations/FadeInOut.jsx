@@ -1,9 +1,9 @@
 import { CSSTransition } from "react-transition-group";
-import { baseTransitionMs } from "../../../../styles/csstransition-animations";
+import { baseTransitionMs } from "../../../styles/csstransition-animations";
 import { useInView } from "react-intersection-observer";
 import React from "react";
 
-const BlurToClear = ({ children, options, infinite = false }) => {
+const FadeInOut = ({ children, options, infinite = false }) => {
 	const { ref, inView } = useInView({
 		initialInView : true,
 		threshold     : 1,
@@ -14,16 +14,16 @@ const BlurToClear = ({ children, options, infinite = false }) => {
 	return (
 		<CSSTransition
 			appear={true}
-			classNames="blur-to-clear"
+			classNames="fade-in-out"
 			in={inView}
 			timeout={baseTransitionMs * 2}
 		>
 			{React.cloneElement(children, {
-				className : "blur-to-clear",
+				className : "fade-in-out",
 				ref,
 			})}
 		</CSSTransition>
 	);
 };
 
-export default BlurToClear;
+export default FadeInOut;
