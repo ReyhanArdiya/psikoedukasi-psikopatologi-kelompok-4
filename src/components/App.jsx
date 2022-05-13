@@ -1,4 +1,4 @@
-import { ThemeProvider, createGlobalStyle } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import cssReset from "../styles/css-reset";
 import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
@@ -10,10 +10,21 @@ const GlobalStyle = createGlobalStyle`
 	${cssTransitionAnimations}
 `;
 
+const Container = styled.div`
+	background: ${({ theme }) => theme.colors.primary[1]};
+	min-height: 600px;
+	height: 100vh;
+	min-width: 320px;
+	width: 100vw;
+`;
+
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
-			<GlobalStyle/>
+			<GlobalStyle />
+			<Container id="App">
+
+			</Container>
 		</ThemeProvider>
 	);
 };
