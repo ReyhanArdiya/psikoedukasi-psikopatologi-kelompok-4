@@ -6,8 +6,22 @@ import { Text } from "../../components/UI/Content/Texts";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
 import BD from "./Summary/BD/BD";
+import CD from "./Summary/CD/CD";
 
-const Container = styled.div``;
+const Container = styled.div`
+	/* CMT Im still on the fence about this */
+	/* body {
+		overflow: hidden;
+	}
+	max-height: 100vh;
+	overflow: auto;
+	scroll-snap-type: y proximity;
+
+	> * {
+		scroll-snap-stop: always;
+		scroll-snap-align: center;
+	} */
+`;
 
 const MultilineText = styled.div`
 	align-items: center;
@@ -58,6 +72,8 @@ const Home = () => {
 					<Text>Tidak.</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<CD/>
 
 			<Intermezzo>
 				<BlurToClear>
