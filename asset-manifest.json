@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.86f24b82.js",
+    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.5ff728f1.js",
     "static/media/reyhan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/reyhan.7b20de7816cd3228b184.jpg",
     "static/media/walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-1920w.26f4c3dacd784d8474c0.jpg",
     "static/media/wawan.png": "/psikoedukasi-psikopatologi-kelompok-4/static/media/wawan.40215f102f6b6ea58e90.png",
@@ -26,9 +26,9 @@
     "static/media/white-flower-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/white-flower-640w.d7b28cbf482e62b3a763.jpg",
     "static/media/glass-walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-640w.1922baa7d5d879ed2af8.jpg",
     "index.html": "/psikoedukasi-psikopatologi-kelompok-4/index.html",
-    "main.86f24b82.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.86f24b82.js.map"
+    "main.5ff728f1.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.5ff728f1.js.map"
   },
   "entrypoints": [
-    "static/js/main.86f24b82.js"
+    "static/js/main.5ff728f1.js"
   ]
 }
