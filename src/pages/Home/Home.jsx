@@ -5,6 +5,7 @@ import Intermezzo from "./Intermezzo";
 import { Text } from "../../components/UI/Content/Texts";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
+import BD from "./Summary/BD/BD";
 
 const Container = styled.div``;
 
@@ -41,6 +42,8 @@ const Home = () => {
 					</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<BD/>
 
 			<Intermezzo>
 				<BlurToClear>
