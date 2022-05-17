@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Intro from "./Intro";
 import Members from "./Members";
 
-const Container = styled.div`
+const Container = styled.section`
 
 `;
 
