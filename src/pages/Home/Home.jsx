@@ -86,7 +86,9 @@ const Home = () => {
 			<CD />
 
 			<Intermezzo>
-				<WhiteFlower/>
+				<BlurToClear>
+					<WhiteFlower/>
+				</BlurToClear>
 			</Intermezzo>
 
 			<Treatment/>
