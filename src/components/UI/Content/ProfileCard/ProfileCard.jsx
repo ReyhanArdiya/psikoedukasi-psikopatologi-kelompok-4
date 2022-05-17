@@ -32,7 +32,8 @@ const ProfileCard = React.forwardRef(
 	 * 	name: string,
 	 * 	nim: number
 	 * },
-	 * className?: string
+	 * className?: string,
+	 * id?: string
 	 * }} props
 	 *
 	 * @param {import("react").ForwardedRef} ref
@@ -40,11 +41,13 @@ const ProfileCard = React.forwardRef(
 	({
 		profileHeader: { profilePic, links },
 		profileInfo: { name, nim },
-		className = ""
+		className = "",
+		id = ""
 	}, ref) => {
 		return (
 			<Container
 				className={`profile-card ${className}`}
+				id={id}
 				ref={ref}
 			>
 				<ProfileHeader

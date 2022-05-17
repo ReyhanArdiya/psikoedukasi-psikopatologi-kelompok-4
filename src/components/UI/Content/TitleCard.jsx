@@ -8,14 +8,15 @@ const TitleCard = React.forwardRef(
 	 * @param {{
 	 * children: import("react").ReactNode,
 	 * pos?: string,
+	 * className?: string,
 	 * }} props
 	 *
 	 * @param {import("react").ForwardedRef} ref
 	 */
-	({ children: text, pos = "bottom" }, ref) => {
+	({ children: text, pos = "bottom", className = "" }, ref) => {
 		return (
 			<AcrylicDouble
-				className="title-card"
+				className={`title-card ${className}`}
 				pos={pos}
 				ref={ref}
 			>
