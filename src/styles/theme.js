@@ -29,7 +29,7 @@ const effects = {
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
-	`,
+	`
 };
 
 effects.acrylicWShadow = css`
@@ -65,12 +65,6 @@ const text = {
 	`
 };
 
-const others = {
-	borderRadius : css`
-		border-radius: 0.2rem;
-	`
-};
-
 const breakpoints = {
 	big(styles) {
 		return css`
@@ -85,7 +79,28 @@ const breakpoints = {
 				${styles}
 			}
 		`;
-	},
+	}
+};
+
+const others = {
+	borderRadius : css`
+		border-radius: 0.2rem;
+	`,
+	responsiveBg(smallImg, bigImg) {
+		return css`
+			background-color: black;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			${breakpoints.small(css`
+				background-image: url(${smallImg});
+			`)}
+			${breakpoints.big(css`
+				background-image: url(${bigImg});
+			`)}
+		`;
+	}
 };
 
 const theme = {
