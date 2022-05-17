@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Text } from "../Content/Texts";
 import Section from "./Section";
 
 const Container = styled(Section)`
@@ -13,15 +12,16 @@ const Container = styled(Section)`
 	width: 76.25%;
 `;
 
-const CenteredText = ({ children: text, id = "", className = "" }) => {
+let idCounter = 1;
+const Intermezzo = ({ children, id = "", className = "" }) => {
 	return (
 		<Container
 			className={className}
-			id={id}
+			id={`intermezzo-${idCounter++}`}
 		>
-			<Text>{text}</Text>
+			{children}
 		</Container>
 	);
 };
 
-export default CenteredText;
+export default Intermezzo;
