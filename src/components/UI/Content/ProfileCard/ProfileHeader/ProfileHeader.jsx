@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AcrylicWBg from "../../Acrylics/AcrylicWBg";
+import AcrylicWBg from "../../../Acrylics/AcrylicWBg";
 import ProfileLinks from "./ProfileLinks";
 import ProfilePic from "./ProfilePic";
 
@@ -18,6 +18,7 @@ const SqrProfilePic = styled(ProfilePic)`
     position: absolute;
     top: -66.67%;
     z-index: 3;
+    filter: grayscale(100%);
 `;
 
 const StyledAcrylicWBg = styled(AcrylicWBg)`
