@@ -10,6 +10,7 @@ import CD from "./Summary/CD/CD";
 import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
 import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
 import Treatment from "./Summary/Treatment/Treatment";
+import Suicide from "./Summary/Suicide/Suicide";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -98,6 +99,8 @@ const Home = () => {
 					<Text>Sebelum kita selesai</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<Suicide/>
 
 			<Intermezzo>
 				<BlurToClear>
