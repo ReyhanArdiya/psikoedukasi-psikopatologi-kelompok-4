@@ -6,7 +6,7 @@ import cssTransitionAnimations from "../styles/csstransition-animations";
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import MDD from "../pages/articles/MDD";
 import SwitchContent from "./UI/Animations/SwitchContent";
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -23,7 +23,6 @@ const Container = styled.div`
 const App = () => {
 	const location = useLocation();
 
-	// TODO add home page
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />

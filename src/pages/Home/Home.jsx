@@ -4,6 +4,7 @@ import React from "react";
 import Intermezzo from "./Intermezzo";
 import { Text } from "../../components/UI/Content/Texts";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
+import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
 
 const Container = styled.div``;
 
@@ -19,6 +20,7 @@ const Home = () => {
 	return (
 		<Container id="Home">
 			<HomeHero />
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>
@@ -27,6 +29,9 @@ const Home = () => {
 					</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<MDDDYSTHYMIA/>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>
@@ -36,6 +41,7 @@ const Home = () => {
 					</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>
@@ -43,21 +49,25 @@ const Home = () => {
 					</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>Tidak.</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>Sebelum kita selesai</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>Dan kita selesai</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 			<Intermezzo>
 				<MultilineText>
 					<BlurToClear>
@@ -68,6 +78,7 @@ const Home = () => {
 					</BlurToClear>
 				</MultilineText>
 			</Intermezzo>
+
 			<Intermezzo>
 				<MultilineText>
 					<BlurToClear>
@@ -94,11 +105,13 @@ const Home = () => {
 					</BlurToClear>
 				</MultilineText>
 			</Intermezzo>
+
 			<Intermezzo>
 				<BlurToClear>
 					<Text>bye.</Text>
 				</BlurToClear>
 			</Intermezzo>
+
 		</Container>
 	);
 };
