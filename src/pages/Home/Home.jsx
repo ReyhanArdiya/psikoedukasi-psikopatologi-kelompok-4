@@ -12,6 +12,7 @@ import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
 import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
 import { Text } from "../../components/UI/Content/Texts";
 import StatueIntermezzo from "./StatueIntermezzo";
+import Credits from "./Credits/Credits";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -152,6 +153,8 @@ const Home = () => {
 					<Text>bye.</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<Credits/>
 
 		</Container>
 	);
