@@ -30,9 +30,10 @@ const App = () => {
 			<Container id="App">
 				<SwitchContent transitionKey={location.key}>
 					<Routes>
+						{/* DBG delete the name after to after final deployment */}
 						<Route
 							element={<Home/>}
-							path="/"
+							path="/psikoedukasi-psikopatologi-kelompok-4"
 						/>
 						<Route path="/articles">
 							<Route
@@ -43,7 +44,7 @@ const App = () => {
 						<Route
 							element={<Navigate
 								replace
-								to="/"
+								to="/psikoedukasi-psikopatologi-kelompok-4"
 							         />}
 							path="*"
 						/>
