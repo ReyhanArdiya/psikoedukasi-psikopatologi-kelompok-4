@@ -27,6 +27,9 @@ const Container = styled(Section)`
 		`);
 	}}
 
+	/* REFAC use this but test it out first */
+	${({ theme, smallImg, bigImg }) => theme.others.responsiveBg(smallImg, bigImg)}
+
     /* Blur */
     position: relative;
 
