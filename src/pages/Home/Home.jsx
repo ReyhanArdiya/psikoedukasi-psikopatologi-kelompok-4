@@ -1,16 +1,17 @@
-import styled from "styled-components";
-import HomeHero from "./HomeHero";
-import React from "react";
-import Intermezzo from "./Intermezzo";
-import { Text } from "../../components/UI/Content/Texts";
-import BlurToClear from "../../components/UI/Animations/BlurToClear";
-import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
 import BD from "./Summary/BD/BD";
+import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import CD from "./Summary/CD/CD";
-import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
-import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
-import Treatment from "./Summary/Treatment/Treatment";
+import HomeHero from "./HomeHero";
+import Intermezzo from "./Intermezzo";
+import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
+import React from "react";
 import Suicide from "./Summary/Suicide/Suicide";
+import Treatment from "./Summary/Treatment/Treatment";
+import styled from "styled-components";
+import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
+import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
+import { Text } from "../../components/UI/Content/Texts";
+import StatueIntermezzo from "./StatueIntermezzo";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -102,11 +103,11 @@ const Home = () => {
 
 			<Suicide/>
 
-			<Intermezzo>
+			<StatueIntermezzo>
 				<BlurToClear>
 					<Text>Dan kita selesai</Text>
 				</BlurToClear>
-			</Intermezzo>
+			</StatueIntermezzo>
 
 			<Intermezzo>
 				<MultilineText>
@@ -119,7 +120,7 @@ const Home = () => {
 				</MultilineText>
 			</Intermezzo>
 
-			<Intermezzo>
+			<StatueIntermezzo pos="right">
 				<MultilineText>
 					<BlurToClear>
 						<Text>
@@ -144,7 +145,7 @@ const Home = () => {
 						</Text>
 					</BlurToClear>
 				</MultilineText>
-			</Intermezzo>
+			</StatueIntermezzo>
 
 			<Intermezzo>
 				<BlurToClear>

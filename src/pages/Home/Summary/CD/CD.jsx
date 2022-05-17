@@ -5,17 +5,18 @@ import Section from "../../../../components/UI/Layouts/Section";
 import TitleCard from "../../../../components/UI/Content/TitleCard";
 import { Text } from "../../../../components/UI/Content/Texts";
 import ReadMore from "../../../../components/UI/Buttons/ReadMore";
+import BlurToClear from "../../../../components/UI/Animations/BlurToClear";
 
 const Container = styled(Section)`
 	${({ theme }) => theme.others.responsiveBg(towerSm, towerBg)}
 	position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 9em;
-    width: 72.5%;
-    margin: 0 auto;
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	gap: 9em;
+	width: 72.5%;
+	margin: 0 auto;
 
 	&::before {
 		content: "";
@@ -25,24 +26,30 @@ const Container = styled(Section)`
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-        z-index: 1;
+		z-index: 0;
 	}
 `;
 
 const StyledText = styled(Text)`
-    z-index: 2;
-    text-align: center;
+	z-index: 3;
+	text-align: center;
 `;
 
 const CD = () => {
 	return (
 		<Container id="CD">
-			<TitleCard>CD</TitleCard>
-			<StyledText>
-				Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika perasaan
-				seseorang berubah-ubah sesuai siklus yang berlaku.
-			</StyledText>
-			<ReadMore path="/articles/CD"/>
+			<BlurToClear>
+				<TitleCard>CD</TitleCard>
+			</BlurToClear>
+			<BlurToClear>
+				<StyledText>
+					Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika
+					perasaan seseorang berubah-ubah sesuai siklus yang berlaku.
+				</StyledText>
+			</BlurToClear>
+			<BlurToClear>
+				<ReadMore path="/articles/CD" />
+			</BlurToClear>
 		</Container>
 	);
 };
