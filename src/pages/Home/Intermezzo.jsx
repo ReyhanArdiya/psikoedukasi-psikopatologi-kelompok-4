@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Section from "./Section";
+import Section from "../../components/UI/Layouts/Section";
 
 const Container = styled(Section)`
 	align-items: center;
