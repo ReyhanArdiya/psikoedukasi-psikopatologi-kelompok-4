@@ -1,0 +1,88 @@
+import styled from "styled-components";
+import ReadMore from "../../../../components/UI/Buttons/ReadMore";
+import Section from "../../../../components/UI/Layouts/Section";
+import spotlightSm from "../../../../images/content/small/spotlight-640w.jpg";
+import spotlightBg from "../../../../images/content/big/spotlight-1920w.jpg";
+import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
+const Container = styled(Section)`
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	width: 100%;
+
+	background-size: cover;
+	background-repeat: repeat-x;
+
+	.title-card {
+		margin-bottom: 3.731em;
+	}
+`;
+
+const Images = styled.div`
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+`;
+
+const Image = styled.div`
+	flex-grow: 1;
+	height: 100%;
+	width: 100%;
+
+	${({ theme }) => theme.others.responsiveBg(spotlightSm, spotlightBg)}
+	${({ flip }) => flip && "transform: scaleX(-1);"}
+
+    background-position: bottom;
+	background-size: cover;
+`;
+
+let firstLoad = true;
+const TreatmentReadMore = () => {
+	const [ images, setImages ] = useState(<Image flip />);
+
+	useEffect(() => {
+		const media = window.matchMedia("screen and (min-width: 48em)");
+
+		const changeImages = ev => {
+			if (ev.matches) {
+				setImages([
+					<Image key={uuidv4()} />,
+					<Image
+						flip
+						key={uuidv4()}
+					/>,
+					<Image key={uuidv4()} />
+				]);
+			} else {
+				setImages(<Image flip />);
+			}
+		};
+
+		media.addEventListener("change", changeImages);
+
+		if (firstLoad) {
+			changeImages(media);
+			firstLoad = false;
+		}
+
+		return () => media.removeEventListener("change", changeImages);
+	}, []);
+
+	return (
+		<Container>
+			<ReadMore path="/articles/treatment" />
+			<Images>{images}</Images>
+		</Container>
+	);
+};
+
+export default TreatmentReadMore;

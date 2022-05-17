@@ -9,6 +9,7 @@ import BD from "./Summary/BD/BD";
 import CD from "./Summary/CD/CD";
 import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
 import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
+import Treatment from "./Summary/Treatment/Treatment";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -87,6 +88,8 @@ const Home = () => {
 			<Intermezzo>
 				<WhiteFlower/>
 			</Intermezzo>
+
+			<Treatment/>
 
 			<Intermezzo>
 				<BlurToClear>
