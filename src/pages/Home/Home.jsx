@@ -7,6 +7,8 @@ import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
 import BD from "./Summary/BD/BD";
 import CD from "./Summary/CD/CD";
+import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
+import whiteFlowerBg from "../../images/content/big/white-flower-1920w.jpg";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -29,6 +31,13 @@ const MultilineText = styled.div`
 	flex-direction: column;
 	gap: 10em;
 	justify-content: center;
+`;
+
+const WhiteFlower = styled.div`
+	${({ theme }) => theme.others.responsiveBg(whiteFlowerSm, whiteFlowerBg)}
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
 `;
 
 const Home = () => {
@@ -73,7 +82,11 @@ const Home = () => {
 				</BlurToClear>
 			</Intermezzo>
 
-			<CD/>
+			<CD />
+
+			<Intermezzo>
+				<WhiteFlower/>
+			</Intermezzo>
 
 			<Intermezzo>
 				<BlurToClear>
