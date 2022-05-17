@@ -39,7 +39,10 @@ const StyledH2 = styled(H2)`
 
 const HomeHero = () => {
 	return (
-		<Container id="hero">
+		<Container
+			as="header"
+			id="hero"
+		>
 			<FadeInOut>
 				<GradientH1>
                     MOOD DISORDERS
