@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TranslateBtn from "../../Buttons/TranslateBtn";
+import TranslateBtn from "./TranslateBtn";
 
 const Container = styled.div`
     align-items: center;
