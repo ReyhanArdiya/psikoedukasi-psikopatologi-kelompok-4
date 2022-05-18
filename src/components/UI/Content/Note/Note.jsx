@@ -9,7 +9,9 @@ const Container = styled.article`
     background-color: ${({ theme }) => theme.colors.primary[2]};
     font-size: 1em;
     height: max-content;
-    width: 16.5em;
+    min-width: 16.5em;
+	width: 100%;
+	margin: 2em 0;
 `;
 
 const Note = React.forwardRef(
