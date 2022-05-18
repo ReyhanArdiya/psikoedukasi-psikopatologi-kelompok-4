@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Section from "../../../../components/UI/Layouts/Section";
 import Layout from "./Layout";
-import bloomSm from "../../../../images/content/small/bloom-beach-house-770w.png";
+import bloomSm from "../../../../images/content/small/bloom-beach-house-770w.jpg";
 // CMT no big bloom :(
 import walkingSm from "../../../../images/content/small/walking-640w.jpg";
 import walkingBg from "../../../../images/content/big/walking-1920w.jpg";

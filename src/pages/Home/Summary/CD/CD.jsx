@@ -38,18 +38,14 @@ const StyledText = styled(Text)`
 const CD = () => {
 	return (
 		<Container id="CD">
-			<BlurToClear>
-				<TitleCard>CD</TitleCard>
-			</BlurToClear>
+			<TitleCard>CD</TitleCard>
 			<BlurToClear>
 				<StyledText>
 					Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika
 					perasaan seseorang berubah-ubah sesuai siklus yang berlaku.
 				</StyledText>
 			</BlurToClear>
-			<BlurToClear>
-				<ReadMore path="/articles/CD" />
-			</BlurToClear>
+			<ReadMore path="/articles/CD" />
 		</Container>
 	);
 };

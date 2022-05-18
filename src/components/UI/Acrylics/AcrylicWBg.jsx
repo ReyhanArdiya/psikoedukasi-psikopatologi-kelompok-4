@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import AcrylicSingle from "./AcrylicSingle";
-import blackAcrylicPaint from "../../../images/content/small/bloom-beach-house-770w.png";
+import blackAcrylicPaint from "../../../images/content/small/bloom-beach-house-770w.jpg";
 
 const Container = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
-    background: fixed black url(${blackAcrylicPaint}) center/100% 100% no-repeat;
+    background: scroll black url(${blackAcrylicPaint}) center/100% 100% no-repeat;
     width: max-content;
     height: max-content;
     position: relative;
@@ -19,6 +19,7 @@ const FilledAcrylicSingle = styled(AcrylicSingle)`
     height: 100%;
     position: absolute;
     min-height: 0;
+    backdrop-filter: blur(2px);
 `;
 
 const AcrylicWBg = ({ className = "" }) => {

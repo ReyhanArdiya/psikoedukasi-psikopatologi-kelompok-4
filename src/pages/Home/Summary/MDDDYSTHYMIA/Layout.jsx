@@ -41,30 +41,26 @@ const Layout = ({
 	imgLoc = "right",
 	readTo = `/articles/${id}`,
 	smallImg,
-	title = id
+	title = id,
+	className = ""
 }) => {
 	return (
 		<Container
+			className={`layout ${className}`}
 			id={id}
 			imgLoc={imgLoc}
 		>
-			<BlurToClear>
-				<Image
-					bigImg={bigImg}
-					className="img"
-					smallImg={smallImg}
-				/>
-			</BlurToClear>
+			<Image
+				bigImg={bigImg}
+				className="img"
+				smallImg={smallImg}
+			/>
 			<Content className="content">
-				<BlurToClear>
-					<TitleCard>{title}</TitleCard>
-				</BlurToClear>
+				<TitleCard>{title}</TitleCard>
 				<BlurToClear>
 					<LimitedText>{text}</LimitedText>
 				</BlurToClear>
-				<BlurToClear>
-					<ReadMore path={readTo} />
-				</BlurToClear>
+				<ReadMore path={readTo} />
 			</Content>
 		</Container>
 	);
