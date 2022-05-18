@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import flowerPetalSm from "../../../../images/content/small/flower-petal-640w.jpg";
 import flowerPetalBg from "../../../../images/content/big/flower-petal-1920w.jpg";
+import BlurToClear from "../../../../components/UI/Animations/BlurToClear";
 
 const Container = styled.div`
 	align-items: center;
@@ -26,7 +27,11 @@ const Container = styled.div`
 `;
 
 const FlowerBg = ({ children, flip }) => {
-	return <Container flip={flip}>{children}</Container>;
+	return (
+		<BlurToClear options={{ threshold : 0.9 }}>
+			<Container flip={flip}>{children}</Container>
+		</BlurToClear>
+	);
 };
 
 export default FlowerBg;

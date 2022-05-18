@@ -2,6 +2,7 @@ import TitleCard from "../../../../components/UI/Content/TitleCard";
 import glassWalkingBg from "../../../../images/content/big/glass-walking-1920w.jpg";
 import glassWalkingSm from "../../../../images/content/small/glass-walking-640w.jpg";
 import styled from "styled-components";
+import BlurToClear from "../../../../components/UI/Animations/BlurToClear";
 
 const Container = styled.header`
 	align-items: center;
@@ -17,12 +18,14 @@ const Container = styled.header`
 
 const BDHeader = ({ className = "" }) => {
 	return (
-		<Container
-			className={className}
-			id="BD-header"
-		>
-			<TitleCard>BD I &amp; II</TitleCard>
-		</Container>
+		<BlurToClear options={{ threshold : 0.5 }}>
+			<Container
+				className={className}
+				id="BD-header"
+			>
+				<TitleCard>BD I &amp; II</TitleCard>
+			</Container>
+		</BlurToClear>
 	);
 };
 

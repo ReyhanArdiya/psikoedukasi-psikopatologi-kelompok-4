@@ -89,7 +89,12 @@ const Home = () => {
 			<CD />
 
 			<Intermezzo>
-				<WhiteFlower/>
+				<BlurToClear
+					once
+					options={{ threshold : 0.5 }}
+				>
+					<WhiteFlower/>
+				</BlurToClear>
 			</Intermezzo>
 
 			<Treatment/>

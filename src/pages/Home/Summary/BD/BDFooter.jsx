@@ -2,6 +2,7 @@ import glassWalkingBg from "../../../../images/content/big/glass-walking-1920w.j
 import glassWalkingSm from "../../../../images/content/small/glass-walking-640w.jpg";
 import styled from "styled-components";
 import ReadMore from "../../../../components/UI/Buttons/ReadMore";
+import BlurToClear from "../../../../components/UI/Animations/BlurToClear";
 
 const Container = styled.footer`
     align-items: center;
@@ -25,12 +26,14 @@ const Container = styled.footer`
 
 const BDFooter = ({ className = "" }) => {
 	return (
-		<Container
-			className={className}
-			id="BD-footer"
-		>
-			<ReadMore path="/articles/BD"/>
-		</Container>
+		<BlurToClear options={{ threshold : 0.5 }}>
+			<Container
+				className={className}
+				id="BD-footer"
+			>
+				<ReadMore path="/articles/BD"/>
+			</Container>
+		</BlurToClear>
 	);
 };
 
