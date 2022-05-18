@@ -7,17 +7,35 @@ import sittingSm from "../../images/content/small/sitting-640w.jpg";
 import sittingBg from "../../images/content/big/sitting-1920w.jpg";
 
 const Container = styled(Section)`
-    ${({ theme }) => theme.others.responsiveBg(sittingSm, sittingBg)}
+	${({ theme }) => theme.others.responsiveBg(sittingSm, sittingBg)}
+	/* background-size: 138%; */
     position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 2.4em 1.4em 1.521em 1.4em;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 2.4em 1.4em 1.521em 1.4em;
 
-    ${({ theme }) => theme.breakpoints.big(css`
-        padding: 5em 3.4em  4.5em 3.4em;
-    `)}
+	${({ theme }) => theme.breakpoints.big(css`
+			padding: 5em 3.4em 4.5em 3.4em;
+		`)}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+				270deg,
+				rgba(0, 0, 0, 0) 93.68%,
+				#000000 100%
+			),
+			linear-gradient(90deg, rgba(0, 0, 0, 0) 81.51%, #000000 104.23%),
+			linear-gradient(180deg, rgba(0, 0, 0, 0) 65.17%, #000000 100%);
+		z-index: 0;
+	}
 `;
 
 const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
@@ -25,16 +43,16 @@ const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 	position: absolute;
 	text-align: left;
 	top: 0;
-    left: 0;
-    width: 100%;
+	left: 0;
+	width: 100%;
 `;
 
 const StyledH2 = styled(H2)`
-    position: absolute;
+	position: absolute;
 	text-align: right;
 	bottom: 0;
-    right: 0;
-    width: 100%;
+	right: 0;
+	width: 100%;
 `;
 
 const HomeHero = () => {
@@ -45,11 +63,12 @@ const HomeHero = () => {
 		>
 			<FadeInOut>
 				<GradientH1>
-                    MOOD DISORDERS
-					<br/>
-                    &amp;
-					<br/>
-                    SUICIDE</GradientH1>
+					MOOD DISORDERS
+					<br />
+					&amp;
+					<br />
+					SUICIDE
+				</GradientH1>
 			</FadeInOut>
 			<FadeInOut>
 				<Arrow />
