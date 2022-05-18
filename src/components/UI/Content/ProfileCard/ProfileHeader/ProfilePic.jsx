@@ -1,8 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
 import SwitchContent from "../../../Animations/SwitchContent";
-import fallbackSm from "../../../../../images/content/small/black-acrylic-paint-640w.jpg";
-import fallbackBg from "../../../../../images/content/big/black-acrylic-paint-1920w.jpg";
 
 const Container = styled.div`
 	width: 100%;
@@ -21,15 +19,25 @@ const ProfileImg = styled.img`
 `;
 
 const Fallback = styled.div`
-	content: "";
+	${({ theme }) => theme.effects.dropShadow}
+	border-radius: inherit;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100%;
-	border-radius: inherit;
 	z-index: 2;
 
-	${({ theme }) => theme.others.responsiveBg(fallbackSm, fallbackBg)}
+	@keyframes glowing{
+		from {
+			background: #696969;
+		}
+
+		to {
+			background: white;
+		}
+	}
+
+	animation: glowing 1.5s infinite alternate ease;
 
 	::after {
 		${({ theme }) => theme.effects.acrylicWShadow}
