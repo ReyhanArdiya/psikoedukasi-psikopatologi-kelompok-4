@@ -25,7 +25,7 @@ const Text = styled.p`
 	${({ theme }) => theme.effects.gradientText};
 `;
 
-const Translate = React.forwardRef(
+const TranslateBtn = React.forwardRef(
 
 	/**
 	 * @param {{
@@ -51,4 +51,4 @@ const Translate = React.forwardRef(
 	}
 );
 
-export default React.memo(Translate);
+export default React.memo(TranslateBtn);
