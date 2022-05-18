@@ -14,7 +14,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 import BlurToClear from "../../../components/UI/Animations/BlurToClear";
+import statueBg from "../../../images/content/big/statue-1920w.jpg";
+import statueSm from "../../../images/content/small/statue-640w.jpg";
 
+const position = "-50%";
 const Container = styled(Section)`
 	font-size: 1.6em;
 	height: max-content;
@@ -33,6 +36,10 @@ const Container = styled(Section)`
 	gap: 8em;
 	margin-bottom: 3em;
 	padding-top: 7em;
+
+	.profile-card {
+		z-index: 1;
+	}
 
 	.profile-card:first-of-type {
 		grid-area: m1;
@@ -67,6 +74,30 @@ const Container = styled(Section)`
 		height: 100vh;
 		min-height: 700px;
 		margin-bottom: 0;
+	}
+
+	/* Statue decos */
+	position: relative;
+
+	::before,
+	::after {
+		${({ theme }) => theme.others.responsiveBg(statueSm, statueBg)}
+		background-size: contain;
+		content: "";
+		height: 30.4em;
+		position: absolute;
+		width: 100%;
+	}
+
+	::before {
+		left: ${position};
+		top: 0;
+	}
+
+	::after {
+		right: ${position};
+		transform: scaleX(-1);
+		bottom: 0;
 	}
 `;
 
