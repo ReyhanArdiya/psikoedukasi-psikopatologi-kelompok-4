@@ -5,7 +5,7 @@ import fithrah from "../../../images/members/fithrah.jpeg";
 import novita from "../../../images/members/novita.jpg";
 import reyhan from "../../../images/members/reyhan.jpg";
 import rifqi from "../../../images/members/rifqi.jpg";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import wawan from "../../../images/members/wawan.jpg";
 import {
 	faGithub,
@@ -16,9 +16,11 @@ import { v4 as uuidv4 } from "uuid";
 import BlurToClear from "../../../components/UI/Animations/BlurToClear";
 
 const Container = styled(Section)`
+	font-size: 1.6em;
 	height: max-content;
 	display: grid;
 	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
 	grid-template-areas:
 		"m1"
 		"m2"
@@ -26,10 +28,10 @@ const Container = styled(Section)`
 		"m4"
 		"m5"
 		"m6";
-	align-content: center;
-	gap: 8em;
+	align-items: center;
 	justify-items: center;
-	padding-bottom: 3em;
+	gap: 8em;
+	margin-bottom: 3em;
 	padding-top: 7em;
 
 	.profile-card:first-of-type {
@@ -56,21 +58,22 @@ const Container = styled(Section)`
 		grid-area: m6;
 	}
 
-	${({ theme }) => theme.breakpoints.big(css`
-			grid-template-areas:
-				"m1 m4"
-				"m2 m5"
-				"m3 m6";
-			max-width: 76.8rem;
-			margin: 0 auto;
-			height: 100vh;
-		`)}
+	@media screen and (min-width: 59.375em) {
+		grid-template-areas:
+			"m1 m2 m3"
+			"m4 m5 m6";
+		gap: 0;
+		padding-top: 0;
+		height: 100vh;
+		min-height: 700px;
+		margin-bottom: 0;
+	}
 `;
 
 const Members = () => {
 	return (
 		<Container id="members">
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-alissa"
 					key={uuidv4()}
@@ -95,7 +98,7 @@ const Members = () => {
 				/>
 			</BlurToClear>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-fithrah"
 					key={uuidv4()}
@@ -120,7 +123,7 @@ const Members = () => {
 				/>
 			</BlurToClear>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-wawan"
 					key={uuidv4()}
@@ -145,7 +148,7 @@ const Members = () => {
 				/>
 			</BlurToClear>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-reyhan"
 					key={uuidv4()}
@@ -178,7 +181,7 @@ const Members = () => {
 				/>
 			</BlurToClear>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-novita"
 					key={uuidv4()}
@@ -203,7 +206,7 @@ const Members = () => {
 				/>
 			</BlurToClear>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ProfileCard
 					id="member-rifqi"
 					key={uuidv4()}
