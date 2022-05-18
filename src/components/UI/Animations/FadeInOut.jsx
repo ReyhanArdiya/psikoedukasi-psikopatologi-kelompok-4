@@ -3,11 +3,11 @@ import { baseTransitionMs } from "../../../styles/csstransition-animations";
 import { useInView } from "react-intersection-observer";
 import React from "react";
 
-const FadeInOut = ({ children, options, infinite = false }) => {
+const FadeInOut = ({ children, options, once = true }) => {
 	const { ref, inView } = useInView({
 		initialInView : true,
 		threshold     : 1,
-		triggerOnce   : !infinite,
+		triggerOnce   : once,
 		...options,
 	});
 

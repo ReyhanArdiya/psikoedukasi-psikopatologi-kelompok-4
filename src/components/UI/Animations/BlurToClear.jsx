@@ -3,11 +3,11 @@ import { baseTransitionMs } from "../../../styles/csstransition-animations";
 import { useInView } from "react-intersection-observer";
 import React from "react";
 
-const BlurToClear = ({ children, options, infinite = false }) => {
+const BlurToClear = ({ children, options, once = false }) => {
 	const { ref, inView } = useInView({
 		initialInView : true,
 		threshold     : 1,
-		triggerOnce   : !infinite,
+		triggerOnce   : once,
 		...options,
 	});
 

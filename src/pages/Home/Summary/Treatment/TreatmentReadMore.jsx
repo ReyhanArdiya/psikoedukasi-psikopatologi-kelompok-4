@@ -5,7 +5,6 @@ import spotlightSm from "../../../../images/content/small/spotlight-640w.jpg";
 import spotlightBg from "../../../../images/content/big/spotlight-1920w.jpg";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import BlurToClear from "../../../../components/UI/Animations/BlurToClear";
 
 const Container = styled(Section)`
 	align-items: center;
@@ -79,12 +78,10 @@ const TreatmentReadMore = () => {
 	}, []);
 
 	return (
-		<BlurToClear options={{ threshold : 0.9 }}>
-			<Container>
-				<ReadMore path="/articles/treatment" />
-				<Images>{images}</Images>
-			</Container>
-		</BlurToClear>
+		<Container>
+			<ReadMore path="/articles/treatment" />
+			<Images>{images}</Images>
+		</Container>
 	);
 };
 

@@ -50,13 +50,11 @@ const Layout = ({
 			id={id}
 			imgLoc={imgLoc}
 		>
-			<BlurToClear>
-				<Image
-					bigImg={bigImg}
-					className="img"
-					smallImg={smallImg}
-				/>
-			</BlurToClear>
+			<Image
+				bigImg={bigImg}
+				className="img"
+				smallImg={smallImg}
+			/>
 			<Content className="content">
 				<TitleCard>{title}</TitleCard>
 				<BlurToClear>
