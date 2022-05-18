@@ -76,7 +76,7 @@ const StyledTransitionGroup = styled(TransitionGroup)`
 const SwitchContent = ({ children, transitionKey }) => {
 	return (
 		<StyledTransitionGroup
-			className="switch-text"
+			className="switch-content"
 			component={"div"}
 		>
 			<CSSTransition

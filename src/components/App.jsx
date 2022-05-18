@@ -3,9 +3,9 @@ import cssReset from "../styles/css-reset";
 import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
 import cssTransitionAnimations from "../styles/csstransition-animations";
-import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import { Route, Routes, /* useLocation */ Navigate } from "react-router-dom";
 import MDD from "../pages/articles/MDD";
-import SwitchContent from "./UI/Animations/SwitchContent";
+// import SwitchContent from "./UI/Animations/SwitchContent";
 import Home from "../pages/Home/Home";
 
 const GlobalStyle = createGlobalStyle`
@@ -22,34 +22,35 @@ const Container = styled.div`
 `;
 
 const App = () => {
-	const location = useLocation();
+	// const location = useLocation();
 
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<Container id="App">
-				<SwitchContent transitionKey={location.key}>
-					<Routes>
-						{/* DBG delete the name after to after final deployment */}
+				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
+				{/* <SwitchContent transitionKey={location.key}> */}
+				<Routes>
+					{/* DBG delete the name after to after final deployment */}
+					<Route
+						element={<Home/>}
+						path="/psikoedukasi-psikopatologi-kelompok-4"
+					/>
+					<Route path="/articles">
 						<Route
-							element={<Home/>}
-							path="/psikoedukasi-psikopatologi-kelompok-4"
+							element={<MDD />}
+							path="MDD"
 						/>
-						<Route path="/articles">
-							<Route
-								element={<MDD />}
-								path="MDD"
-							/>
-						</Route>
-						<Route
-							element={<Navigate
-								replace
-								to="/psikoedukasi-psikopatologi-kelompok-4"
-							         />}
-							path="*"
-						/>
-					</Routes>
-				</SwitchContent>
+					</Route>
+					<Route
+						element={<Navigate
+							replace
+							to="/psikoedukasi-psikopatologi-kelompok-4"
+						         />}
+						path="*"
+					/>
+				</Routes>
+				{/* </SwitchContent> */}
 			</Container>
 		</ThemeProvider>
 	);
