@@ -39,7 +39,15 @@ const Image = styled.div`
 	width: 100%;
 
 	${({ theme }) => theme.others.responsiveBg(spotlightSm, spotlightBg)}
-	${({ flip }) => flip && "transform: scaleX(-1);"}
+	${({ big, flip }) => {
+		if (big && flip) {
+			return "transform: scaleX(-1) scaleX(1.01);";
+		} else if (flip) {
+			return "transform: scaleX(-1);";
+		} else if (big) {
+			return "transform: scaleX(1.01);";
+		}
+	}}
 
     background-position: bottom;
 	background-size: cover;
@@ -55,12 +63,19 @@ const TreatmentReadMore = () => {
 		const changeImages = ev => {
 			if (ev.matches) {
 				setImages([
-					<Image key={uuidv4()} />,
 					<Image
+						big={ev.matches}
+						key={uuidv4()}
+					/>,
+					<Image
+						big={ev.matches}
 						flip
 						key={uuidv4()}
 					/>,
-					<Image key={uuidv4()} />
+					<Image
+						big={ev.matches}
+						key={uuidv4()}
+					/>
 				]);
 			} else {
 				setImages(<Image flip />);
