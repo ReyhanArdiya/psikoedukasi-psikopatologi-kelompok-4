@@ -14,7 +14,7 @@ const Button = styled.button`
 	cursor: pointer;
 	user-select: none;
 
-	font-size: 1.3em;
+	font-size: 1.9em;
 	line-height: unset;
 
 	width: 1.5385em;
