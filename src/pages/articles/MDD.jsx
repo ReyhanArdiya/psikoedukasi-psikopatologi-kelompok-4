@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 import Ol from "../../components/UI/Layouts/List/Ol";
 import Li from "../../components/UI/Layouts/List/Li";
 import Note from "../../components/UI/Content/Note/Note";
+import SwitchContent from "../../components/UI/Animations/SwitchContent";
 
 const MDD = () => {
 	const { t, i18n } = useTranslation("MDD");
@@ -50,58 +51,60 @@ const MDD = () => {
 					i18n={i18n}
 					t={t}
 				/>
-				<Ol>
-					<Li>
-						{t("A.text")}
-						<Ol>
-							<Li>
-								{t("A.nest.1")}
-							</Li>
-							<Li>
-								{t("A.nest.2")}
-							</Li>
-							<Li>
-								{t("A.nest.3")}
-							</Li>
-							<Li>
-								{t("A.nest.4")}
-							</Li>
-							<Li>
-								{t("A.nest.5")}
-							</Li>
-							<Li>
-								{t("A.nest.6")}
-							</Li>
-							<Li>
-								{t("A.nest.7")}
-							</Li>
-							<Li>
-								{t("A.nest.8")}
-							</Li>
-							<Li>
-								{t("A.nest.9")}
-							</Li>
-						</Ol>
-					</Li>
-					<Li>
-						{t("B.text")}
-					</Li>
-					<Li>
-						{t("C.text")}
-					</Li>
-					<Note>
-						{t("Note1.text")}
-					</Note>
-					<Note>
-						{t("Note2.text")}
-					</Note>
-					<Li>
-						{t("D.text")}
-					</Li>
-					<Li>
-						{t("E.text")}
-					</Li>
-				</Ol>
+				<SwitchContent transitionKey={i18n.resolvedLanguage}>
+					<Ol>
+						<Li>
+							{t("A.text")}
+							<Ol>
+								<Li>
+									{t("A.nest.1")}
+								</Li>
+								<Li>
+									{t("A.nest.2")}
+								</Li>
+								<Li>
+									{t("A.nest.3")}
+								</Li>
+								<Li>
+									{t("A.nest.4")}
+								</Li>
+								<Li>
+									{t("A.nest.5")}
+								</Li>
+								<Li>
+									{t("A.nest.6")}
+								</Li>
+								<Li>
+									{t("A.nest.7")}
+								</Li>
+								<Li>
+									{t("A.nest.8")}
+								</Li>
+								<Li>
+									{t("A.nest.9")}
+								</Li>
+							</Ol>
+						</Li>
+						<Li>
+							{t("B.text")}
+						</Li>
+						<Li>
+							{t("C.text")}
+						</Li>
+						<Note>
+							{t("Note1.text")}
+						</Note>
+						<Note>
+							{t("Note2.text")}
+						</Note>
+						<Li>
+							{t("D.text")}
+						</Li>
+						<Li>
+							{t("E.text")}
+						</Li>
+					</Ol>
+				</SwitchContent>
 			</ArticleSection>
 		</ArticlePage>
 	);
