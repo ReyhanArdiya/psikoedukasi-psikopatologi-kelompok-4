@@ -190,7 +190,7 @@ const Members = () => {
 								icon : faGithub
 							},
 							{
-								href : "www.linkedin.com/in/mreyhanapw",
+								href : "https://www.linkedin.com/in/mreyhanapw",
 								icon : faLinkedinIn
 							},
 							{
