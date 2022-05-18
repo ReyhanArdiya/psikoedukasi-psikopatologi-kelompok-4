@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.65eff2f6.js",
+    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.786ba015.js",
     "static/media/walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-1920w.26f4c3dacd784d8474c0.jpg",
-    "static/media/black-acrylic-paint-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/black-acrylic-paint-1920w.f1b792fc0f0d5cff29aa.jpg",
     "static/media/walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-640w.43c66c86e2eed94a7e40.jpg",
     "static/media/statue-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-1920w.a173d6dc562b71df1d3e.jpg",
     "static/media/mountain-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/mountain-1920w.9ef8dc62818c9ef77103.jpg",
@@ -14,7 +13,6 @@
     "static/media/glass-walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-1920w.6c602e51afd6871b7060.jpg",
     "static/media/alissa.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/alissa.d7c998836b28758ae206.jpg",
     "static/media/fithrah.jpeg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/fithrah.51a1ea8a77cee199c66d.jpeg",
-    "static/media/black-acrylic-paint-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/black-acrylic-paint-640w.4965b0be0827e6e3cb34.jpg",
     "static/media/bloom-beach-house-770w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/bloom-beach-house-770w.01125787cdee134d92a5.jpg",
     "static/media/statue-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-640w.cb280ccf063a57aca406.jpg",
     "static/media/flower-petal-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/flower-petal-640w.887dcb34bc9107c2de39.jpg",
@@ -28,9 +26,9 @@
     "static/media/wawan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/wawan.c685bb6169be82ef3c27.jpg",
     "static/media/glass-walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-640w.1922baa7d5d879ed2af8.jpg",
     "index.html": "/psikoedukasi-psikopatologi-kelompok-4/index.html",
-    "main.65eff2f6.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.65eff2f6.js.map"
+    "main.786ba015.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.786ba015.js.map"
   },
   "entrypoints": [
-    "static/js/main.65eff2f6.js"
+    "static/js/main.786ba015.js"
   ]
 }
