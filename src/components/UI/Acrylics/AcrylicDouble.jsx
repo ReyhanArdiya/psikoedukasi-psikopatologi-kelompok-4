@@ -15,11 +15,18 @@ const Container = styled.div`
 	}
 `;
 
-const SmallerAcrylic = styled(AcrylicSingle)`
-	position: absolute;
+const SmallerAcrylic = styled.div`
 	${({ pos }) => pos}: -20%;
+	${({ theme }) => theme.others.borderRadius}
+	align-items: center;
+	background: rgba(248, 249, 250, 0.5);
+	display: flex;
+	justify-content: center;
 	min-height: 67.56%;
 	min-width: 82%;
+	padding: 0.6em 0.8em;
+	position: absolute;
+	width: max-content;
 	z-index: 1;
 `;
 
