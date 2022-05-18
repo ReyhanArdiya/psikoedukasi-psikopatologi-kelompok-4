@@ -18,7 +18,6 @@ const SqrProfilePic = styled(ProfilePic)`
     position: absolute;
     top: -66.67%;
     z-index: 3;
-    filter: grayscale(100%);
 `;
 
 const StyledAcrylicWBg = styled(AcrylicWBg)`

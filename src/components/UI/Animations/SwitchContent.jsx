@@ -73,10 +73,10 @@ const StyledTransitionGroup = styled(TransitionGroup)`
  *
  * ```
  */
-const SwitchContent = ({ children, transitionKey }) => {
+const SwitchContent = ({ children, transitionKey, className = "" }) => {
 	return (
 		<StyledTransitionGroup
-			className="switch-content"
+			className={`switch-content ${className}`}
 			component={"div"}
 		>
 			<CSSTransition
