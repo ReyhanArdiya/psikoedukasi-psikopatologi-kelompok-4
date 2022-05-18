@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.786ba015.js",
+    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.876d5057.js",
     "static/media/walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-1920w.26f4c3dacd784d8474c0.jpg",
     "static/media/walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-640w.43c66c86e2eed94a7e40.jpg",
     "static/media/statue-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-1920w.a173d6dc562b71df1d3e.jpg",
@@ -17,8 +17,8 @@
     "static/media/statue-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-640w.cb280ccf063a57aca406.jpg",
     "static/media/flower-petal-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/flower-petal-640w.887dcb34bc9107c2de39.jpg",
     "static/media/mountain-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/mountain-640w.c6634e9464f7cb381f83.jpg",
+    "static/media/reyhan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/reyhan.b194f8e2e0e6c2680d1e.jpg",
     "static/media/sitting-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/sitting-640w.e1fc4a705b2ee0af64ae.jpg",
-    "static/media/reyhan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/reyhan.990fc1bd24488e089f55.jpg",
     "static/media/tower-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/tower-640w.f524f10b6ef69a11d663.jpg",
     "static/media/spotlight-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/spotlight-640w.573b6aa7225bbd1b5472.jpg",
     "static/media/white-flower-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/white-flower-640w.d7b28cbf482e62b3a763.jpg",
@@ -26,9 +26,9 @@
     "static/media/wawan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/wawan.c685bb6169be82ef3c27.jpg",
     "static/media/glass-walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-640w.1922baa7d5d879ed2af8.jpg",
     "index.html": "/psikoedukasi-psikopatologi-kelompok-4/index.html",
-    "main.786ba015.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.786ba015.js.map"
+    "main.876d5057.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.876d5057.js.map"
   },
   "entrypoints": [
-    "static/js/main.786ba015.js"
+    "static/js/main.876d5057.js"
   ]
 }
