@@ -31,10 +31,9 @@ const App = () => {
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
 				<Routes>
-					{/* DBG delete the name after to after final deployment */}
 					<Route
 						element={<Home/>}
-						path="/psikoedukasi-psikopatologi-kelompok-4"
+						path="/"
 					/>
 					<Route path="/articles">
 						<Route
@@ -45,7 +44,7 @@ const App = () => {
 					<Route
 						element={<Navigate
 							replace
-							to="/psikoedukasi-psikopatologi-kelompok-4"
+							to="/"
 						         />}
 						path="*"
 					/>
