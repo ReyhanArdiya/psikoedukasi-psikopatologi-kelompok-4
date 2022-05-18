@@ -7,7 +7,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    background: fixed black url(${blackAcrylicPaint}) center/100% 100% no-repeat;
+    background: scroll black url(${blackAcrylicPaint}) center/100% 100% no-repeat;
     width: max-content;
     height: max-content;
     position: relative;
@@ -19,6 +19,7 @@ const FilledAcrylicSingle = styled(AcrylicSingle)`
     height: 100%;
     position: absolute;
     min-height: 0;
+    backdrop-filter: blur(2px);
 `;
 
 const AcrylicWBg = ({ className = "" }) => {
