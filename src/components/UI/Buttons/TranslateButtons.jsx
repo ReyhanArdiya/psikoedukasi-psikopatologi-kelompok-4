@@ -9,15 +9,15 @@ const Container = styled.div`
     width: 100%;
 `;
 
-const TranslateButtons = ({ t, i18n }) => {
-	const switchLan = () => {
-		i18n.resolvedLanguge === "id" ? i18n.changeLanguage("en") : i18n.changeLanguage("id");
-	};
-
+const TranslateButtons = ({ i18n }) => {
 	return (
 		<Container className="translate-actions">
-			<TranslateBtn onClick={switchLan}>ID</TranslateBtn>
-			<TranslateBtn onClick={switchLan}>EN</TranslateBtn>
+			<TranslateBtn
+				onClick={() => i18n.changeLanguage("id")}
+			>ID</TranslateBtn>
+			<TranslateBtn
+				onClick={() => i18n.changeLanguage("en")}
+			>EN</TranslateBtn>
 		</Container>
 	);
 };
