@@ -201,7 +201,7 @@ const Members = () => {
 						profilePic : {
 							alt   : "Member Reyhan",
 							img   : reyhan,
-							pos   : "center",
+							pos   : "100% 30%",
 							title : "Member Reyhan"
 						}
 					}}
