@@ -1,3 +1,7 @@
+// CMT BTW I don't think this component is used, EVER. Since I need finer control
+// over how I markup the bolded Note for example. But I'm happy that I was able to
+// use recursions with JSX for the first time :)
+
 import Li from "./Li";
 import Ol from "./Ol";
 

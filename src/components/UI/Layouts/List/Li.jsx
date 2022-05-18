@@ -4,6 +4,10 @@ import { Text } from "../../Content/Texts";
 const Li = styled(Text).attrs({ as : "li" })`
     text-align: justify;
     line-height: 1.5em;
+
+    b {
+        font-weight: bold;
+    }
 `;
 
 // const Li = ({ children }) => {
