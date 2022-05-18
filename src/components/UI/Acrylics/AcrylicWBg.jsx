@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import AcrylicSingle from "./AcrylicSingle";
-import blackAcrylicPaint from "../../../images/content/small/bloom-beach-house-770w.png";
+import blackAcrylicPaint from "../../../images/content/small/bloom-beach-house-770w.jpg";
 
 const Container = styled.div`
     align-items: center;
