@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import BlurToClear from "../../Animations/BlurToClear";
 import { H1 } from "../../Content/Texts";
 import Section from "../Section";
 
@@ -65,16 +64,14 @@ const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 
 const ArticleHero = ({ title, smallImg, bigImg }) => {
 	return (
-		<BlurToClear once>
-			<Container
-				bigImg={bigImg}
-				className="article-hero"
-				smallImg={smallImg}
-			>
-				<GradientH1>{title}</GradientH1>
-				<GradientH1>{title}</GradientH1>
-			</Container>
-		</BlurToClear>
+		<Container
+			bigImg={bigImg}
+			className="article-hero"
+			smallImg={smallImg}
+		>
+			<GradientH1>{title}</GradientH1>
+			<GradientH1>{title}</GradientH1>
+		</Container>
 	);
 };
 
