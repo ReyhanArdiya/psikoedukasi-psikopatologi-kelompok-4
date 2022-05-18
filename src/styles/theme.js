@@ -48,13 +48,13 @@ const text = {
 		color: ${colors.primary[1]};
 		font-feature-settings: "calt" off;
 	`,
-	note : css`
-		font: 300 1.2em/1.334em "Khula", sans-serif;
-		color: ${colors.primary[1]};
-		font-feature-settings: "calt" off;
-	`,
+	// note : css`
+	// 	font: 300 1.2em/1.334em "Khula", sans-serif;
+	// 	color: ${colors.primary[1]};
+	// 	font-feature-settings: "calt" off;
+	// `,
 	text : css`
-		font: 300 1.4em/1.143em "Khula", sans-serif;
+		font: 300 1.6em/1.5em "Khula", sans-serif;
 		color: ${colors.primary[1]};
 		font-feature-settings: "calt" off;
 	`,
@@ -64,6 +64,8 @@ const text = {
 		font-feature-settings: "calt" off;
 	`
 };
+
+text.note = text.text;
 
 const breakpoints = {
 	big(styles) {
