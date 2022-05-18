@@ -6,7 +6,7 @@ import novita from "../../../images/members/novita.jpg";
 import reyhan from "../../../images/members/reyhan.jpg";
 import rifqi from "../../../images/members/rifqi.jpg";
 import styled, { css } from "styled-components";
-import wawan from "../../../images/members/wawan.png";
+import wawan from "../../../images/members/wawan.jpg";
 import {
 	faGithub,
 	faInstagram,
@@ -61,174 +61,174 @@ const Container = styled(Section)`
 				"m1 m4"
 				"m2 m5"
 				"m3 m6";
-            max-width: 76.8rem;
-            margin: 0 auto;
-            height: 100vh;
+			max-width: 76.8rem;
+			margin: 0 auto;
+			height: 100vh;
 		`)}
 `;
 
 const Members = () => {
-	const membersList = [
-		<BlurToClear>
-			<ProfileCard
-				id="member-alissa"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://www.instagram.com/im__anggaraalissa/",
-							icon : faInstagram
+	return (
+		<Container id="members">
+			<BlurToClear>
+				<ProfileCard
+					id="member-alissa"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://www.instagram.com/im__anggaraalissa/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Alissa",
+							img   : alissa,
+							pos   : "center",
+							title : "Member Alissa"
 						}
-					],
-					profilePic : {
-						alt   : "Member Alissa",
-						img   : alissa,
-						pos   : "center",
-						title : "Member Alissa"
-					}
-				}}
-				profileInfo={{
-					name : "Alissa Dwi Anggara",
-					nim  : "15000120120052"
-				}}
-			/>
-		</BlurToClear>,
+					}}
+					profileInfo={{
+						name : "Alissa Dwi Anggara",
+						nim  : "15000120120052"
+					}}
+				/>
+			</BlurToClear>
 
-		<BlurToClear>
-			<ProfileCard
-				id="member-fithrah"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://www.instagram.com/fth.rh/",
-							icon : faInstagram
+			<BlurToClear>
+				<ProfileCard
+					id="member-fithrah"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://www.instagram.com/fth.rh/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Fithrah",
+							img   : fithrah,
+							pos   : "center",
+							title : "Member Fithrah"
 						}
-					],
-					profilePic : {
-						alt   : "Member Fithrah",
-						img   : fithrah,
-						pos   : "center",
-						title : "Member Fithrah"
-					}
-				}}
-				profileInfo={{
-					name : "Fitrah Rohimah",
-					nim  : "15000120140342"
-				}}
-			/>
-		</BlurToClear>,
+					}}
+					profileInfo={{
+						name : "Fitrah Rohimah",
+						nim  : "15000120140342"
+					}}
+				/>
+			</BlurToClear>
 
-		<BlurToClear>
-			<ProfileCard
-				id="member-wawan"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://www.instagram.com/azzam.twan/",
-							icon : faInstagram
+			<BlurToClear>
+				<ProfileCard
+					id="member-wawan"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://www.instagram.com/azzam.twan/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Wawan",
+							img   : wawan,
+							pos   : "bottom",
+							title : "Member Wawan"
 						}
-					],
-					profilePic : {
-						alt   : "Member Wawan",
-						img   : wawan,
-						pos   : "bottom",
-						title : "Member Wawan"
-					}
-				}}
-				profileInfo={{
-					name : "M. Azzam Taqwawan",
-					nim  : "15000120140336"
-				}}
-			/>
-		</BlurToClear>,
+					}}
+					profileInfo={{
+						name : "M. Azzam Taqwawan",
+						nim  : "15000120140336"
+					}}
+				/>
+			</BlurToClear>
 
-		<BlurToClear>
-			<ProfileCard
-				id="member-reyhan"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://github.com/ReyhanArdiya",
-							icon : faGithub
-						},
-						{
-							href : "www.linkedin.com/in/mreyhanapw",
-							icon : faLinkedinIn
-						},
-						{
-							href : "https://www.instagram.com/reyhan_roze/",
-							icon : faInstagram
+			<BlurToClear>
+				<ProfileCard
+					id="member-reyhan"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://github.com/ReyhanArdiya",
+								icon : faGithub
+							},
+							{
+								href : "www.linkedin.com/in/mreyhanapw",
+								icon : faLinkedinIn
+							},
+							{
+								href : "https://www.instagram.com/reyhan_roze/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Reyhan",
+							img   : reyhan,
+							pos   : "center",
+							title : "Member Reyhan"
 						}
-					],
-					profilePic : {
-						alt   : "Member Reyhan",
-						img   : reyhan,
-						pos   : "center",
-						title : "Member Reyhan"
-					}
-				}}
-				profileInfo={{
-					name : "M. Reyhan A.P.W",
-					nim  : "15000120120008"
-				}}
-			/>
-		</BlurToClear>,
+					}}
+					profileInfo={{
+						name : "M. Reyhan A.P.W",
+						nim  : "15000120120008"
+					}}
+				/>
+			</BlurToClear>
 
-		<BlurToClear>
-			<ProfileCard
-				id="member-novita"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://www.instagram.com/novitarhp/",
-							icon : faInstagram
+			<BlurToClear>
+				<ProfileCard
+					id="member-novita"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://www.instagram.com/novitarhp/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Novita",
+							img   : novita,
+							pos   : "center",
+							title : "Member Novita"
 						}
-					],
-					profilePic : {
-						alt   : "Member Novita",
-						img   : novita,
-						pos   : "center",
-						title : "Member Novita"
-					}
-				}}
-				profileInfo={{
-					name : "Novita Retno H.P.",
-					nim  : "15000120130247"
-				}}
-			/>
-		</BlurToClear>,
+					}}
+					profileInfo={{
+						name : "Novita Retno H.P.",
+						nim  : "15000120130247"
+					}}
+				/>
+			</BlurToClear>
 
-		<BlurToClear>
-			<ProfileCard
-				id="member-rifqi"
-				key={uuidv4()}
-				profileHeader={{
-					links : [
-						{
-							href : "https://www.instagram.com/rifqiprime/",
-							icon : faInstagram
+			<BlurToClear>
+				<ProfileCard
+					id="member-rifqi"
+					key={uuidv4()}
+					profileHeader={{
+						links : [
+							{
+								href : "https://www.instagram.com/rifqiprime/",
+								icon : faInstagram
+							}
+						],
+						profilePic : {
+							alt   : "Member Rifqi",
+							img   : rifqi,
+							pos   : "center",
+							title : "Member Rifqi"
 						}
-					],
-					profilePic : {
-						alt   : "Member Rifqi",
-						img   : rifqi,
-						pos   : "center",
-						title : "Member Rifqi"
-					}
-				}}
-				profileInfo={{
-					name : "Rifqi Prime A",
-					nim  : "15000117140114"
-				}}
-			/>
-		</BlurToClear>
-	];
-
-	return <Container id="members">{membersList}</Container>;
+					}}
+					profileInfo={{
+						name : "Rifqi Prime A",
+						nim  : "15000117140114"
+					}}
+				/>
+			</BlurToClear>
+		</Container>
+	);
 };
 
 export default Members;

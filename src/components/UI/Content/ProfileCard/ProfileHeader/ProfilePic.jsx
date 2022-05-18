@@ -13,6 +13,7 @@ const ProfilePic = ({ img, alt = "", title = "", pos = "center", className = "" 
 		<ProfileImg
 			alt={alt}
 			className={`profile-img ${className}`}
+			loading="lazy"
 			pos={pos}
 			src={img}
 			title={title}
