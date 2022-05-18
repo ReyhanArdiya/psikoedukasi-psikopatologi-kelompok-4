@@ -1,10 +1,7 @@
 {
   "files": {
-    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.075c0de9.js",
-    "static/media/reyhan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/reyhan.7b20de7816cd3228b184.jpg",
+    "main.js": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.e9193f5e.js",
     "static/media/walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-1920w.26f4c3dacd784d8474c0.jpg",
-    "static/media/wawan.png": "/psikoedukasi-psikopatologi-kelompok-4/static/media/wawan.40215f102f6b6ea58e90.png",
-    "static/media/novita.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/novita.03791165d0fa8a35172a.jpg",
     "static/media/walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/walking-640w.43c66c86e2eed94a7e40.jpg",
     "static/media/statue-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-1920w.a173d6dc562b71df1d3e.jpg",
     "static/media/mountain-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/mountain-1920w.9ef8dc62818c9ef77103.jpg",
@@ -16,19 +13,22 @@
     "static/media/glass-walking-1920w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-1920w.6c602e51afd6871b7060.jpg",
     "static/media/alissa.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/alissa.d7c998836b28758ae206.jpg",
     "static/media/fithrah.jpeg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/fithrah.51a1ea8a77cee199c66d.jpeg",
-    "static/media/bloom-beach-house-770w.png": "/psikoedukasi-psikopatologi-kelompok-4/static/media/bloom-beach-house-770w.01125787cdee134d92a5.png",
+    "static/media/bloom-beach-house-770w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/bloom-beach-house-770w.01125787cdee134d92a5.jpg",
     "static/media/statue-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/statue-640w.cb280ccf063a57aca406.jpg",
     "static/media/flower-petal-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/flower-petal-640w.887dcb34bc9107c2de39.jpg",
     "static/media/mountain-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/mountain-640w.c6634e9464f7cb381f83.jpg",
     "static/media/sitting-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/sitting-640w.e1fc4a705b2ee0af64ae.jpg",
+    "static/media/reyhan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/reyhan.990fc1bd24488e089f55.jpg",
     "static/media/tower-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/tower-640w.f524f10b6ef69a11d663.jpg",
     "static/media/spotlight-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/spotlight-640w.573b6aa7225bbd1b5472.jpg",
     "static/media/white-flower-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/white-flower-640w.d7b28cbf482e62b3a763.jpg",
+    "static/media/novita.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/novita.8c03ec82534e220f654b.jpg",
+    "static/media/wawan.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/wawan.c685bb6169be82ef3c27.jpg",
     "static/media/glass-walking-640w.jpg": "/psikoedukasi-psikopatologi-kelompok-4/static/media/glass-walking-640w.1922baa7d5d879ed2af8.jpg",
     "index.html": "/psikoedukasi-psikopatologi-kelompok-4/index.html",
-    "main.075c0de9.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.075c0de9.js.map"
+    "main.e9193f5e.js.map": "/psikoedukasi-psikopatologi-kelompok-4/static/js/main.e9193f5e.js.map"
   },
   "entrypoints": [
-    "static/js/main.075c0de9.js"
+    "static/js/main.e9193f5e.js"
   ]
 }
