@@ -1,0 +1,32 @@
+{
+	"A": {
+		"text": "Merupakan sebuah periode ketika mood secara abnormal dan konsisten meningkat, berkembangan atau menjadi mudah terganggu; dan meningkatnya secara konsisten dan abnormal aktivtias yang memiliki tujuan atau energi; dimana periode ini berlangsung selama setidaknya 4 hari berturut-turut dan muncul untuk sebagian besar waktu, hampir setiap hari."
+	},
+	"B": {
+		"text": "Selama periode ini, 3 (atau lebih) gejala berikut ini (atau 4 jika mood hanya mudah terganggu) muncul secara signifikan dan menunjukkan adanya perubahan dari perilaku biasa:",
+		"nest": {
+			"1": "Harga diri yang meningkat.",
+			"2": "Berkurangnya kebutuhan untuk tidur (seperti sudah merasa cukup dengan 3 jam tidur).",
+			"3": "Lebih sering berbicara dari biasanya atau adanya tekanan untuk terus berbicara.",
+			"4": "Flight of ideas (berbicara dengan meloncat-loncat ke topik-topik lain dengan cepat) atau perasaan subjektif bahwa pikiran cepat berlalu.",
+			"5": "Mudah teralihkan (yaitu atensi terlalu mudah fokus pada stimuli yang tidak penting), berdasarkan pelaporan atau observasi.",
+			"6": "Meningkatnya aktivitas yang bertujuan (seperti sosial, kerja, sekolah atau seksual) atau agitasi psikomotor (yaitu aktivitas yang tidak punya tujuan).",
+			"7": "Keterlibatan yang berlebih dalam aktivitias yang berpotensi tinggi menyebabkan konsekuensi yang menyakitkan (seperti terlibat dalam belanja yang berlebihan, perilaku seksual tidak bijak atau investasi bisnis yang buruk)."
+		}
+	},
+	"C": {
+		"text": "Episode ini terkait dengan perubahan yang jelas dalam fungsi yang adalah bukan karakteristik individu ketika tidak menunjukkan gejala."
+	},
+	"D": {
+		"text": "Gangguan mood dan perubahan fungsi terlihat oleh orang lain."
+	},
+	"E": {
+		"text": "Episode ini tidak cukup parah untuk menyebabkan cacat serius dalam fungsi sosial atau pekerjaan atau untuk keperluan rumah sakit. Jika ada ciri-ciri psikotik, episode ini, menurut definisi, manik."
+	},
+	"F": {
+		"text": "Episode ini tidak disebabkan oleh efek fisiologis suatu zat (misalnya, obat penyalahgunaan, obat atau pengobatan lainnya)."
+	},
+	"Note1": {
+		"text": "Sebuah episode penuh hipomanik yang muncul selama pengobatan antidepresi (misalnya, pengobatan, terapi elektrokonvulsif) tetapi tetap bertahan pada tingkat sindromal sepenuhnya di luar dampak fisiologis pengobatan itu merupakan bukti yang memadai untuk diagnosis episode hipomanik. Akan tetapi, kehati-hatian diindikasikan bahwa satu atau dua gejala (khususnya meningkatnya sikap mudah marah, resah, atau resah setelah penggunaan obat antidepresi) tidak dianggap cukup untuk diagnosis suatu episode hipomanik, juga tidak selalu menunjukkan bahwa interpretasi bipolar."
+	}
+}

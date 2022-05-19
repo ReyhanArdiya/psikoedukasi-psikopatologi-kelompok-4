@@ -1,0 +1,41 @@
+{
+	"A": {
+		"text": "In the majority of menstrual cycles, at least five symptoms must be present in the final week before the onset of menses, start to improve within a few days after the onset of menses, and become minimal or absent in the week postmenses."
+	},
+	"B": {
+		"text": "One (or more) of the following symptoms must be present:",
+		"nest": {
+			"1": "Marked affective lability (e.g., mood swings: feeling suddenly sad or tearful, or increased sensitivity to rejection).",
+			"2": "Marked irritability or anger or increased interpersonal conflicts.",
+			"3": "Marked depressed mood, feelings of hopelessness, or self-deprecating thoughts.",
+			"4": "Marked anxiety, tension, and/or feelings of being keyed up or on edge."
+		}
+	},
+	"C": {
+		"text": "One (or more) of the following symptoms must additionally be present, to reach a total of five symptoms when combined with symptoms from Criterion B above.",
+		"nest": {
+			"1": "Decreased interest in usual activities (e.g., work, school, friends, hobbies).",
+			"2": "Subjective difficulty in concentration.",
+			"3": "Lethargy, easy fatigability, or marked lack of energy.",
+			"4": "Marked change in appetite; overeating; or specific food cravings.",
+			"5": "Hypersomnia or insomnia.",
+			"6": "A sense of being ovenwhelmed or out of control.",
+			"7": "Physical symptoms such as breast tenderness or swelling, joint or muscle pain, a sensation of “bloating,” or weight gain."
+		}
+	},
+	"Note1": {
+		"text": "The symptoms in Criteria A-C must have been met for most menstrual cycles that occurred in the preceding year."
+	},
+	"D": {
+		"text": "The symptoms are associated with clinically significant distress or interference with work, school, usual social activities, or relationships with others (e.g., avoidance of social activities; decreased productivity and efficiency at work, school, or home)."
+	},
+	"E": {
+		"text": "The disturbance is not merely an exacerbation of the symptoms of another disorder, such as major depressive disorder, panic disorder, persistent depressive disorder (dysthymia), or a personality disorder (although it may co-occur with any of these disorders)"
+	},
+	"F": {
+		"text": "Criterion A should be confirmed by prospective daily ratings during at least two symptomatic cycles. (<b>Note</b>: The diagnosis may be made provisionally prior to this confirmation.)"
+	},
+	"G": {
+		"text": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment) or another medical condition (e.g., hyperthyroidism)"
+	}
+}

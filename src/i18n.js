@@ -20,10 +20,10 @@ i18n
 	// init i18next
 	// for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
-		debug       : true,
-		fallbackLng : "en",
-
-		interpolation : { escapeValue : false }
+		debug         : true,
+		fallbackLng   : "id",
+		interpolation : { escapeValue : false },
+		lng           : "id",
 	});
 
 export default i18n;

@@ -1,0 +1,29 @@
+{
+	"A": {
+		"text": "Merupakan sebuah periode ketika mood secara abnormal dan konsisten meningkat, berkembangan atau menjadi mudah terganggu; dan meningkatnya secara konsisten dan abnormal aktivtias yang memiliki tujuan atau energi; dimana periode ini berlangsung selama setidaknya 1 minggu dan muncul untuk sebagian besar waktu, hampir setiap hari (atau selama durasi berapapun jika rawat inap diperlukan)."
+	},
+	"B": {
+		"text": "Selama periode ini, 3 (atau lebih) gejala berikut ini (atau 4 jika mood hanya mudah terganggu) muncul secara signifikan dan menunjukkan adanya perubahan dari perilaku biasa:",
+		"nest": {
+			"1": "Harga diri yang meningkat",
+			"2": "Berkurangnya kebutuhan untuk tidur (seperti sudah merasa cukup dengan 3 jam tidur).",
+			"3": "Lebih sering berbicara dari biasanya atau adanya tekanan untuk terus berbicara.",
+			"4": "Flight of ideas (berbicara dengan meloncat-loncat ke topik-topik lain dengan cepat) atau perasaan subjektif bahwa pikiran cepat berlalu.",
+			"5": "Mudah teralihkan (yaitu atensi terlalu mudah fokus pada stimuli yang tidak penting), berdasarkan pelaporan atau observasi.",
+			"6": "Meningkatnya aktivitas yang bertujuan (seperti sosial, kerja, sekolah atau seksual) atau agitasi psikomotor (yaitu aktivitas yang tidak punya tujuan).",
+			"7": "Keterlibatan yang berlebih dalam aktivitias yang berpotensi tinggi menyebabkan konsekuensi yang menyakitkan (seperti terlibat dalam belanja yang berlebihan, perilaku seksual tidak bijak atau investasi bisnis yang buruk)"
+		}
+	},
+	"C": {
+		"text": "Gangguan mood cukup untuk mengganggu fungsionalitas sosial atau pekerjaan atau memerlukan rawat inap untuk menghindari bahaya pada diri sendiri atau orang lain, atau adanya fitur-fitur psikotik."
+	},
+	"D": {
+		"text": "Episode bukan merupakan dmapak dari efek fisiologis penggunaan zat-zat (seperti penyalahgunaan narkoba, obat atau perawatan lainnya) atau kondisi kesehatan lainnya (seperti hipertiroidisme)"
+	},
+	"Note1": {
+		"text": "Episode manik penuh yang terjadi selama perawatan antidepresan (seperti obat, terapi electroconvulsive) tetapi terus berlangsung sampai level sindroma yang melebihi efek fisiologis dari perawatan adalah bukti yang cukup untuk sebuah episode manik dan diagnosa bipolar I."
+	},
+	"Note2": {
+		"text": "Kriteria A-D mendasari sebuah episode manik. Setidaknya satu episode manik harus pernah terjadi selama masa kehidupan untuk diagnosa gangguan bipolar I."
+	}
+}

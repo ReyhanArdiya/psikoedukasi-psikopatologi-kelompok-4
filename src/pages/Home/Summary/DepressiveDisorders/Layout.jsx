@@ -53,6 +53,7 @@ const Layout = ({
 			<Image
 				bigImg={bigImg}
 				className="img"
+				imgLoc={imgLoc}
 				smallImg={smallImg}
 			/>
 			<Content className="content">

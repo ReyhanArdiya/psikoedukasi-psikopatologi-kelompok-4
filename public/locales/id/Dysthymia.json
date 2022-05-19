@@ -1,0 +1,37 @@
+{
+	"A": {
+		"text": "Suasana hati (mood) yang tertekan hampir sepanjang hari, seperti yang ditunjukkan oleh laporan subjektif atau pengamatan orang lain, setidaknya selama 2 tahun. <b>Note</b>: Pada anak-anak dan remaja, durasinya harus minimal 1 tahun."
+	},
+	"B": {
+		"text": "Saat tertekan, timbul dua (atau lebih) gejala berikut ini:",
+		"nest": {
+			"1": "Nafsu makan yang buruk atau makan berlebihan.",
+			"2": " Insomnia atau hipersomnia.",
+			"3": "Energi rendah atau kelelahan.",
+			"4": "Harga diri rendah.",
+			"5": "Konsentrasi yang buruk atau kesulitan membuat keputusan.",
+			"6": "Perasaan putus asa."
+		}
+	},
+	"C": {
+		"text": "Selama 2 tahun (1 tahun untuk anak-anak atau remaja), individu tidak pernah tidak mengalami gejala pada kriteria A dan B selama lebih dari 2 bulan."
+	},
+	"D": {
+		"text": "Kriteria gangguan depresi mayor dapat muncul terus menerus selama 2 tahun."
+	},
+	"E": {
+		"text": "Tidak pernah ada episode manik atau episode hipomanik, dan tidak pernah memenuhi kriteria untuk gangguan siklotimik."
+	},
+	"F": {
+		"text": "Gangguan tidak lebih baik dijelaskan oleh/tidak cocok dengan kriteria diagnostik pada gangguan skizoafektif persisten, skizofrenia, gangguan delusi, spektrum skizofrenia spesifik atau tidak spesifik, dan gangguan psikotik lainnya."
+	},
+	"G": {
+		"text": "Gejala tidak disebabkan oleh efek fisiologis suatu zat (misalnya penyalahgunaan obat, konsumsi obat selama menjalani pengobatan) atau kondisi medis lain (misalnya hipotiroidisme)."
+	},
+	"H": {
+		"text": "Gejala menyebabkan penderitaan yang signifikan secara klinis atau pelemahan dalam fungsi sosial, pekerjaan, atau fungsi penting lainnya."
+	},
+	"Note1": {
+		"text": "Karena kriteria episode depresi mayor mencakup empat gejala yang tidak ada dalam daftar gejala distimia, beberapa individu akan memiliki gejala depresi yang telah berlangsung lebih dari 2 tahun, tetapi tidak akan memenuhi kriteria untuk distimia. Apabila semua kriteria untuk episode depresi mayor telah terpenuhi di beberapa titik selama episode penyakit saat ini, mereka harus diberikan diagnosis gangguan depresi mayor. Jika tidak, diagnosis gangguan depresi tertentu lainnya atau gangguan depresi tidak spesifik dibenarkan."
+	}
+}
