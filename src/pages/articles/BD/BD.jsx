@@ -1,40 +1,12 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import ArticlePage from "../../../components/UI/Layouts/ArticlePage/ArticlePage";
 import swingSm from "../../../images/content/small/swing-640w.jpg";
 import swingBg from "../../../images/content/big/swing-1920w.jpg";
-import BlurToClear from "../../../components/UI/Animations/BlurToClear";
-import { H2 /* Text */ } from "../../../components/UI/Content/Texts";
-import TranslateButtons from "../../../components/UI/Buttons/TranslateButtons";
-import SwitchContent from "../../../components/UI/Animations/SwitchContent";
 import BDContent from "./BDContent";
-import ArticleSection from "../../../components/UI/Layouts/ArticlePage/ArticleSection";
-import Manic from "./DSM/Manic";
-import styled, { css } from "styled-components";
-import Hypomanic from "./DSM/Hypomanic";
-import MajorDepressive from "./DSM/MajorDepressive";
-
-const BDI = styled(ArticleSection)`
-	width: 100%;
-	display: grid;
-	grid-template-areas:
-		"manic"
-		"hypomanic"
-		"majordepressive";
-    align-items: start;
-
-	${({ theme }) => theme.breakpoints.big(css`
-            grid-template-columns: 1fr 1fr;
-            column-gap: 8.2em;
-			grid-template-areas:
-				"manic hypomanic"
-				"majordepressive majordepressive";
-		`)}
-`;
+import BDI from "./BDI";
+import BDII from "./BDII";
 
 const BD = () => {
-	const { i18n } = useTranslation("BD");
-
 	return (
 		<ArticlePage
 			goBackLink="/#BD"
@@ -45,21 +17,8 @@ const BD = () => {
 			title="Bipolar Disorders (BD I & II)"
 		>
 			<BDContent />
-
-			<BlurToClear once>
-				<ArticleSection>
-					<H2>Kriteria DSM-V BD</H2>
-					<TranslateButtons i18n={i18n} />
-
-					<SwitchContent transitionKey={i18n.resolvedLanguage}>
-						<BDI id="BD-I">
-							<Manic />
-							<Hypomanic />
-							<MajorDepressive complete/>
-						</BDI>
-					</SwitchContent>
-				</ArticleSection>
-			</BlurToClear>
+			<BDI/>
+			<BDII/>
 		</ArticlePage>
 	);
 };
