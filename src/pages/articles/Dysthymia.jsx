@@ -11,6 +11,31 @@ import SwitchContent from "../../components/UI/Animations/SwitchContent";
 import Ol from "../../components/UI/Layouts/List/Ol";
 import Li from "../../components/UI/Layouts/List/Li";
 import Note from "../../components/UI/Content/Note/Note";
+import styled, { css } from "styled-components";
+
+const MythFact = styled(ArticleSection)`
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		"myth"
+		"fact";
+    align-items: start;
+    column-gap: 10em;
+
+	${({ theme }) => theme.breakpoints.big(css`
+			grid-template-areas: "myth fact";
+		`)}
+`;
+
+const Myth = styled(ArticleSection)`
+	width: 100%;
+	grid-area: myth;
+`;
+
+const Fact = styled(ArticleSection)`
+	width: 100%;
+	grid-area: fact;
+`;
 
 const Dysthymia = () => {
 	const { t, i18n } = useTranslation("Dysthymia");
@@ -26,46 +51,69 @@ const Dysthymia = () => {
 		>
 			<ArticleSection>
 				<BlurToClear>
-					<H2>Depresi &amp; Perasaan Sedih</H2>
-				</BlurToClear>
-				<BlurToClear>
 					<Text>
-						Faktanya, tidak semua kondisi sedih dapat dikategorikan
-						sebagai bagian dari depresi. Pada dasarnya seseorang
-						mungkin pernah mengalami kondisi kegagalan yang berujung
-						pada kesedihan mendalam. Namun, perlu diketahui bahwa
-						kesedihan berbeda dengan gangguan depresi. Tidak semua
-						perasaan sedih akan menimbulkan depresi. Oleh karenanya,
-						perlu ada pertimbangan cermat terkait gejala depresi
-						sesuai DSM dan intervensi klinis untuk mengetahui jenis
-						gangguan yang dialami seseorang.
+						Depresi yang berlangsung hingga bertahun-tahun disebut
+						“distimia”.
 					</Text>
 				</BlurToClear>
 				<BlurToClear>
+					<H2>Distimia itu apa, sih?</H2>
+				</BlurToClear>
+				<BlurToClear>
 					<Text>
-						Menurut Oltmans & Emery (dalam Chandrawijaya & Yunanto,
-						2019) Major Depressive Disorder (MDD) merupakan salah
-						satu bentuk gangguan mood (suasana hati) dimana kondisi
-						individu didominasi oleh perasaan tertekan (depresi).
+						Distimia adalah suasana hati tertekan/depresi (merasa
+						sedih, hilang semangat, dan putus asa) yang terjadi
+						hampir sepanjang hari dan berlangsung minimal 1 tahun
+						(pada anak-anak dan remaja) atau 2 tahun (pada orang
+						dewasa), tetapi gejalanya tidak separah depresi mayor.
 					</Text>
 				</BlurToClear>
+
+				<MythFact>
+					<Myth>
+						<BlurToClear>
+							<H2>Mitos</H2>
+						</BlurToClear>
+						<BlurToClear>
+							<Text>
+								Distimia mulai terjadi ketika individu sudah
+								dewasa.
+							</Text>
+						</BlurToClear>
+					</Myth>
+
+					<Fact>
+						<BlurToClear>
+							<H2>Fakta</H2>
+						</BlurToClear>
+						<BlurToClear>
+							<Text>
+								Distimia yang terjadi ketika dewasa merupakan
+								kelanjutan distimia yang sudah berlangsung sejak
+								kanak-kanak/remaja.
+							</Text>
+						</BlurToClear>
+					</Fact>
+				</MythFact>
 			</ArticleSection>
 
 			<BlurToClear once>
 				<ArticleSection>
 					<H2>Kriteria DSM-V MDD</H2>
 
-					<TranslateButtons
-						i18n={i18n}
-					/>
+					<TranslateButtons i18n={i18n} />
 					<SwitchContent transitionKey={i18n.resolvedLanguage}>
 						<Ol>
 							<Li>
 								{t("A.text")}
 								<Ol>
-									<Li dangerouslySetInnerHTML={{ __html : t("A.nest.1") }}/>
+									<Li
+										dangerouslySetInnerHTML={{ __html : t("A.nest.1") }}
+									/>
 									<Li>{t("A.nest.2")}</Li>
-									<Li dangerouslySetInnerHTML={{ __html : t("A.nest.3") }}/>
+									<Li
+										dangerouslySetInnerHTML={{ __html : t("A.nest.3") }}
+									/>
 									<Li>{t("A.nest.4")}</Li>
 									<Li>{t("A.nest.5")}</Li>
 									<Li>{t("A.nest.6")}</Li>
@@ -79,7 +127,9 @@ const Dysthymia = () => {
 							<Note>{t("Note1.text")}</Note>
 							<Note>{t("Note2.text")}</Note>
 							<Li>{t("D.text")}</Li>
-							<Li dangerouslySetInnerHTML={{ __html : t("E.text") }}/>
+							<Li
+								dangerouslySetInnerHTML={{ __html : t("E.text") }}
+							/>
 						</Ol>
 					</SwitchContent>
 				</ArticleSection>
