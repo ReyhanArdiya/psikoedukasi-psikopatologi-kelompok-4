@@ -3,9 +3,9 @@ import cssReset from "../styles/css-reset";
 import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
 import cssTransitionAnimations from "../styles/csstransition-animations";
-import { Route, Routes, /* useLocation */ Navigate } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
-import React, { Suspense } from "react";
+import React, { Suspense, useLayoutEffect } from "react";
 import BlackBox from "./UI/Fallbacks/BlackBox";
 
 const GlobalStyle = createGlobalStyle`
@@ -26,7 +26,14 @@ const MDD = React.lazy(() => import("../pages/articles/MDD"));
 const Home = React.lazy(() => import("../pages/Home/Home"));
 
 const App = () => {
-	// const location = useLocation();
+	const location = useLocation();
+
+	// Restore scroll position when routing to other pages EXCEPT for "/"
+	useLayoutEffect(() => {
+		if (location.pathname !== "/") {
+			window.scrollTo(0, 0);
+		}
+	}, [ location.pathname ]);
 
 	return (
 		<ThemeProvider theme={theme}>
