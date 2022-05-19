@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css, keyframes } from "styled-components";
 
 const colors = {
 	primary : {
@@ -105,7 +105,31 @@ const others = {
 	}
 };
 
+const animations = {
+	glowing : keyframes`
+		from {
+			background: ${colors.primary[1]};
+            color: ${colors.primary[2]};
+		}
+
+		to {
+			background: ${colors.primary[2]};
+            color: ${colors.primary[1]};
+		}
+	`,
+	rotate : keyframes`
+	from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+	`,
+};
+
 const theme = {
+	animations,
 	breakpoints,
 	colors,
 	effects,

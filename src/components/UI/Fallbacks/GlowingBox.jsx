@@ -12,19 +12,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
 
-	@keyframes glowing{
-		from {
-			background: ${({ theme }) => theme.colors.primary[1]};
-            color: ${({ theme }) => theme.colors.primary[2]};
-		}
-
-		to {
-			background: ${({ theme }) => theme.colors.primary[2]};
-            color: ${({ theme }) => theme.colors.primary[1]};
-		}
-	}
-
-	animation: glowing 1.5s infinite alternate ease-in-out;
+	animation: ${({ theme }) => theme.animations.glowing} 1.5s infinite alternate ease-in-out;
 
 	::before {
 		${({ theme }) => theme.effects.acrylicWShadow}
@@ -32,7 +20,6 @@ const Container = styled.div`
 		content: "";
 		height: 100%;
 		position: absolute;
-		top: 0;
 		width: 100%;
 	}
 
@@ -42,9 +29,9 @@ const Container = styled.div`
     }
 `;
 
-const GlowingBox = ({ children }) => {
+const GlowingBox = ({ children, className = "" }) => {
 	return (
-		<Container>
+		<Container className={className}>
 			{children}
 		</Container>
 	);
