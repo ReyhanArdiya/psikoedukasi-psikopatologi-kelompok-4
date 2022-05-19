@@ -3,14 +3,15 @@ import { useTranslation } from "react-i18next";
 import ArticlePage from "../../../components/UI/Layouts/ArticlePage/ArticlePage";
 import swingSm from "../../../images/content/small/swing-640w.jpg";
 import swingBg from "../../../images/content/big/swing-1920w.jpg";
-import ArticleSection from "../../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../../components/UI/Animations/BlurToClear";
-import { H2, Text } from "../../../components/UI/Content/Texts";
+import { H2, /* Text */ } from "../../../components/UI/Content/Texts";
 import TranslateButtons from "../../../components/UI/Buttons/TranslateButtons";
 import SwitchContent from "../../../components/UI/Animations/SwitchContent";
 import Ol from "../../../components/UI/Layouts/List/Ol";
 import Li from "../../../components/UI/Layouts/List/Li";
 import Note from "../../../components/UI/Content/Note/Note";
+import BDContent from "./BDContent";
+import ArticleSection from "../../../components/UI/Layouts/ArticlePage/ArticleSection";
 
 const BD = () => {
 	const { t, i18n } = useTranslation("BD");
@@ -24,47 +25,7 @@ const BD = () => {
 			}}
 			title="Bipolar Disorders (BD I & II)"
 		>
-			<ArticleSection>
-				<BlurToClear>
-					<H2>Apakah Itu?</H2>
-				</BlurToClear>
-				<BlurToClear>
-					<Text>
-						Bentuk yang lebih parah dari PMS dimana selama periode
-						menstruasi, wanita akan mengalami beberapa gejala fisik
-						yang juga berhubungan dengan suasana hati. Kenapa hal
-						ini bisa terjadi? Para peneliti menduga adanya peran
-						hormon seksual wanita, neurotransmiter (Bäckström dkk.;
-						Kiesner dalam Nevid dkk., 2018) dan faktor psikologis.
-					</Text>
-				</BlurToClear>
-
-				<BlurToClear>
-					<H2>Bukannya Sama seperti PMS?</H2>
-				</BlurToClear>
-				<BlurToClear>
-					<Text>
-						Walaupun gejalanya mirip, faktanya bahwa terdapat
-						perbedaan pada intensitas gejala yang dialami wanita
-						selama periode tersebut. Wanita yang sedang mengalami
-						PMS masih bisa berfungsi dengan normal dalam
-						kehidupannya, tapi mereka yang mengalami BD akan
-						merasakan gejala yang lebih parah sehingga bisa saja
-						mengganggu kehidupan sehari-hari mereka.
-					</Text>
-				</BlurToClear>
-
-				<BlurToClear>
-					<H2>Bagaimana Menanganinya?</H2>
-				</BlurToClear>
-				<BlurToClear>
-					<Text>
-						Gejala BD bisa diredakan melalui memulai gaya hidup
-						yang sehat, terapi kognitif dan obat-obatan seperti
-						antidepresan.
-					</Text>
-				</BlurToClear>
-			</ArticleSection>
+			<BDContent />
 
 			<BlurToClear once>
 				<ArticleSection>
