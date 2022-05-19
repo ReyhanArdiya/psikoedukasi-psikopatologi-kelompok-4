@@ -16,6 +16,7 @@ const Content = styled.main`
 	flex-direction: column;
 	gap: 4em;
 	align-items: center;
+	width: 100%;
 `;
 
 const ArticlePage = ({
