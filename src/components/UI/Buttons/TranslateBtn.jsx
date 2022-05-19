@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { baseTransitionMs } from "../../../styles/csstransition-animations";
 
 const Button = styled.button`
 	${({ theme }) => theme.effects.acrylicWShadow}
@@ -19,6 +20,9 @@ const Button = styled.button`
 
 	width: 1.5385em;
 	height: 1.5385em;
+
+	opacity: ${({ active }) => active ? 1 : 0.5};
+	transition: opacity ${baseTransitionMs}ms ease-in-out;
 `;
 
 const Text = styled.p`
@@ -31,16 +35,18 @@ const TranslateBtn = React.forwardRef(
 	 * @param {{
 	 * children: import("react").ReactNode,
 	 * className?:string,
-	 * onClick:EventListener
+	 * onClick:EventListener,
+	 * active: boolean
 	 * }} props
 	 *
 	 * @param {import("react").ForwardedRef} ref
 	 */
-	({ onClick, children: text, className = "" }, ref) => {
+	({ onClick, children: text, className = "", active }, ref) => {
 		text = text.slice(0, 2).toUpperCase();
 
 		return (
 			<Button
+				active={active}
 				className={`translate ${className}`}
 				onClick={onClick}
 				ref={ref}

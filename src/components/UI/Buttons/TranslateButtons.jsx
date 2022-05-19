@@ -14,6 +14,7 @@ const TranslateButtons = React.forwardRef(
 
 	/**
 	 *
+	 *
 	 * @param {{i18n : any, className: string}} props
 	 *
 	 * @param {*} ref
@@ -27,9 +28,11 @@ const TranslateButtons = React.forwardRef(
 				ref={ref}
 			>
 				<TranslateBtn
+					active={i18n.language === "id"}
 					onClick={() => i18n.changeLanguage("id")}
 				>ID</TranslateBtn>
 				<TranslateBtn
+					active={i18n.language === "en"}
 					onClick={() => i18n.changeLanguage("en")}
 				>EN</TranslateBtn>
 			</Container>
