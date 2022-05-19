@@ -3,6 +3,7 @@ import ArticlePage from "../../../components/UI/Layouts/ArticlePage/ArticlePage"
 import holdingHandsSm from "../../../images/content/small/holding-hands-640w.jpg";
 import holdingHandsBg from "../../../images/content/big/holding-hands-1920w.jpg";
 import Depression from "./Depression";
+import Bipolar from "./Bipolar";
 
 const Treatment = () => {
 	return (
@@ -15,6 +16,7 @@ const Treatment = () => {
 			title="Penanganan Gangguan Suasana Hati (Mood Disorder)"
 		>
 			<Depression />
+			<Bipolar/>
 		</ArticlePage>
 	);
 };
