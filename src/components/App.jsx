@@ -12,7 +12,6 @@ import {
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense, useCallback, useLayoutEffect } from "react";
 import BlackBox from "./UI/Fallbacks/BlackBox";
-import Dysthymia from "../pages/articles/Dysthymia";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -30,6 +29,8 @@ const Container = styled.div`
 // Lazy vitches
 const MDD = React.lazy(() => import("../pages/articles/MDD"));
 const Home = React.lazy(() => import("../pages/Home/Home"));
+const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia"));
+const PMDD = React.lazy(() => import("../pages/articles/PMDD"));
 
 const App = () => {
 	const location = useLocation();
@@ -77,6 +78,10 @@ const App = () => {
 							<Route
 								element={<Dysthymia />}
 								path="Dysthymia"
+							/>
+							<Route
+								element={<PMDD />}
+								path="PMDD"
 							/>
 						</Route>
 						<Route
