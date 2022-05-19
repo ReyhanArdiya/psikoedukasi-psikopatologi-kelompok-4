@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import SwitchContent from "../../../Animations/SwitchContent";
-import Fallback from "../../../Fallback";
+import GlowingBox from "../../../Fallbacks/GlowingBox";
 
 const Container = styled.div`
 	width: 100%;
@@ -34,7 +34,7 @@ const ProfilePic = ({
 			transitionKey={isLoaded}
 		>
 			<Container>
-				{isLoaded || <Fallback />}
+				{isLoaded || <GlowingBox />}
 				<ProfileImg
 					alt={alt}
 					loading="lazy"

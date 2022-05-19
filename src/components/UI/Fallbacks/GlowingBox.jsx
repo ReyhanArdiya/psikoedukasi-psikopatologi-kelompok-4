@@ -42,7 +42,7 @@ const Container = styled.div`
     }
 `;
 
-const Fallback = ({ children }) => {
+const GlowingBox = ({ children }) => {
 	return (
 		<Container>
 			{children}
@@ -50,4 +50,4 @@ const Fallback = ({ children }) => {
 	);
 };
 
-export default Fallback;
+export default GlowingBox;
