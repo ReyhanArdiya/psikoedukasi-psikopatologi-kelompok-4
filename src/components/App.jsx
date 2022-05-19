@@ -34,6 +34,7 @@ const PMDD = React.lazy(() => import("../pages/articles/PMDD"));
 const BD = React.lazy(() => import("../pages/articles/BD/BD"));
 const CD = React.lazy(() => import("../pages/articles/CD"));
 const Treatment = React.lazy(() => import("../pages/articles/Treatment/Treatment"));
+const Suicide = React.lazy(() => import("../pages/articles/Suicide"));
 
 const App = () => {
 	const location = useLocation();
@@ -97,6 +98,10 @@ const App = () => {
 							<Route
 								element={<Treatment />}
 								path="Treatment"
+							/>
+							<Route
+								element={<Suicide />}
+								path="Suicide"
 							/>
 						</Route>
 						<Route
