@@ -30,7 +30,7 @@ const MDDDYSTHYMIA = () => {
 				bigImg={walkingBg }
 				id="DYSTHYMIA"
 				imgLoc="left"
-				readTo="/articles/DYSTHYMIA"
+				readTo="/articles/Dysthymia"
 				smallImg={walkingSm}
 				title="DYSTHYMIA"
 			>

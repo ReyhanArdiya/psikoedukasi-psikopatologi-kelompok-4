@@ -12,6 +12,7 @@ import {
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense, useCallback, useLayoutEffect } from "react";
 import BlackBox from "./UI/Fallbacks/BlackBox";
+import Dysthymia from "../pages/articles/Dysthymia";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -72,6 +73,10 @@ const App = () => {
 							<Route
 								element={<MDD />}
 								path="MDD"
+							/>
+							<Route
+								element={<Dysthymia />}
+								path="Dysthymia"
 							/>
 						</Route>
 						<Route

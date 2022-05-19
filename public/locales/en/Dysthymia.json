@@ -1,0 +1,37 @@
+{
+	"A": {
+		"text": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year."
+	},
+	"B": {
+		"text": "Presence, while depressed, of two (or more) of the following:",
+		"nest": {
+			"1": "Poor appetite or overeating.",
+			"2": "Insomnia or hypersomnia.",
+			"3": "Low energy or fatigue.",
+			"4": "Low self-esteem.",
+			"5": "Poor concentration or difficulty making decisions.",
+			"6": "Feelings of hopelessness."
+		}
+	},
+	"C": {
+		"text": "During the 2-year period (1 year for children or adolescents) of the disturbance, the individual has never been without the symptoms in Criteria A and B for more than 2 months at a time."
+	},
+	"D": {
+		"text": "Criteria for a major depressive disorder may be continuously present for 2 years."
+	},
+	"E": {
+		"text": "There has never been a manic episode or a hypomanie episode, and criteria have never been met for cyclothymic disorder."
+	},
+	"F": {
+		"text": "The disturbance is not better explained by a persistent schizoaffective disorder, schizophrenia, delusional disorder, or other specified or unspecified schizophrenia spectrum and other psychotic disorder."
+	},
+	"G": {
+		"text": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication) or another medical condition (e.g. hypothyroidism)."
+	},
+	"H": {
+		"text": "The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning."
+	},
+	"Note1": {
+		"text": "Because the criteria for a major depressive episode include four symptoms that are absent from the symptom list for persistent depressive disorder (dysthymia), a very limited number of individuals will have depressive symptoms that have persisted longer than 2 years but will not meet criteria for persistent depressive disorder. If full criteria for a major depressive episode have been met at some point during the current episode of illness, they should be given a diagnosis of major depressive disorder. Otherwise, a diagnosis of other specified depressive disorder or unspecified depressive disorder is warranted."
+	}
+}
