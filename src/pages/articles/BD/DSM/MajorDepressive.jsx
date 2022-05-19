@@ -8,9 +8,10 @@ import Note from "../../../../components/UI/Content/Note/Note";
 
 const Container = styled(ArticleSection)`
 	width: 100%;
+    grid-area: majordepressive;
 `;
 
-const MajorDepressive = ({ complete = true }) => {
+const MajorDepressive = ({ complete = false }) => {
 	const { t } = useTranslation("MajorDepressive");
 
 	return (

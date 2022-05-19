@@ -4,18 +4,32 @@ import ArticlePage from "../../../components/UI/Layouts/ArticlePage/ArticlePage"
 import swingSm from "../../../images/content/small/swing-640w.jpg";
 import swingBg from "../../../images/content/big/swing-1920w.jpg";
 import BlurToClear from "../../../components/UI/Animations/BlurToClear";
-import { H2, /* Text */ } from "../../../components/UI/Content/Texts";
+import { H2 /* Text */ } from "../../../components/UI/Content/Texts";
 import TranslateButtons from "../../../components/UI/Buttons/TranslateButtons";
 import SwitchContent from "../../../components/UI/Animations/SwitchContent";
 import BDContent from "./BDContent";
 import ArticleSection from "../../../components/UI/Layouts/ArticlePage/ArticleSection";
 import Manic from "./DSM/Manic";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Hypomanic from "./DSM/Hypomanic";
 import MajorDepressive from "./DSM/MajorDepressive";
 
 const BDI = styled(ArticleSection)`
-    width: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		"manic"
+		"hypomanic"
+		"majordepressive";
+    align-items: start;
+
+	${({ theme }) => theme.breakpoints.big(css`
+            grid-template-columns: 1fr 1fr;
+            column-gap: 8.2em;
+			grid-template-areas:
+				"manic hypomanic"
+				"majordepressive majordepressive";
+		`)}
 `;
 
 const BD = () => {
@@ -26,7 +40,7 @@ const BD = () => {
 			goBackLink="/#BD"
 			heroImg={{
 				big   : swingBg,
-				small : swingSm,
+				small : swingSm
 			}}
 			title="Bipolar Disorders (BD I & II)"
 		>
@@ -41,7 +55,7 @@ const BD = () => {
 						<BDI id="BD-I">
 							<Manic />
 							<Hypomanic />
-							<MajorDepressive/>
+							<MajorDepressive complete/>
 						</BDI>
 					</SwitchContent>
 				</ArticleSection>

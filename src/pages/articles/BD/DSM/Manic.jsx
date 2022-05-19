@@ -8,6 +8,7 @@ import Note from "../../../../components/UI/Content/Note/Note";
 
 const Container = styled(ArticleSection)`
     width: 100%;
+	grid-area: manic;
 `;
 
 const Manic = () => {
