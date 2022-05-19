@@ -1,3 +1,4 @@
+/* eslint-disable jsdoc/check-param-names */
 import React from "react";
 import styled from "styled-components";
 import TranslateBtn from "./TranslateBtn";
