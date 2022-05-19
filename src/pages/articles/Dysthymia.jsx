@@ -99,37 +99,30 @@ const Dysthymia = () => {
 
 			<BlurToClear once>
 				<ArticleSection>
-					<H2>Kriteria DSM-V MDD</H2>
-
+					<H2>Kriteria DSM-V Dysthymia</H2>
 					<TranslateButtons i18n={i18n} />
+
 					<SwitchContent transitionKey={i18n.resolvedLanguage}>
 						<Ol>
+							<Li dangerouslySetInnerHTML={{ __html : t("A.text") }}/>
 							<Li>
-								{t("A.text")}
+								{t("B.text")}
 								<Ol>
-									<Li
-										dangerouslySetInnerHTML={{ __html : t("A.nest.1") }}
-									/>
-									<Li>{t("A.nest.2")}</Li>
-									<Li
-										dangerouslySetInnerHTML={{ __html : t("A.nest.3") }}
-									/>
-									<Li>{t("A.nest.4")}</Li>
-									<Li>{t("A.nest.5")}</Li>
-									<Li>{t("A.nest.6")}</Li>
-									<Li>{t("A.nest.7")}</Li>
-									<Li>{t("A.nest.8")}</Li>
-									<Li>{t("A.nest.9")}</Li>
+									<Li>{t("B.nest.1")}</Li>
+									<Li>{t("B.nest.2")}</Li>
+									<Li>{t("B.nest.3")}</Li>
+									<Li>{t("B.nest.4")}</Li>
+									<Li>{t("B.nest.5")}</Li>
+									<Li>{t("B.nest.6")}</Li>
 								</Ol>
 							</Li>
-							<Li>{t("B.text")}</Li>
 							<Li>{t("C.text")}</Li>
-							<Note>{t("Note1.text")}</Note>
-							<Note>{t("Note2.text")}</Note>
 							<Li>{t("D.text")}</Li>
-							<Li
-								dangerouslySetInnerHTML={{ __html : t("E.text") }}
-							/>
+							<Li>{t("E.text")}</Li>
+							<Li>{t("F.text")}</Li>
+							<Li>{t("G.text")}</Li>
+							<Li>{t("H.text")}</Li>
+							<Note>{t("Note1.text")}</Note>
 						</Ol>
 					</SwitchContent>
 				</ArticleSection>
