@@ -33,6 +33,7 @@ const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia"));
 const PMDD = React.lazy(() => import("../pages/articles/PMDD"));
 const BD = React.lazy(() => import("../pages/articles/BD/BD"));
 const CD = React.lazy(() => import("../pages/articles/CD"));
+const Treatment = React.lazy(() => import("../pages/articles/Treatment/Treatment"));
 
 const App = () => {
 	const location = useLocation();
@@ -92,6 +93,10 @@ const App = () => {
 							<Route
 								element={<CD />}
 								path="CD"
+							/>
+							<Route
+								element={<Treatment />}
+								path="Treatment"
 							/>
 						</Route>
 						<Route
