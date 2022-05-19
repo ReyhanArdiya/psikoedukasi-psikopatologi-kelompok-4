@@ -51,7 +51,7 @@ const MDD = () => {
 				</BlurToClear>
 			</ArticleSection>
 
-			<BlurToClear>
+			<BlurToClear once>
 				<ArticleSection>
 					<H2>Kriteria DSM-V MDD</H2>
 
@@ -63,9 +63,9 @@ const MDD = () => {
 							<Li>
 								{t("A.text")}
 								<Ol>
-									<Li>{t("A.nest.1")}</Li>
+									<Li dangerouslySetInnerHTML={{ __html : t("A.nest.1") }}/>
 									<Li>{t("A.nest.2")}</Li>
-									<Li>{t("A.nest.3")}</Li>
+									<Li dangerouslySetInnerHTML={{ __html : t("A.nest.3") }}/>
 									<Li>{t("A.nest.4")}</Li>
 									<Li>{t("A.nest.5")}</Li>
 									<Li>{t("A.nest.6")}</Li>
@@ -79,7 +79,7 @@ const MDD = () => {
 							<Note>{t("Note1.text")}</Note>
 							<Note>{t("Note2.text")}</Note>
 							<Li>{t("D.text")}</Li>
-							<Li>{t("E.text")}</Li>
+							<Li dangerouslySetInnerHTML={{ __html : t("E.text") }}/>
 						</Ol>
 					</SwitchContent>
 				</ArticleSection>
