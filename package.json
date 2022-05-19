@@ -49,5 +49,6 @@
 		"@types/styled-components": "^5.1.25",
 		"eslint-plugin-jsdoc": "^39.2.9",
 		"gh-pages": "^4.0.0"
-	}
+	},
+	"homepage": "https://ReyhanArdiya.github.io/psikoedukasi-psikopatologi-kelompok-4"
 }
