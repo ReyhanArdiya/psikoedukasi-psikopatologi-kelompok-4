@@ -52,7 +52,7 @@ const Home = () => {
 			<Intermezzo>
 				<BlurToClear>
 					<Text>
-						2 gangguan yang akan kami kenalkan pertama kali
+						3 gangguan yang akan kami kenalkan pertama kali
 						berhubungan dengan perasaan depresi.
 					</Text>
 				</BlurToClear>
