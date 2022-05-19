@@ -3,9 +3,14 @@ import cssReset from "../styles/css-reset";
 import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
 import cssTransitionAnimations from "../styles/csstransition-animations";
-import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import {
+	Route,
+	Routes,
+	useLocation,
+	Navigate
+} from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
-import React, { Suspense, useLayoutEffect } from "react";
+import React, { Suspense, useCallback, useLayoutEffect } from "react";
 import BlackBox from "./UI/Fallbacks/BlackBox";
 
 const GlobalStyle = createGlobalStyle`
@@ -28,12 +33,26 @@ const Home = React.lazy(() => import("../pages/Home/Home"));
 const App = () => {
 	const location = useLocation();
 
-	// Restore scroll position when routing to other pages EXCEPT for "/"
+	const scrollToSection = useCallback(() => {
+		if (location.hash) {
+			const section = document.querySelector(location.hash);
+			if (section) {
+				section.scrollIntoView({
+					behavior : "auto",
+					block    : "start"
+				});
+			}
+		}
+	}, [ location.hash ]);
+
+	// Scroll restoration
 	useLayoutEffect(() => {
 		if (location.pathname !== "/") {
 			window.scrollTo(0, 0);
 		}
-	}, [ location.pathname ]);
+
+		scrollToSection();
+	}, [ location.hash, location.pathname, scrollToSection ]);
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -42,7 +61,7 @@ const App = () => {
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
 				<Suspense
-					fallback={<BlackBox/>}
+					fallback={<BlackBox onUnMount={scrollToSection}/>}
 				>
 					<Routes>
 						<Route

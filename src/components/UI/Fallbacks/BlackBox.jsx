@@ -31,14 +31,15 @@ const Content = styled(GlowingBox)`
 
 `;
 
-const BlackBox = () => {
+const BlackBox = ({ onUnMount }) => {
 	useEffect(() => {
 		document.body.style.overflow = "hidden";
 
 		return () => {
 			document.body.style.overflow = "";
+			onUnMount();
 		};
-	}, []);
+	}, [ onUnMount ]);
 
 	return ReactDOM.createPortal(
 		<Container><Content/></Container>,
