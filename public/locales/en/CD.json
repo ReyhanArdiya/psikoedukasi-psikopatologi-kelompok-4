@@ -1,0 +1,20 @@
+{
+	"A": {
+		"text": "For at least 2 years (at least 1 year in children and adolescents) there have been numerous periods with hypomanic symptoms that do not meet criteria for a hypomanic episode and numerous periods with depressive symptoms that do not meet criteria for a major depressive episode."
+	},
+	"B": {
+		"text": "During the above 2-year period (1 year in children and adolescents), the hypomanic and depressive periods have been present for at least half the time and the individual has not been without the symptoms for more than 2 months at a time."
+	},
+	"C": {
+		"text": "Criteria for a major depressive, manic, or hypomanic episode have never been met."
+	},
+	"D": {
+		"text": "The symptoms in Criterion A are not better explained by schizoaffective disorder, schizophrenia, schizophreniform disorder, delusional disorder, or other specified or unspecified schizophrenia spectrum and other psychotic disorder."
+	},
+	"E": {
+		"text": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication) or another medical condition (e.g., hyperthyroidism)."
+	},
+	"F": {
+		"text": "The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning."
+	}
+}
