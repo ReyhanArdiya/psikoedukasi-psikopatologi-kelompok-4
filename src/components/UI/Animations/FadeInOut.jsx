@@ -6,7 +6,7 @@ import React from "react";
 const FadeInOut = ({ children, options, once = true }) => {
 	const { ref, inView } = useInView({
 		initialInView : true,
-		threshold     : 1,
+		threshold     : 0.1,
 		triggerOnce   : once,
 		...options,
 	});
