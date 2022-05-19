@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
-import foggyLakeSm from "../../images/content/small/foggy-lake-640w.jpg";
-import foggyLakeBg from "../../images/content/big/foggy-lake-1920w.jpg";
+import whiteRosesSm from "../../images/content/small/white-roses-640w.jpg";
+import whiteRosesBg from "../../images/content/big/white-roses-1920w.jpg";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import { H2, Text } from "../../components/UI/Content/Texts";
@@ -11,31 +11,6 @@ import SwitchContent from "../../components/UI/Animations/SwitchContent";
 import Ol from "../../components/UI/Layouts/List/Ol";
 import Li from "../../components/UI/Layouts/List/Li";
 import Note from "../../components/UI/Content/Note/Note";
-import styled, { css } from "styled-components";
-
-const MythFact = styled(ArticleSection)`
-	width: 100%;
-	display: grid;
-	grid-template-areas:
-		"myth"
-		"fact";
-    align-items: start;
-    column-gap: 10em;
-
-	${({ theme }) => theme.breakpoints.big(css`
-			grid-template-areas: "myth fact";
-		`)}
-`;
-
-const Myth = styled(ArticleSection)`
-	width: 100%;
-	grid-area: myth;
-`;
-
-const Fact = styled(ArticleSection)`
-	width: 100%;
-	grid-area: fact;
-`;
 
 const PMDD = () => {
 	const { t, i18n } = useTranslation("PMDD");
@@ -44,57 +19,51 @@ const PMDD = () => {
 		<ArticlePage
 			goBackLink="/#PMDD"
 			heroImg={{
-				big   : foggyLakeBg,
-				small : foggyLakeSm
+				big   : whiteRosesBg,
+				small : whiteRosesSm,
 			}}
 			title="Premenstrual Dysphoric Disorder (PMDD)"
 		>
 			<ArticleSection>
 				<BlurToClear>
-					<Text>
-						Depresi yang berlangsung hingga bertahun-tahun disebut
-						“distimia”.
-					</Text>
-				</BlurToClear>
-				<BlurToClear>
-					<H2>Distimia itu apa, sih?</H2>
+					<H2>Apakah Itu?</H2>
 				</BlurToClear>
 				<BlurToClear>
 					<Text>
-						Distimia adalah suasana hati tertekan/depresi (merasa
-						sedih, hilang semangat, dan putus asa) yang terjadi
-						hampir sepanjang hari dan berlangsung minimal 1 tahun
-						(pada anak-anak dan remaja) atau 2 tahun (pada orang
-						dewasa), tetapi gejalanya tidak separah depresi mayor.
+						Bentuk yang lebih parah dari PMS dimana selama periode
+						menstruasi, wanita akan mengalami beberapa gejala fisik
+						yang juga berhubungan dengan suasana hati. Kenapa hal
+						ini bisa terjadi? Para peneliti menduga adanya peran
+						hormon seksual wanita, neurotransmiter (Bäckström dkk.;
+						Kiesner dalam Nevid dkk., 2018) dan faktor psikologis.
 					</Text>
 				</BlurToClear>
 
-				<MythFact>
-					<Myth>
-						<BlurToClear>
-							<H2>Mitos</H2>
-						</BlurToClear>
-						<BlurToClear>
-							<Text>
-								Distimia mulai terjadi ketika individu sudah
-								dewasa.
-							</Text>
-						</BlurToClear>
-					</Myth>
+				<BlurToClear>
+					<H2>Bukannya Sama seperti PMS?</H2>
+				</BlurToClear>
+				<BlurToClear>
+					<Text>
+						Walaupun gejalanya mirip, faktanya bahwa terdapat
+						perbedaan pada intensitas gejala yang dialami wanita
+						selama periode tersebut. Wanita yang sedang mengalami
+						PMS masih bisa berfungsi dengan normal dalam
+						kehidupannya, tapi mereka yang mengalami PMDD akan
+						merasakan gejala yang lebih parah sehingga bisa saja
+						mengganggu kehidupan sehari-hari mereka.
+					</Text>
+				</BlurToClear>
 
-					<Fact>
-						<BlurToClear>
-							<H2>Fakta</H2>
-						</BlurToClear>
-						<BlurToClear>
-							<Text>
-								Distimia yang terjadi ketika dewasa merupakan
-								kelanjutan distimia yang sudah berlangsung sejak
-								kanak-kanak/remaja.
-							</Text>
-						</BlurToClear>
-					</Fact>
-				</MythFact>
+				<BlurToClear>
+					<H2>Bagaimana Menanganinya?</H2>
+				</BlurToClear>
+				<BlurToClear>
+					<Text>
+						Gejala PMDD bisa diredakan melalui memulai gaya hidup
+						yang sehat, terapi kognitif dan obat-obatan seperti
+						antidepresan.
+					</Text>
+				</BlurToClear>
 			</ArticleSection>
 
 			<BlurToClear once>
@@ -104,7 +73,7 @@ const PMDD = () => {
 
 					<SwitchContent transitionKey={i18n.resolvedLanguage}>
 						<Ol>
-							<Li dangerouslySetInnerHTML={{ __html : t("A.text") }}/>
+							<Li>{t("A.text")}</Li>
 							<Li>
 								{t("B.text")}
 								<Ol>
@@ -112,17 +81,27 @@ const PMDD = () => {
 									<Li>{t("B.nest.2")}</Li>
 									<Li>{t("B.nest.3")}</Li>
 									<Li>{t("B.nest.4")}</Li>
-									<Li>{t("B.nest.5")}</Li>
-									<Li>{t("B.nest.6")}</Li>
 								</Ol>
 							</Li>
-							<Li>{t("C.text")}</Li>
+							<Li>
+								{t("C.text")}
+								<Ol>
+									<Li>{t("C.nest.1")}</Li>
+									<Li>{t("C.nest.2")}</Li>
+									<Li>{t("C.nest.3")}</Li>
+									<Li>{t("C.nest.4")}</Li>
+									<Li>{t("C.nest.5")}</Li>
+									<Li>{t("C.nest.6")}</Li>
+									<Li>{t("C.nest.7")}</Li>
+								</Ol>
+							</Li>
+							<Note>{t("Note1.text")}</Note>
 							<Li>{t("D.text")}</Li>
 							<Li>{t("E.text")}</Li>
-							<Li>{t("F.text")}</Li>
+							<Li
+								dangerouslySetInnerHTML={{ __html : t("F.text") }}
+							/>
 							<Li>{t("G.text")}</Li>
-							<Li>{t("H.text")}</Li>
-							<Note>{t("Note1.text")}</Note>
 						</Ol>
 					</SwitchContent>
 				</ArticleSection>
