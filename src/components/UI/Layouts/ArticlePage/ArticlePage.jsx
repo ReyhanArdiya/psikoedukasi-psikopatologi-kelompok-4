@@ -11,7 +11,12 @@ const Container = styled.div`
 	gap: 4em;
 `;
 
-const Content = styled.main``;
+const Content = styled.main`
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+	align-items: center;
+`;
 
 const ArticlePage = ({
 	title,

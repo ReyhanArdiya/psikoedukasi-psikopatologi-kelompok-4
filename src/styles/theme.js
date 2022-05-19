@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css, keyframes } from "styled-components";
 
 const colors = {
 	primary : {
@@ -48,13 +48,13 @@ const text = {
 		color: ${colors.primary[1]};
 		font-feature-settings: "calt" off;
 	`,
-	note : css`
-		font: 300 1.2em/1.334em "Khula", sans-serif;
-		color: ${colors.primary[1]};
-		font-feature-settings: "calt" off;
-	`,
+	// note : css`
+	// 	font: 300 1.2em/1.334em "Khula", sans-serif;
+	// 	color: ${colors.primary[1]};
+	// 	font-feature-settings: "calt" off;
+	// `,
 	text : css`
-		font: 300 1.4em/1.143em "Khula", sans-serif;
+		font: 300 1.6em/1.5em "Khula", sans-serif;
 		color: ${colors.primary[1]};
 		font-feature-settings: "calt" off;
 	`,
@@ -64,6 +64,8 @@ const text = {
 		font-feature-settings: "calt" off;
 	`
 };
+
+text.note = text.text;
 
 const breakpoints = {
 	big(styles) {
@@ -103,7 +105,31 @@ const others = {
 	}
 };
 
+const animations = {
+	glowing : keyframes`
+		from {
+			background: ${colors.primary[1]};
+            color: ${colors.primary[2]};
+		}
+
+		to {
+			background: ${colors.primary[2]};
+            color: ${colors.primary[1]};
+		}
+	`,
+	rotate : keyframes`
+	from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+	`,
+};
+
 const theme = {
+	animations,
 	breakpoints,
 	colors,
 	effects,

@@ -3,13 +3,16 @@ import styled from "styled-components";
 import NoteHeader from "./NoteHeader";
 import NoteText from "./NoteText";
 
-const Container = styled.article`
+const Container = styled.li`
     ${({ theme }) => theme.effects.dropShadow}
     ${({ theme }) => theme.others.borderRadius}
     background-color: ${({ theme }) => theme.colors.primary[2]};
     font-size: 1em;
     height: max-content;
-    width: 16.5em;
+    min-width: 16.5em;
+	width: 100%;
+	margin: 2em 0;
+	list-style: none;
 `;
 
 const Note = React.forwardRef(

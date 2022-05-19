@@ -3,10 +3,15 @@ import cssReset from "../styles/css-reset";
 import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
 import cssTransitionAnimations from "../styles/csstransition-animations";
-import { Route, Routes, /* useLocation */ Navigate } from "react-router-dom";
-import MDD from "../pages/articles/MDD";
+import {
+	Route,
+	Routes,
+	useLocation,
+	Navigate
+} from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
-import Home from "../pages/Home/Home";
+import React, { Suspense, useCallback, useLayoutEffect } from "react";
+import BlackBox from "./UI/Fallbacks/BlackBox";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -21,8 +26,33 @@ const Container = styled.div`
 	overflow: hidden;
 `;
 
+// Lazy vitches
+const MDD = React.lazy(() => import("../pages/articles/MDD"));
+const Home = React.lazy(() => import("../pages/Home/Home"));
+
 const App = () => {
-	// const location = useLocation();
+	const location = useLocation();
+
+	const scrollToSection = useCallback(() => {
+		if (location.hash) {
+			const section = document.querySelector(location.hash);
+			if (section) {
+				section.scrollIntoView({
+					behavior : "auto",
+					block    : "start"
+				});
+			}
+		}
+	}, [ location.hash ]);
+
+	// Scroll restoration
+	useLayoutEffect(() => {
+		if (location.pathname !== "/") {
+			window.scrollTo(0, 0);
+		}
+
+		scrollToSection();
+	}, [ location.hash, location.pathname, scrollToSection ]);
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -30,26 +60,29 @@ const App = () => {
 			<Container id="App">
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
-				<Routes>
-					{/* DBG delete the name after to after final deployment */}
-					<Route
-						element={<Home/>}
-						path="/psikoedukasi-psikopatologi-kelompok-4"
-					/>
-					<Route path="/articles">
+				<Suspense
+					fallback={<BlackBox onUnMount={scrollToSection}/>}
+				>
+					<Routes>
 						<Route
-							element={<MDD />}
-							path="MDD"
+							element={<Home/>}
+							path="/"
 						/>
-					</Route>
-					<Route
-						element={<Navigate
-							replace
-							to="/psikoedukasi-psikopatologi-kelompok-4"
-						         />}
-						path="*"
-					/>
-				</Routes>
+						<Route path="/articles">
+							<Route
+								element={<MDD />}
+								path="MDD"
+							/>
+						</Route>
+						<Route
+							element={<Navigate
+								replace
+								to="/"
+							         />}
+							path="*"
+						/>
+					</Routes>
+				</Suspense>
 				{/* </SwitchContent> */}
 			</Container>
 		</ThemeProvider>

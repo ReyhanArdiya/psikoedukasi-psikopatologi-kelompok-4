@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { baseTransitionMs } from "../../../styles/csstransition-animations";
 
 const Button = styled.button`
 	${({ theme }) => theme.effects.acrylicWShadow}
@@ -14,33 +15,38 @@ const Button = styled.button`
 	cursor: pointer;
 	user-select: none;
 
-	font-size: 1.3em;
+	font-size: 1.9em;
 	line-height: unset;
 
 	width: 1.5385em;
 	height: 1.5385em;
+
+	opacity: ${({ active }) => active ? 1 : 0.5};
+	transition: opacity ${baseTransitionMs}ms ease-in-out;
 `;
 
 const Text = styled.p`
 	${({ theme }) => theme.effects.gradientText};
 `;
 
-const Translate = React.forwardRef(
+const TranslateBtn = React.forwardRef(
 
 	/**
 	 * @param {{
 	 * children: import("react").ReactNode,
 	 * className?:string,
-	 * onClick:EventListener
+	 * onClick:EventListener,
+	 * active: boolean
 	 * }} props
 	 *
 	 * @param {import("react").ForwardedRef} ref
 	 */
-	({ onClick, children: text, className = "" }, ref) => {
+	({ onClick, children: text, className = "", active }, ref) => {
 		text = text.slice(0, 2).toUpperCase();
 
 		return (
 			<Button
+				active={active}
 				className={`translate ${className}`}
 				onClick={onClick}
 				ref={ref}
@@ -51,4 +57,4 @@ const Translate = React.forwardRef(
 	}
 );
 
-export default React.memo(Translate);
+export default React.memo(TranslateBtn);

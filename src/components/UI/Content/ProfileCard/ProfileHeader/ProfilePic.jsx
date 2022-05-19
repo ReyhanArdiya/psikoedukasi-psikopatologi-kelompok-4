@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import SwitchContent from "../../../Animations/SwitchContent";
+import GlowingBox from "../../../Fallbacks/GlowingBox";
 
 const Container = styled.div`
 	width: 100%;
@@ -18,38 +19,6 @@ const ProfileImg = styled.img`
 	filter: grayscale(100%);
 `;
 
-const Fallback = styled.div`
-	${({ theme }) => theme.effects.dropShadow}
-	border-radius: inherit;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 2;
-
-	@keyframes glowing{
-		from {
-			background: #696969;
-		}
-
-		to {
-			background: white;
-		}
-	}
-
-	animation: glowing 1.5s infinite alternate ease;
-
-	::after {
-		${({ theme }) => theme.effects.acrylicWShadow}
-		border-radius: inherit;
-		content: "";
-		height: 100%;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-`;
-
 const ProfilePic = ({
 	img,
 	alt = "",
@@ -65,7 +34,7 @@ const ProfilePic = ({
 			transitionKey={isLoaded}
 		>
 			<Container>
-				{isLoaded || <Fallback />}
+				{isLoaded || <GlowingBox />}
 				<ProfileImg
 					alt={alt}
 					loading="lazy"
