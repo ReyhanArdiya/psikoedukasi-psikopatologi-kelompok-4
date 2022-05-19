@@ -28,7 +28,7 @@ const Container = styled.div`
 
 const FlowerBg = ({ children, flip }) => {
 	return (
-		<BlurToClear options={{ threshold : 0.9 }}>
+		<BlurToClear options={{ threshold : 0.5 }}>
 			<Container flip={flip}>{children}</Container>
 		</BlurToClear>
 	);
