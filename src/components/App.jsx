@@ -4,9 +4,10 @@ import theme from "../styles/theme";
 import hookAnimations from "../styles/hooks-animations";
 import cssTransitionAnimations from "../styles/csstransition-animations";
 import { Route, Routes, /* useLocation */ Navigate } from "react-router-dom";
-import MDD from "../pages/articles/MDD";
 // import SwitchContent from "./UI/Animations/SwitchContent";
-import Home from "../pages/Home/Home";
+import React, { Suspense } from "react";
+import Fallback from "./UI/Fallback";
+import { H1 } from "./UI/Content/Texts";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -21,6 +22,10 @@ const Container = styled.div`
 	overflow: hidden;
 `;
 
+// Lazy vitches
+const MDD = React.lazy(() => import("../pages/articles/MDD"));
+const Home = React.lazy(() => import("../pages/Home/Home"));
+
 const App = () => {
 	// const location = useLocation();
 
@@ -30,25 +35,27 @@ const App = () => {
 			<Container id="App">
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
-				<Routes>
-					<Route
-						element={<Home/>}
-						path="/"
-					/>
-					<Route path="/articles">
+				<Suspense fallback={<Fallback><H1>Loading...</H1></Fallback>}>
+					<Routes>
 						<Route
-							element={<MDD />}
-							path="MDD"
+							element={<Home/>}
+							path="/"
 						/>
-					</Route>
-					<Route
-						element={<Navigate
-							replace
-							to="/"
-						         />}
-						path="*"
-					/>
-				</Routes>
+						<Route path="/articles">
+							<Route
+								element={<MDD />}
+								path="MDD"
+							/>
+						</Route>
+						<Route
+							element={<Navigate
+								replace
+								to="/"
+							         />}
+							path="*"
+						/>
+					</Routes>
+				</Suspense>
 				{/* </SwitchContent> */}
 			</Container>
 		</ThemeProvider>
