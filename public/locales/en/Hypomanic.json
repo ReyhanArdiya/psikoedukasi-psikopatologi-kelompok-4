@@ -1,0 +1,32 @@
+{
+	"A": {
+		"text": "A distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased activity or energy, lasting at least 4 consecutive days and present most of the day, nearly every day."
+	},
+	"B": {
+		"text": "During the period of mood disturbance and increased energy and activity, three (or more) of the following symptoms (four if the mood is only irritable) have persisted, represent a noticeable change from usual behavior, and have been present to a significant degree:",
+		"nest": {
+			"1": "Inflated self-esteem or grandiosity",
+			"2": "Decreased need for sleep (e.g., feels rested after only 3 hours of sleep).",
+			"3": "More talkative than usual or pressure to keep talking.",
+			"4": "Flight of ideas or subjective experience that thoughts are racing.",
+			"5": "Distractibility (i.e., attention too easily drawn to unimportant or irrelevant external stimuli), as reported or observed.",
+			"6": "Increase in goal-directed activity (either socially, at work or school, or sexually) or psychomotor agitation (i.e., purposeless non-goal-directed activity).",
+			"7": "Excessive involvement in activities that have a high potential for painful consequences (e.g., engaging in unrestrained buying sprees, sexual indiscretions, or foolish business investments)."
+		}
+	},
+	"C": {
+		"text": "The episode is associated with an unequivocal change in functioning that is uncharacteristic of the individual when not symptomatic."
+	},
+	"D": {
+		"text": "The disturbance in mood and the change in functioning are observable by others."
+	},
+	"E": {
+		"text": "The episode is not severe enough to cause marked impairment in social or occupational functioning or to necessitate hospitalization. If there are psychotic features, the episode is, by definition, manic."
+	},
+	"F": {
+		"text": "The episode is not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment)."
+	},
+	"Note1": {
+		"text": "A full hypomanic episode that emerges during antidepressant treatment (e.g., medication, electroconvulsive therapy) but persists at a fully syndromal level beyond the physiological effect of that treatment is sufficient evidence for a hypomanie episode diagnosis. However, caution is indicated so that one or two symptoms (particularly increased irritability, edginess, or agitation following antidepressant use) are not taken as sufficient for diagnosis of a hypomanie episode, nor necessarily indicative of a bipolar diathesis."
+	}
+}
