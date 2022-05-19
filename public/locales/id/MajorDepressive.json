@@ -1,0 +1,28 @@
+{
+	"A": {
+		"text": "Lima (atau lebih) dari gejala berikut telah muncul selama periode 2 minggu dan menunjukkan perubahan dari fungsi sebelumnya; setidaknya salah satu gejalanya adalah (1) suasana hati yang tertekan atau (2) kehilangan minat atau kesenangan. Note: Jangan sertakan gejala yang secara jelas terkait dengan kondisi medis lain.",
+		"nest": {
+			"1": "Suasana hati yang tertekan hampir sepanjang hari dan hampir setiap hari, seperti  yang ditunjukkan oleh laporan subjektif (misalnya, merasa sedih, kosong, atau putus asa) atau pengamatan yang dilakukan oleh orang lain (misalnya, tampak menangis). (<b>Note</b>: Pada anak-anak dan remaja, mood dapat menjadi mudah tersinggung).",
+			"2": "Berkurangnya minat atau kesenangan secara nyata pada aktivitas hampir sepanjang  hari dan hampir setiap hari (seperti yang ditunjukkan oleh catatan subjektif atau pengamatan).",
+			"3": "Penurunan berat badan yang signifikan saat tidak berdiet atau penambahan berat badan (misalnya, perubahan lebih dari 5% dari berat badan dalam sebulan), atau penurunan atau peningkatan nafsu makan hampir setiap hari. (<b>Note</b>: Pada anak-anak, pertimbangkan kegagalan untuk membuat kenaikan berat badan yang diharapkan).",
+			"4": "Insomnia atau hipersomnia hampir setiap hari.",
+			"5": "Agitasi atau keterbelakangan psikomotor hampir setiap hari (dapat diamati oleh orang lain; bukan hanya perasaan subjektif dari kegelisahan atau perlambatan).",
+			"6": "Kelelahan atau kehilangan energi hampir setiap hari.",
+			"7": "Perasaan tidak berharga atau rasa bersalah yang berlebihan atau tidak pantas (yang mungkin bersifat delusi) hampir setiap hari (bukan hanya mencela diri sendiri atau rasa bersalah karena sakit).",
+			"8": "Berkurangnya kemampuan untuk berpikir atau berkonsentrasi dan keragu-raguan hampir setiap hari (baik karena penilaian subjektif atau seperti yang diamati oleh orang lain).",
+			"9": "Pikiran kematian yang berulang (bukan hanya ketakutan akan kematian), ide bunuh diri yang berulang tanpa rencana khusus, atau usaha bunuh diri atau rencana khusus untuk bunuh diri."
+		}
+	},
+	"B": {
+		"text": "Gejala menyebabkan penderitaan yang bermakna secara klinis atau abnormalitas dalam fungsi sosial, pekerjaan, atau fungsi penting lainnya."
+	},
+	"C": {
+		"text": "Episode ini tidak disebabkan oleh efek fisiologis suatu zat atau kondisi medis lainnya."
+	},
+	"Note1": {
+		"text": "Kriteria A-C merupakan episode depresif mayor. Episode depresif mayor sering terjadi pada gangguan bipolar I, tetapi tidak diperlukan untuk diagnosis gangguan bipolar I."
+	},
+	"Note2": {
+		"text": "Respons terhadap kehilangan yang signifikan (misalnya, kehilangan, kehancuran finansial, kerugian dari bencana alam, penyakit medis yang serius atau kecacatan) dapat mencakup perasaan sedih yang mendalam, perenungan tentang kehilangan, insomnia, nafsu makan yang buruk, dan penurunan berat badan. Meskipun gejala tersebut dapat dimengerti atau dianggap sesuai dengan kehilangan, adanya episode depresif mayor di samping respons normal terhadap kehilangan yang signifikan juga harus dipertimbangkan secara hati-hati. Keputusan ini mau tidak mau  membutuhkan pelaksanaan penilaian klinis berdasarkan sejarah individu dan norma budaya untuk ekspresi kesusahan dalam konteks kehilangan."
+	}
+}

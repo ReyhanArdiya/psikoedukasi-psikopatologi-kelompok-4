@@ -12,6 +12,7 @@ import ArticleSection from "../../../components/UI/Layouts/ArticlePage/ArticleSe
 import Manic from "./DSM/Manic";
 import styled from "styled-components";
 import Hypomanic from "./DSM/Hypomanic";
+import MajorDepressive from "./DSM/MajorDepressive";
 
 const BDI = styled(ArticleSection)`
     width: 100%;
@@ -39,7 +40,8 @@ const BD = () => {
 					<SwitchContent transitionKey={i18n.resolvedLanguage}>
 						<BDI id="BD-I">
 							<Manic />
-							<Hypomanic/>
+							<Hypomanic />
+							<MajorDepressive/>
 						</BDI>
 					</SwitchContent>
 				</ArticleSection>
