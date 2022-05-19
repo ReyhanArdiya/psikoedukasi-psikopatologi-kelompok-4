@@ -6,8 +6,7 @@ import cssTransitionAnimations from "../styles/csstransition-animations";
 import { Route, Routes, /* useLocation */ Navigate } from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense } from "react";
-import GlowingBox from "./UI/Fallbacks/GlowingBox";
-import { H1 } from "./UI/Content/Texts";
+import BlackBox from "./UI/Fallbacks/BlackBox";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -35,7 +34,9 @@ const App = () => {
 			<Container id="App">
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
-				<Suspense fallback={<GlowingBox><H1>Loading...</H1></GlowingBox>}>
+				<Suspense
+					fallback={<BlackBox/>}
+				>
 					<Routes>
 						<Route
 							element={<Home/>}

@@ -14,11 +14,14 @@ const Container = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 `;
 
 const Content = styled(GlowingBox)`
-    width: 30em;
-    height: 30em;
+    width: 50vw;
+    height: 50vw;
+    max-width: 30em;
+    max-height: 30em;
     position: relative;
     z-index: 2;
 
