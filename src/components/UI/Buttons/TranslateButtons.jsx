@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import TranslateBtn from "./TranslateBtn";
 
@@ -9,17 +10,31 @@ const Container = styled.div`
     width: 100%;
 `;
 
-const TranslateButtons = ({ i18n }) => {
-	return (
-		<Container className="translate-actions">
-			<TranslateBtn
-				onClick={() => i18n.changeLanguage("id")}
-			>ID</TranslateBtn>
-			<TranslateBtn
-				onClick={() => i18n.changeLanguage("en")}
-			>EN</TranslateBtn>
-		</Container>
-	);
-};
+const TranslateButtons = React.forwardRef(
+
+	/**
+	 *
+	 * @param {{i18n : any, className: string}} props
+	 *
+	 * @param {*} ref
+	 *
+	 * @returns
+	 */
+	({ i18n, className = "" }, ref) => {
+		return (
+			<Container
+				className={`translate-actions ${className}`}
+				ref={ref}
+			>
+				<TranslateBtn
+					onClick={() => i18n.changeLanguage("id")}
+				>ID</TranslateBtn>
+				<TranslateBtn
+					onClick={() => i18n.changeLanguage("en")}
+				>EN</TranslateBtn>
+			</Container>
+		);
+	}
+);
 
 export default TranslateButtons;
