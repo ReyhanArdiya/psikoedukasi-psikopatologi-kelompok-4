@@ -3,7 +3,7 @@ import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import CD from "./Summary/CD/CD";
 import HomeHero from "./HomeHero";
 import Intermezzo from "./Intermezzo";
-import MDDDYSTHYMIA from "./Summary/MDDDYSTHYMIA/MDDDYSTHYMIA";
+import DepressiveDisorders from "./Summary/DepressiveDisorders/DepressiveDisorders";
 import React from "react";
 import Suicide from "./Summary/Suicide/Suicide";
 import Treatment from "./Summary/Treatment/Treatment";
@@ -58,7 +58,7 @@ const Home = () => {
 				</BlurToClear>
 			</Intermezzo>
 
-			<MDDDYSTHYMIA/>
+			<DepressiveDisorders/>
 
 			<Intermezzo>
 				<BlurToClear>

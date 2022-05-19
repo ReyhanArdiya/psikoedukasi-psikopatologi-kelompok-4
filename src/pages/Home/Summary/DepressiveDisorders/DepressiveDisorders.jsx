@@ -14,10 +14,9 @@ const Container = styled(Section)`
 	justify-content: space-around;
 `;
 
-// DepresiveDisorders
-const MDDDYSTHYMIA = () => {
+const DepressiveDisorders = () => {
 	return (
-		<Container id="MDDDYSTHYMIA">
+		<Container id="depressive-disorders">
 			<Layout
 				bigImg={bloomSm}
 				id="MDD"
@@ -54,4 +53,4 @@ const MDDDYSTHYMIA = () => {
 	);
 };
 
-export default MDDDYSTHYMIA;
+export default DepressiveDisorders;
