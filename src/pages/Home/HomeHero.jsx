@@ -8,8 +8,7 @@ import sittingBg from "../../images/content/big/sitting-1920w.jpg";
 
 const Container = styled(Section)`
 	${({ theme }) => theme.others.responsiveBg(sittingSm, sittingBg)}
-	/* background-size: 138%; */
-    position: relative;
+	position: relative;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
@@ -40,18 +39,12 @@ const Container = styled(Section)`
 
 const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 	${({ theme }) => theme.effects.gradientText}
-	position: absolute;
 	text-align: left;
-	top: 0;
-	left: 0;
 	width: 100%;
 `;
 
 const StyledH2 = styled(H2)`
-	position: absolute;
 	text-align: right;
-	bottom: 0;
-	right: 0;
 	width: 100%;
 `;
 
