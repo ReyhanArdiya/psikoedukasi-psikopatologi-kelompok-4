@@ -1,0 +1,34 @@
+{
+	"A": {
+		"text": "Lima (atau lebih) gejala-gejala ini terjadi selama periode waktu 2 minggu, yang mencerminkan suatu perubahan dari fungsi sebelumnya; setidaknya salah satu gejalanya adalah (1) perasaan depresi atau (2) kehilangan minat atau kesenangan dalam beraktivitas.",
+		"nest": {
+			"1": "Perasaan depresi yang terjadi sepanjang dan hampir setiap hari, seperti yang ditunjukkan oleh laporan subjektif (misalnya perasaan sedih, kosong, putus asa) atau pengamatan orang lain (misanya kelihatan menangis).",
+			"2": "Terjadi penurunan minat atau kesenangan pada hampir semua hal, aktivitas sepanjang hari dan terjadi hampir setiap hari (ditunjukkan oleh laporan subjektif ataupun pengamatan orang lain).",
+			"3": "Kehilangan berat badan yang signifikan ketika sedang tidak diet ataupun pertambahan berat badan (misalnya, perubahan lebih dari 5% berat tubuh dalam sebulan) dan terjadi peningkatan atau penurunan selera makan hampir setiap hari.",
+			"4": "Insomnia atau Hipersomnia hampir setiap hari.",
+			"5": "Agitasi yang berlebihan atau terjadi retardasi hampir setiap hari (berdasarkan pengamatan orang lain, bukan hanya perasaan subjektif dari kegelisahan atau terjadi kelambatan berpikir).",
+			"6": "Perasaan lelah atau kehilangan energi hampir setiap hari.",
+			"7": "Perasaan tidak berharga atau rasa bersalah yang berlebihan atau merasa tidak pantas yang terjadi hampir setiap hari.",
+			"8": "Berkurangnya kemampuan berkonsentrasi atau kebimbangan, hampir setiap hari (berdasarkan perasaan subjetif atau pengamatan orang lain).",
+			"9": "Pikiran berulang tentang kematian (bukan hanya takut mati), terdapat ide bunuh diri tanpa rencana yang spesifik atau munculnya suatu percobaan bunuh diri atau ada rencana yang spesifik untuk melakukan bunuh diri."
+		}
+	},
+	"B": {
+		"text": "Gejala-gejala ini menyebabkan penderitaan atau gangguan sosial yang signifikan secara klinis, pekerjaan, atau fungsi penting lainnya."
+	},
+	"C": {
+		"text": "Episode ini tidak disebabkan oleh efek fisiologis suatu zat atau kondisi medis lainnya."
+	},
+	"Note1": {
+		"text": "Kriteria A-C mewakili Major Depressive Episode."
+	},
+	"Note2": {
+		"text": "Respon terhadap kehilangan yang signifikan (misalnya, dukacita, kehancuran finansial, kerugian akibat bencana alam, penyakit atau kelumpuhan medis yang serius) dapat mencakup perasaan kesedihan yang mendalam, perasaan rugi, insomnia, nafsu makan yang buruk, dan penurunan berat badan seperti yang dicatat dalam kriteria A, yang mungkin serupa dengan episode depresif. Meskipun gejala seperti itu dapat dianggap sebagai respon yang normal untuk peristiwa kehilangan, kehadiran Major Depressive Disorder disamping respon normal terhadap kehilangan yang signifikan hendaknya juga dipertimbangkan dengan cermat. Keputusan ini membutuhkan latihan penilaian klinis berdasarkan sejarah individu dan norma-norma budaya untuk pengungkapan penderitaan dalam konteks kehilangan."
+	},
+	"D": {
+		"text": "Peristiwa Major Depressive Disorder tidak dijelaskan dengan lebih baik oleh gangguan schizoaffective, schizophrenia, gangguan schizophreniform, gangguan delusi, atau lainnya yang ditentukan atau tidak ditentukan oleh spektrum  schizophrenia dan gangguan kejiwaan lainnya."
+	},
+	"E": {
+		"text": "Belum pernah memiliki episode manik atau episode hipomanik. <b>Note</b>: pengecualian ini tidak berlaku jika semua episode seperti manik atau hipomanik bersifat substansi termasuk atau disebabkan oleh efek fisiologis kondisi medis lain."
+	}
+}
