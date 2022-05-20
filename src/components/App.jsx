@@ -45,7 +45,8 @@ const App = () => {
 			if (section) {
 				section.scrollIntoView({
 					behavior : "auto",
-					block    : "start"
+					block    : "center",
+					inline   : "center"
 				});
 			}
 		}
