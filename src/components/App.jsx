@@ -32,7 +32,7 @@ const MDD = React.lazy(() => import("../pages/articles/MDD/MDD"));
 const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia/Dysthymia"));
 const PMDD = React.lazy(() => import("../pages/articles/PMDD/PMDD"));
 const BD = React.lazy(() => import("../pages/articles/BD/BD"));
-const CD = React.lazy(() => import("../pages/articles/CD"));
+const CD = React.lazy(() => import("../pages/articles/CD/CD"));
 const Treatment = React.lazy(() => import("../pages/articles/Treatment/Treatment"));
 const Suicide = React.lazy(() => import("../pages/articles/Suicide"));
 
