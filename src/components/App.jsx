@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense, useCallback, useLayoutEffect } from "react";
-import BlackBox from "./UI/Fallbacks/BlackBox";
+import Hourglass from "./UI/Fallbacks/Hourglass";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -68,7 +68,7 @@ const App = () => {
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
 				<Suspense
-					fallback={<BlackBox onUnMount={scrollToSection}/>}
+					fallback={<Hourglass onUnMount={scrollToSection}/>}
 				>
 					<Routes>
 						<Route
