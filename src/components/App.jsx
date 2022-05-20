@@ -30,7 +30,7 @@ const Container = styled.div`
 const Home = React.lazy(() => import("../pages/Home/Home"));
 const MDD = React.lazy(() => import("../pages/articles/MDD/MDD"));
 const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia/Dysthymia"));
-const PMDD = React.lazy(() => import("../pages/articles/PMDD"));
+const PMDD = React.lazy(() => import("../pages/articles/PMDD/PMDD"));
 const BD = React.lazy(() => import("../pages/articles/BD/BD"));
 const CD = React.lazy(() => import("../pages/articles/CD"));
 const Treatment = React.lazy(() => import("../pages/articles/Treatment/Treatment"));
