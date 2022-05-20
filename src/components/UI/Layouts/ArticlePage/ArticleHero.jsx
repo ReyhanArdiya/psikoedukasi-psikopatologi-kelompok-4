@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { H1 } from "../../Content/Texts";
 import Section from "../Section";
+import React from "react";
 
 const Container = styled(Section)`
 	/* Centering */
@@ -51,6 +52,7 @@ const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 `;
 
 const ArticleHero = ({ title, img }) => {
+	console.log("hero");
 	return (
 		<Container
 			className="article-hero"
@@ -62,4 +64,4 @@ const ArticleHero = ({ title, img }) => {
 	);
 };
 
-export default ArticleHero;
+export default React.memo(ArticleHero);

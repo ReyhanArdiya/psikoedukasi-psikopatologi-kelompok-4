@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GoBack from "../../Buttons/GoBack";
 import ArticleHero from "./ArticleHero";
+import React from "react";
 
 const Container = styled.div`
 	align-items: center;
@@ -37,4 +38,4 @@ const ArticlePage = ({
 	);
 };
 
-export default ArticlePage;
+export default React.memo(ArticlePage);
