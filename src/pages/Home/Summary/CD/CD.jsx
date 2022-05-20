@@ -51,7 +51,7 @@ const CD = () => {
 		<Container id="CD">
 			<TitleCard>CD</TitleCard>
 			<BlurToClear>
-				<StyledText>
+				<StyledText id="CD-text">
 					Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika
 					perasaan seseorang berubah-ubah sesuai siklus yang berlaku.
 				</StyledText>

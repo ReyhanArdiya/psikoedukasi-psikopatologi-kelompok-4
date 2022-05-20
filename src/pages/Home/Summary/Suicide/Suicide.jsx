@@ -23,7 +23,7 @@ const Suicide = () => {
 			</FlowerBg>
 
 			<BlurToClear>
-				<StyledText>
+				<StyledText id="Suicide-text">
 					Ada satu hal lagi yang penting untuk dipahami, yaitu tentang
 					bunuh diri &#40;suicide&#41; yang erat kaitannya dengan
 					gangguan mood

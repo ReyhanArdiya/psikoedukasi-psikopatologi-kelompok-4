@@ -18,7 +18,7 @@ const CD = () => {
 	return (
 		<I18nextProvider i18n={i18n}>
 			<ArticlePage
-				goBackLink="/#CD"
+				goBackLink="/#CD-text"
 				heroImg={spiralStaircaseSm}
 				title="Cyclothymic Disorder (CD)"
 			>

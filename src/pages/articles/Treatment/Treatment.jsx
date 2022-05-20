@@ -7,7 +7,7 @@ import Bipolar from "./Bipolar";
 const Treatment = () => {
 	return (
 		<ArticlePage
-			goBackLink="/#Treatment"
+			goBackLink="/#Treatment-read-more"
 			heroImg={holdingHandsSm}
 			title="Penanganan Gangguan Suasana Hati (Mood Disorder)"
 		>

@@ -36,7 +36,7 @@ const Subsection = styled(ArticleSection).attrs({ className : "subsection" })`
 const Suicide = () => {
 	return (
 		<ArticlePage
-			goBackLink="/#Suicide"
+			goBackLink="/#Suicide-text"
 			heroImg={buildingsSm}
 			title="Suicide"
 		>

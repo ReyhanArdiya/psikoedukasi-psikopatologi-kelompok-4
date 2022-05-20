@@ -102,7 +102,10 @@ const TreatmentReadMore = () => {
 			options={{ threshold : 0.5 }}
 		>
 			<Container>
-				<ReadMore path="/articles/treatment" />
+				<ReadMore
+					id="Treatment-read-more"
+					path="/articles/treatment"
+				/>
 				<Images>{images}</Images>
 			</Container>
 		</BlurToClear>
