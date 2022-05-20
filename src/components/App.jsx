@@ -12,6 +12,7 @@ import {
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense, useCallback, useLayoutEffect } from "react";
 import Hourglass from "./UI/Fallbacks/Hourglass";
+import HandleAnyError from "./Error/HandleAnyError";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -67,53 +68,55 @@ const App = () => {
 			<Container id="App">
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
-				<Suspense
-					fallback={<Hourglass onUnMount={scrollToSection}/>}
-				>
-					<Routes>
-						<Route
-							element={<Home/>}
-							path="/"
-						/>
-						<Route path="/articles">
+				<HandleAnyError>
+					<Suspense
+						fallback={<Hourglass onUnMount={scrollToSection}/>}
+					>
+						<Routes>
 							<Route
-								element={<MDD />}
-								path="MDD"
+								element={<Home/>}
+								path="/"
 							/>
+							<Route path="/articles">
+								<Route
+									element={<MDD />}
+									path="MDD"
+								/>
+								<Route
+									element={<Dysthymia />}
+									path="Dysthymia"
+								/>
+								<Route
+									element={<PMDD />}
+									path="PMDD"
+								/>
+								<Route
+									element={<BD />}
+									path="BD"
+								/>
+								<Route
+									element={<CD />}
+									path="CD"
+								/>
+								<Route
+									element={<Treatment />}
+									path="Treatment"
+								/>
+								<Route
+									element={<Suicide />}
+									path="Suicide"
+								/>
+							</Route>
 							<Route
-								element={<Dysthymia />}
-								path="Dysthymia"
+								element={<Navigate
+									replace
+									to="/"
+								         />}
+								path="*"
 							/>
-							<Route
-								element={<PMDD />}
-								path="PMDD"
-							/>
-							<Route
-								element={<BD />}
-								path="BD"
-							/>
-							<Route
-								element={<CD />}
-								path="CD"
-							/>
-							<Route
-								element={<Treatment />}
-								path="Treatment"
-							/>
-							<Route
-								element={<Suicide />}
-								path="Suicide"
-							/>
-						</Route>
-						<Route
-							element={<Navigate
-								replace
-								to="/"
-							         />}
-							path="*"
-						/>
-					</Routes>
-				</Suspense>
+						</Routes>
+					</Suspense>
+				</HandleAnyError>
 				{/* </SwitchContent> */}
 			</Container>
 		</ThemeProvider>

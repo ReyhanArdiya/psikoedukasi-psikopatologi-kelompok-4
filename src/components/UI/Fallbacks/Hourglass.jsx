@@ -25,18 +25,21 @@ const Content = styled(FontAwesomeIcon).attrs({ icon : faHourglass })`
 	max-height: 30em;
 	position: relative;
 	z-index: 2;
+	color: ${({ theme }) => theme.colors.primary[2]};
 
-	@keyframes invert {
+	@keyframes blurToClear {
 		from {
-			color: ${({ theme }) => theme.colors.primary[2]};
+			filter: blur(0px);
+			opacity: 1;
 		}
 
 		to {
-			color: ${({ theme }) => theme.colors.primary[1]};
+            filter: blur(10px);
+		    opacity: 0;
 		}
 	}
 
-	animation-name: invert, ${({ theme }) => theme.animations.rotate};
+	animation-name: blurToClear, ${({ theme }) => theme.animations.rotate};
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
     animation-direction: alternate;
