@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Ol = styled.ol`
 	width: 100%;
-	list-style-position: inside;
+	list-style-position: outside;
+	padding-left: 2em;
 
 	& li {
 		list-style-type: upper-alpha;
