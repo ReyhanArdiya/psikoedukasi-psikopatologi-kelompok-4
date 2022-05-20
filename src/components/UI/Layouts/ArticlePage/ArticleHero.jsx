@@ -52,7 +52,6 @@ const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 `;
 
 const ArticleHero = ({ title, img }) => {
-	console.log("hero");
 	return (
 		<Container
 			className="article-hero"
