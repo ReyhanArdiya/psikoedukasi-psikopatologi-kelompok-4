@@ -90,7 +90,10 @@ const TreatmentReadMore = () => {
 			firstLoad = false;
 		}
 
-		return () => media.removeEventListener("change", changeImages);
+		return () => {
+			media.removeEventListener("change", changeImages);
+			firstLoad = true;
+		};
 	}, []);
 
 	return (
