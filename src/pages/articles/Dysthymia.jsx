@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
 import foggyLakeSm from "../../images/content/small/foggy-lake-640w.jpg";
-import foggyLakeBg from "../../images/content/big/foggy-lake-1920w.jpg";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import { H2, Text } from "../../components/UI/Content/Texts";
@@ -43,10 +42,7 @@ const Dysthymia = () => {
 	return (
 		<ArticlePage
 			goBackLink="/#DYSTHYMIA"
-			heroImg={{
-				big   : foggyLakeBg,
-				small : foggyLakeSm
-			}}
+			heroImg={foggyLakeSm}
 			title="Persistent Depressive Disorder (Dysthymia)"
 		>
 			<ArticleSection>

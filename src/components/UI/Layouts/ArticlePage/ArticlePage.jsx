@@ -23,13 +23,12 @@ const ArticlePage = ({
 	title,
 	children: content,
 	goBackLink = "/",
-	heroImg: { small, big }
+	heroImg
 }) => {
 	return (
 		<Container className="article">
 			<ArticleHero
-				bigImg={big}
-				smallImg={small}
+				img={heroImg}
 				title={title}
 			/>
 			<Content className="article-content">{content}</Content>

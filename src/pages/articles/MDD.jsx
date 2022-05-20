@@ -1,7 +1,6 @@
 import React from "react";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
 import mountainSM from "../../images/content/small/mountain-640w.jpg";
-import mountainBg from "../../images/content/big/mountain-1920w.jpg";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import { H2, Text } from "../../components/UI/Content/Texts";
 import TranslateButtons from "../../components/UI/Buttons/TranslateButtons";
@@ -18,10 +17,7 @@ const MDD = () => {
 	return (
 		<ArticlePage
 			goBackLink="/#MDD"
-			heroImg={{
-				big   : mountainBg,
-				small : mountainSM
-			}}
+			heroImg={mountainSM}
 			title="Major Depressive Disorder (MDD)"
 		>
 			<ArticleSection>

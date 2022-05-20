@@ -1,7 +1,6 @@
 import React from "react";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
 import buildingsSm from "../../images/content/small/buildings-640w.jpg";
-import buildingsBg from "../../images/content/big/buildings-1920w.jpg";
 import styled, { css } from "styled-components";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
@@ -38,10 +37,7 @@ const Suicide = () => {
 	return (
 		<ArticlePage
 			goBackLink="/#Suicide"
-			heroImg={{
-				big   : buildingsBg,
-				small : buildingsSm
-			}}
+			heroImg={buildingsSm}
 			title="Suicide"
 		>
 			<Section>

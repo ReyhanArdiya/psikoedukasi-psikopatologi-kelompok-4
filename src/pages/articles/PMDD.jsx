@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
 import whiteRosesSm from "../../images/content/small/white-roses-640w.jpg";
-import whiteRosesBg from "../../images/content/big/white-roses-1920w.jpg";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import { H2, Text } from "../../components/UI/Content/Texts";
@@ -18,10 +17,7 @@ const PMDD = () => {
 	return (
 		<ArticlePage
 			goBackLink="/#PMDD"
-			heroImg={{
-				big   : whiteRosesBg,
-				small : whiteRosesSm,
-			}}
+			heroImg={whiteRosesSm}
 			title="Premenstrual Dysphoric Disorder (PMDD)"
 		>
 			<ArticleSection>

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { H1 } from "../../Content/Texts";
 import Section from "../Section";
 
@@ -16,22 +16,10 @@ const Container = styled(Section)`
 	background-size: cover;
 
 	/* Hopefully this will save bandwith */
-	${({ theme, smallImg }) => {
-		return theme.breakpoints.small(css`
-			background-image: url(${smallImg});
-		`);
-	}}
-	${({ theme, bigImg }) => {
-		return theme.breakpoints.big(css`
-			background-image: url(${bigImg});
-		`);
-	}}
+	background-image: url(${({ img }) => img});
 
-	/* REFAC use this but test it out first */
-	${({ theme, smallImg, bigImg }) => theme.others.responsiveBg(smallImg, bigImg)}
-
-    /* Blur */
-    position: relative;
+	/* Blur */
+	position: relative;
 
 	.hero-title:first-of-type {
 		z-index: 1;
@@ -62,12 +50,11 @@ const GradientH1 = styled(H1).attrs({ className : "hero-title" })`
 	width: 80%;
 `;
 
-const ArticleHero = ({ title, smallImg, bigImg }) => {
+const ArticleHero = ({ title, img }) => {
 	return (
 		<Container
-			bigImg={bigImg}
 			className="article-hero"
-			smallImg={smallImg}
+			img={img}
 		>
 			<GradientH1>{title}</GradientH1>
 			<GradientH1>{title}</GradientH1>

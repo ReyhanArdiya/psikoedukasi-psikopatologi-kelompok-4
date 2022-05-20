@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import ArticlePage from "../../components/UI/Layouts/ArticlePage/ArticlePage";
 import spiralStaircaseSm from "../../images/content/small/spiral-staircase-640w.jpg";
-import spiralStaircaseBg from "../../images/content/big/spiral-staircase-1920w.jpg";
 import ArticleSection from "../../components/UI/Layouts/ArticlePage/ArticleSection";
 import BlurToClear from "../../components/UI/Animations/BlurToClear";
 import { H2, Text } from "../../components/UI/Content/Texts";
@@ -17,10 +16,7 @@ const CD = () => {
 	return (
 		<ArticlePage
 			goBackLink="/#CD"
-			heroImg={{
-				big   : spiralStaircaseBg,
-				small : spiralStaircaseSm
-			}}
+			heroImg={spiralStaircaseSm}
 			title="Cyclothymic Disorder (CD)"
 		>
 			<ArticleSection>
