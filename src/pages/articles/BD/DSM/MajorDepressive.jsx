@@ -16,7 +16,7 @@ const MajorDepressive = ({ complete = false }) => {
 
 	return (
 		<Container>
-			<H2>Episode Depresif Mayor</H2>
+			<H2>{t("title.text")}</H2>
 
 			<Ol>
 				<Li>

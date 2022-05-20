@@ -1,4 +1,7 @@
 {
+	"title": {
+		"text": "Major Depressive Episode"
+	},
 	"A": {
 		"text": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Note: Do not include symptoms that are clearly attributable to another medical condition",
 		"nest": {

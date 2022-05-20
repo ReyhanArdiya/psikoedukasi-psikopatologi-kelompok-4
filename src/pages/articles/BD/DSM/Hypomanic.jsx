@@ -16,7 +16,7 @@ const Hypomanic = ({ complete = false }) => {
 
 	return (
 		<Container>
-			<H2>Episode Hipomanik</H2>
+			<H2>{t("title.text")}</H2>
 
 			<Ol>
 				<Li>{t("A.text")}</Li>
