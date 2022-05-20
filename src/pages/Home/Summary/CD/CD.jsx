@@ -28,6 +28,17 @@ const Container = styled(Section)`
 		background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 		z-index: 0;
 	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000000ae;
+		z-index: 0;
+	}
 `;
 
 const StyledText = styled(Text)`
@@ -40,7 +51,7 @@ const CD = () => {
 		<Container id="CD">
 			<TitleCard>CD</TitleCard>
 			<BlurToClear>
-				<StyledText>
+				<StyledText id="CD-text">
 					Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika
 					perasaan seseorang berubah-ubah sesuai siklus yang berlaku.
 				</StyledText>

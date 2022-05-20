@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from "react";
 
 const ArticleSection = styled.section.attrs({ className : "article-section", })`
     align-items: center;
@@ -11,4 +12,4 @@ const ArticleSection = styled.section.attrs({ className : "article-section", })`
     max-width: 70em;
 `;
 
-export default ArticleSection;
+export default React.memo(ArticleSection);

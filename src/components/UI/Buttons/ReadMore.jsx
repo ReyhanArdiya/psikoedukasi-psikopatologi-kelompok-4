@@ -18,9 +18,10 @@ const ReadMore = React.forwardRef(
 	 *
 	 * @param {import("react").ForwardedRef} ref
 	 */
-	({ path = "/", pos = "top" }, ref) => {
+	({ path = "/", pos = "top", id = "" }, ref) => {
 		return (
 			<StyledLink
+				id={id}
 				ref={ref}
 				to={path}
 			>

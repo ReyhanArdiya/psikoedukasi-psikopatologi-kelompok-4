@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GoBack from "../../Buttons/GoBack";
 import ArticleHero from "./ArticleHero";
+import React from "react";
 
 const Container = styled.div`
 	align-items: center;
@@ -23,13 +24,12 @@ const ArticlePage = ({
 	title,
 	children: content,
 	goBackLink = "/",
-	heroImg: { small, big }
+	heroImg
 }) => {
 	return (
 		<Container className="article">
 			<ArticleHero
-				bigImg={big}
-				smallImg={small}
+				img={heroImg}
 				title={title}
 			/>
 			<Content className="article-content">{content}</Content>
@@ -38,4 +38,4 @@ const ArticlePage = ({
 	);
 };
 
-export default ArticlePage;
+export default React.memo(ArticlePage);

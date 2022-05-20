@@ -12,7 +12,7 @@
 		}
 	},
 	"C": {
-		"text": "One (or more) of the following symptoms must additionally be present, to reach a total of five symptoms when combined with symptoms from Criterion B above.",
+		"text": "One (or more) of the following symptoms must additionally be present, to reach a total of five symptoms when combined with symptoms from Criterion B above:",
 		"nest": {
 			"1": "Decreased interest in usual activities (e.g., work, school, friends, hobbies).",
 			"2": "Subjective difficulty in concentration.",
@@ -30,12 +30,12 @@
 		"text": "The symptoms are associated with clinically significant distress or interference with work, school, usual social activities, or relationships with others (e.g., avoidance of social activities; decreased productivity and efficiency at work, school, or home)."
 	},
 	"E": {
-		"text": "The disturbance is not merely an exacerbation of the symptoms of another disorder, such as major depressive disorder, panic disorder, persistent depressive disorder (dysthymia), or a personality disorder (although it may co-occur with any of these disorders)"
+		"text": "The disturbance is not merely an exacerbation of the symptoms of another disorder, such as major depressive disorder, panic disorder, persistent depressive disorder (dysthymia), or a personality disorder (although it may co-occur with any of these disorders)."
 	},
 	"F": {
-		"text": "Criterion A should be confirmed by prospective daily ratings during at least two symptomatic cycles. (<b>Note</b>: The diagnosis may be made provisionally prior to this confirmation.)"
+		"text": "Criterion A should be confirmed by prospective daily ratings during at least two symptomatic cycles. (<b>Note</b>: The diagnosis may be made provisionally prior to this confirmation)."
 	},
 	"G": {
-		"text": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment) or another medical condition (e.g., hyperthyroidism)"
+		"text": "The symptoms are not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment) or another medical condition (e.g., hyperthyroidism)."
 	}
 }

@@ -1,4 +1,7 @@
 {
+	"title": {
+		"text": "Hypomanic Episode"
+	},
 	"A": {
 		"text": "A distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased activity or energy, lasting at least 4 consecutive days and present most of the day, nearly every day."
 	},
@@ -27,6 +30,6 @@
 		"text": "The episode is not attributable to the physiological effects of a substance (e.g., a drug of abuse, a medication, other treatment)."
 	},
 	"Note1": {
-		"text": "A full hypomanic episode that emerges during antidepressant treatment (e.g., medication, electroconvulsive therapy) but persists at a fully syndromal level beyond the physiological effect of that treatment is sufficient evidence for a hypomanie episode diagnosis. However, caution is indicated so that one or two symptoms (particularly increased irritability, edginess, or agitation following antidepressant use) are not taken as sufficient for diagnosis of a hypomanie episode, nor necessarily indicative of a bipolar diathesis."
+		"text": "A full hypomanic episode that emerges during antidepressant treatment (e.g., medication, electroconvulsive therapy) but persists at a fully syndromal level beyond the physiological effect of that treatment is sufficient evidence for a hypomanic episode diagnosis. However, caution is indicated so that one or two symptoms (particularly increased irritability, edginess, or agitation following antidepressant use) are not taken as sufficient for diagnosis of a hypomanic episode, nor necessarily indicative of a bipolar diathesis."
 	}
 }

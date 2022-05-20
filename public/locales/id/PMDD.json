@@ -5,22 +5,22 @@
 	"B": {
 		"text": "Satu (atau lebih) gejala-gejala dibawah ini harus muncul:",
 		"nest": {
-			"1": "Ada tanda-tanda afek yang labil (seperti perubahan emosi cepat, tiba-tiba merasa sedih, atau lebih sensitif terhadap penolakan)",
-			"2": "Ada tanda-tanda iritabilitas atau kemarahan atau konflik interpersonal yang meningkat",
-			"3": "Ada tanda-tanda mood depresi, merasa keputusasaan atau pikiran yang merendahkan diri",
-			"4": "Ada tanda-tanda kecemasan, ketegangan dan atau perasaan gelisah"
+			"1": "Ada tanda-tanda afek yang labil (seperti perubahan emosi cepat, tiba-tiba merasa sedih, atau lebih sensitif terhadap penolakan).",
+			"2": "Ada tanda-tanda iritabilitas atau kemarahan atau konflik interpersonal yang meningkat.",
+			"3": "Ada tanda-tanda mood depresi, merasa keputusasaan atau pikiran yang merendahkan diri.",
+			"4": "Ada tanda-tanda kecemasan, ketegangan dan atau perasaan gelisah."
 		}
 	},
 	"C": {
 		"text": "Satu (atau lebih) gejala-gejala dibawah ini harus muncul untuk bisa mencapai setidaknya 5 gejala ketika digabungkan dengan gejala yang muncul pada kriteria B diatas:",
 		"nest": {
-			"1": "Menurunnya ketertarikan terhadap aktivitas biasa (seperti kerja, sekolah, pertemanan dan hobi)",
-			"2": "Kesulitan berkonsentrasi yang subjektif",
-			"3": "Lesu, mudah lelah atau ada tanda-tanda sedikit energi",
-			"4": "Ada tanda-tanda perubahan nafsu, kelebihan makan atau mengidam makanan tertentu",
-			"5": "Hipersomnia atau insomnia",
-			"6": "Ada perasaan kewalahan atau kehilangan kendali",
-			"7": "Gejala fisik seperti payudara yang lunak atau membengkak, sakit pada persendian atau otot, perasaan kembung atau berat badan naik"
+			"1": "Menurunnya ketertarikan terhadap aktivitas biasa (seperti kerja, sekolah, pertemanan dan hobi).",
+			"2": "Kesulitan berkonsentrasi yang subjektif.",
+			"3": "Lesu, mudah lelah atau ada tanda-tanda sedikit energi.",
+			"4": "Ada tanda-tanda perubahan nafsu, kelebihan makan atau mengidam makanan tertentu.",
+			"5": "Hipersomnia atau insomnia.",
+			"6": "Ada perasaan kewalahan atau kehilangan kendali.",
+			"7": "Gejala fisik seperti payudara yang lunak atau membengkak, sakit pada persendian atau otot, perasaan kembung atau berat badan naik."
 		}
 	},
 	"Note1": {
@@ -33,7 +33,7 @@
 		"text": "Gangguan yang dialami bukan hanya gejala-gejala dari gangguan lain yang memburuk, seperti gangguan depresi mayor, gangguan panik, gangguan depresi persisten (distimia) atau gangguan kepribadian (namun gangguan ini dapat terjadi bersamaan dengan gangguan-ganggaun lain tersebut)."
 	},
 	"F": {
-		"text": "Kriteria A sebaiknya dikonfirmasi melalui penilaian harian selama setidaknya 2 siklus simtomatik (<b>Note</b>: diagnosa bisa dibuat untuk sementara waktu sebelum konfirmasi ini)"
+		"text": "Kriteria A sebaiknya dikonfirmasi melalui penilaian harian selama setidaknya 2 siklus simtomatik (<b>Note</b>: diagnosa bisa dibuat untuk sementara waktu sebelum konfirmasi ini)."
 	},
 	"G": {
 		"text": "Gejala-gejala bukan merupakan dampak dari efek fisiologis penggunaan zat-zat (seperti penyalahgunaan narkoba, obat atau perawatan lainnya) atau kondisi kesehatan lainnya (seperti hipertiroidisme)."

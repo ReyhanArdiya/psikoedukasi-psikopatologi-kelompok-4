@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 // import SwitchContent from "./UI/Animations/SwitchContent";
 import React, { Suspense, useCallback, useLayoutEffect } from "react";
-import BlackBox from "./UI/Fallbacks/BlackBox";
+import Hourglass from "./UI/Fallbacks/Hourglass";
 
 const GlobalStyle = createGlobalStyle`
 	${cssReset}
@@ -27,12 +27,12 @@ const Container = styled.div`
 `;
 
 // Lazy vitches
-const MDD = React.lazy(() => import("../pages/articles/MDD"));
 const Home = React.lazy(() => import("../pages/Home/Home"));
-const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia"));
-const PMDD = React.lazy(() => import("../pages/articles/PMDD"));
+const MDD = React.lazy(() => import("../pages/articles/MDD/MDD"));
+const Dysthymia = React.lazy(() => import("../pages/articles/Dysthymia/Dysthymia"));
+const PMDD = React.lazy(() => import("../pages/articles/PMDD/PMDD"));
 const BD = React.lazy(() => import("../pages/articles/BD/BD"));
-const CD = React.lazy(() => import("../pages/articles/CD"));
+const CD = React.lazy(() => import("../pages/articles/CD/CD"));
 const Treatment = React.lazy(() => import("../pages/articles/Treatment/Treatment"));
 const Suicide = React.lazy(() => import("../pages/articles/Suicide"));
 
@@ -45,7 +45,8 @@ const App = () => {
 			if (section) {
 				section.scrollIntoView({
 					behavior : "auto",
-					block    : "start"
+					block    : "center",
+					inline   : "center"
 				});
 			}
 		}
@@ -67,7 +68,7 @@ const App = () => {
 				{/* BUG using filter 0 on parent breaks background-filter on childrens */}
 				{/* <SwitchContent transitionKey={location.key}> */}
 				<Suspense
-					fallback={<BlackBox onUnMount={scrollToSection}/>}
+					fallback={<Hourglass onUnMount={scrollToSection}/>}
 				>
 					<Routes>
 						<Route
