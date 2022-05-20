@@ -1,6 +1,6 @@
 {
 	"A": {
-		"text": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. Note: In children and adolescents, mood can be irritable and duration must be at least 1 year."
+		"text": "Depressed mood for most of the day, for more days than not, as indicated by either subjective account or observation by others, for at least 2 years. <b>Note</b>: In children and adolescents, mood can be irritable and duration must be at least 1 year."
 	},
 	"B": {
 		"text": "Presence, while depressed, of two (or more) of the following:",
@@ -20,7 +20,7 @@
 		"text": "Criteria for a major depressive disorder may be continuously present for 2 years."
 	},
 	"E": {
-		"text": "There has never been a manic episode or a hypomanie episode, and criteria have never been met for cyclothymic disorder."
+		"text": "There has never been a manic episode or a hypomanic episode, and criteria have never been met for cyclothymic disorder."
 	},
 	"F": {
 		"text": "The disturbance is not better explained by a persistent schizoaffective disorder, schizophrenia, delusional disorder, or other specified or unspecified schizophrenia spectrum and other psychotic disorder."
