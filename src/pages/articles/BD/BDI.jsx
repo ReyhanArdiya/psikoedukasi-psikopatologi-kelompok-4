@@ -10,6 +10,7 @@ import Hypomanic from "./DSM/Hypomanic";
 import MajorDepressive from "./DSM/MajorDepressive";
 import Manic from "./DSM/Manic";
 import createNewi18n from "../../../helpers/create-new-i18n";
+import React from "react";
 
 const DSM = styled(DSMLayout)`
 	grid-template-areas:
@@ -48,4 +49,4 @@ const BDI = () => {
 	);
 };
 
-export default BDI;
+export default React.memo(BDI);

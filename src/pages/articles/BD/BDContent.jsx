@@ -28,7 +28,7 @@ const Fact = styled(ArticleSection)`
 	grid-area: fact;
 `;
 
-const BDContent = ({ propsDestruct }) => {
+const BDContent = () => {
 	return (
 		<ArticleSection>
 			<BlurToClear>
@@ -97,4 +97,4 @@ const BDContent = ({ propsDestruct }) => {
 	);
 };
 
-export default BDContent;
+export default React.memo(BDContent);

@@ -9,6 +9,7 @@ import DSMLayout from "./DSMLayout";
 import Hypomanic from "./DSM/Hypomanic";
 import MajorDepressive from "./DSM/MajorDepressive";
 import createNewi18n from "../../../helpers/create-new-i18n";
+import React from "react";
 
 const DSM = styled(DSMLayout)`
 	grid-template-areas:
@@ -43,4 +44,4 @@ const BDII = () => {
 	);
 };
 
-export default BDII;
+export default React.memo(BDII);
