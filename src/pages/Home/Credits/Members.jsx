@@ -147,7 +147,7 @@ const Members = () => {
 						}
 					}}
 					profileInfo={{
-						name : "Fitrah Rohimah",
+						name : "Fithrah Rohimah",
 						nim  : "15000120140342"
 					}}
 				/>
