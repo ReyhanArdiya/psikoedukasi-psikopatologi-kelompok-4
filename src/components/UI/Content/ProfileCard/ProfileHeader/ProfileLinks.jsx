@@ -32,6 +32,10 @@ const StyledFa = styled(FontAwesomeIcon)`
  * @returns
  */
 const ProfileLinks = ({ links, className }) => {
+	if (!links || links.length === 0) {
+		return null;
+	}
+
 	const items = links.map(({ href, icon }) => {
 		return (
 			<li
