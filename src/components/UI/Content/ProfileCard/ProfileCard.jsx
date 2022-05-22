@@ -6,8 +6,8 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Container = styled.article`
 	font-size: 1em;
     background: ${({ theme }) => theme.colors.primary[2]};
-    width: max-content;
-    height: max-content;
+    width: min-content;
+    height: min-content;
     ${({ theme }) => theme.others.borderRadius}
     ${({ theme }) => theme.effects.dropShadow}
 `;
