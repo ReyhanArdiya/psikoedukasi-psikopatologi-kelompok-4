@@ -7,6 +7,7 @@ import reyhan from "../../../images/members/reyhan.jpg";
 import rifqi from "../../../images/members/rifqi.jpg";
 import styled from "styled-components";
 import wawan from "../../../images/members/wawan.jpg";
+import kartika from "../../../images/members/kartika.jpg";
 import {
 	faGithub,
 	faInstagram,
@@ -254,8 +255,27 @@ const Members = () => {
 						}
 					}}
 					profileInfo={{
-						name : "Rifqi Prime A",
+						name : "Rifqi Prime A.",
 						nim  : "15000117140114"
+					}}
+				/>
+			</BlurToClear>
+
+			<BlurToClear once>
+				<ProfileCard
+					id="dosen-kartika"
+					key={uuidv4()}
+					profileHeader={{
+						profilePic : {
+							alt   : "Dosen Kartika Sari Dewi, S.Psi., M.Psi.",
+							img   : kartika,
+							pos   : "center",
+							title : "Dosen Kartika Sari Dewi, S.Psi., M.Psi."
+						}
+					}}
+					profileInfo={{
+						name : "Kartika Sari Dewi, S.Psi., M.Psi.",
+						nim  : "Dosen Pengampu"
 					}}
 				/>
 			</BlurToClear>
