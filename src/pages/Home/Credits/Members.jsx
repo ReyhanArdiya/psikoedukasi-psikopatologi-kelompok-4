@@ -7,6 +7,7 @@ import reyhan from "../../../images/members/reyhan.jpg";
 import rifqi from "../../../images/members/rifqi.jpg";
 import styled from "styled-components";
 import wawan from "../../../images/members/wawan.jpg";
+import kartika from "../../../images/members/kartika.jpg";
 import {
 	faGithub,
 	faInstagram,
@@ -21,19 +22,14 @@ const position = "-50%";
 const Container = styled(Section)`
 	font-size: 1.6em;
 	height: max-content;
+	width: 100%;
+
 	display: grid;
 	grid-auto-columns: 1fr;
 	grid-auto-rows: 1fr;
-	grid-template-areas:
-		"m1"
-		"m2"
-		"m3"
-		"m4"
-		"m5"
-		"m6";
 	align-items: center;
 	justify-items: center;
-	gap: 8em;
+	row-gap: 8em;
 	margin-bottom: 3em;
 	padding-top: 7em;
 
@@ -41,39 +37,42 @@ const Container = styled(Section)`
 		z-index: 1;
 	}
 
-	.profile-card:first-of-type {
-		grid-area: m1;
-	}
-
-	.profile-card:nth-of-type(2) {
-		grid-area: m2;
-	}
-
-	.profile-card:nth-of-type(3) {
-		grid-area: m3;
-	}
-
-	.profile-card:nth-of-type(4) {
-		grid-area: m4;
-	}
-
-	.profile-card:nth-of-type(5) {
-		grid-area: m5;
-	}
-
-	.profile-card:nth-of-type(6) {
-		grid-area: m6;
-	}
-
 	@media screen and (min-width: 59.375em) {
 		grid-template-areas:
 			"m1 m2 m3"
-			"m4 m5 m6";
-		gap: 0;
-		padding-top: 0;
-		height: 100vh;
+			"m4 m5 m6"
+			"m7 m7 m7"
+			;
+			padding-top: 0;
 		min-height: 700px;
-		margin-bottom: 0;
+
+		.profile-card:first-of-type {
+			grid-area: m1;
+		}
+
+		.profile-card:nth-of-type(2) {
+			grid-area: m2;
+		}
+
+		.profile-card:nth-of-type(3) {
+			grid-area: m3;
+		}
+
+		.profile-card:nth-of-type(4) {
+			grid-area: m4;
+		}
+
+		.profile-card:nth-of-type(5) {
+			grid-area: m5;
+		}
+
+		.profile-card:nth-of-type(6) {
+			grid-area: m6;
+		}
+
+		.profile-card:nth-of-type(7) {
+			grid-area: m7;
+		}
 	}
 
 	/* Statue decos */
@@ -148,7 +147,7 @@ const Members = () => {
 						}
 					}}
 					profileInfo={{
-						name : "Fitrah Rohimah",
+						name : "Fithrah Rohimah",
 						nim  : "15000120140342"
 					}}
 				/>
@@ -256,8 +255,27 @@ const Members = () => {
 						}
 					}}
 					profileInfo={{
-						name : "Rifqi Prime A",
+						name : "Rifqi Prime A.",
 						nim  : "15000117140114"
+					}}
+				/>
+			</BlurToClear>
+
+			<BlurToClear once>
+				<ProfileCard
+					id="dosen-kartika"
+					key={uuidv4()}
+					profileHeader={{
+						profilePic : {
+							alt   : "Dosen Kartika Sari Dewi, S.Psi., M.Psi.",
+							img   : kartika,
+							pos   : "center",
+							title : "Dosen Kartika Sari Dewi, S.Psi., M.Psi."
+						}
+					}}
+					profileInfo={{
+						name : "Kartika Sari Dewi, S.Psi., M.Psi.",
+						nim  : "Dosen Pengampu"
 					}}
 				/>
 			</BlurToClear>
