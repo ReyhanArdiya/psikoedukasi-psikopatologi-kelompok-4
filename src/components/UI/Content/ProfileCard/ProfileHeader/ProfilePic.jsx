@@ -8,6 +8,7 @@ const Container = styled.div`
 	height: 100%;
 	position: relative;
 	${({ theme }) => theme.others.borderRadius}
+	${({ theme }) => theme.effects.dropShadow}
 `;
 
 const ProfileImg = styled.img`

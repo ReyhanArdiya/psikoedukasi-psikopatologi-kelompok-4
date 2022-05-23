@@ -20,6 +20,12 @@ const Intro = () => {
 			<BlurToClear>
 				<H2>KELOMPOK 4</H2>
 			</BlurToClear>
+			<BlurToClear>
+				<H2>KELAS 5 PSIKOPATOLOGI</H2>
+			</BlurToClear>
+			<BlurToClear>
+				<H2>FAKULTAS PSIKOLOGI UNDIP</H2>
+			</BlurToClear>
 		</Container>
 	);
 };
