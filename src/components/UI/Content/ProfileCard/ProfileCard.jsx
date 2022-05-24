@@ -5,11 +5,11 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Container = styled.article`
 	font-size: 1em;
-    background: ${({ theme }) => theme.colors.primary[2]};
-    width: min-content;
-    height: min-content;
-    ${({ theme }) => theme.others.borderRadius}
-    ${({ theme }) => theme.effects.dropShadow}
+	background: ${({ theme }) => theme.colors.primary[2]};
+	width: min-content;
+	height: min-content;
+	${({ theme }) => theme.others.borderRadius}
+	${({ theme }) => theme.effects.dropShadow}
 `;
 
 const ProfileCard = React.forwardRef(
@@ -23,10 +23,10 @@ const ProfileCard = React.forwardRef(
 	 *		title?: string;
 	 *		pos?: string;
 	 *	},
-	 *	links: [{
+	 *	links: {
 	 *		icon: SVGElement;
 	 *		href: string;
-	 *	}]
+	 *	}[]
 	 * },
 	 * profileInfo: {
 	 * 	name: string,
@@ -38,12 +38,15 @@ const ProfileCard = React.forwardRef(
 	 *
 	 * @param {import("react").ForwardedRef} ref
 	 */
-	({
-		profileHeader: { profilePic, links },
-		profileInfo: { name, nim },
-		className = "",
-		id = ""
-	}, ref) => {
+	(
+		{
+			profileHeader: { profilePic, links },
+			profileInfo: { name, nim },
+			className = "",
+			id = ""
+		},
+		ref
+	) => {
 		return (
 			<Container
 				className={`profile-card ${className}`}
