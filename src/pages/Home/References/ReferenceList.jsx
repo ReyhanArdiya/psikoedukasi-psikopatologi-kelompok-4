@@ -8,9 +8,9 @@ const Container = styled(Ol)`
 
 const ReferenceItem = styled(Li)`
     list-style-type: none !important;
-    padding-left: 3em;
-    text-indent: -3em;
-
+    --indentation: 3em;
+    padding-left: var(--indentation);
+    text-indent: calc(-1 * var(--indentation));
 `;
 
 /**
