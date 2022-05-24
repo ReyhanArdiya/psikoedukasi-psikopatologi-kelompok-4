@@ -130,7 +130,7 @@ const members = [
 		{
 			alt   : "Dosen Kartika Sari Dewi, S.Psi., M.Psi.",
 			img   : kartika,
-			pos   : "center",
+			pos   : "100% 30%",
 			title : "Dosen Kartika Sari Dewi, S.Psi., M.Psi."
 		},
 		"dosen-kartika"

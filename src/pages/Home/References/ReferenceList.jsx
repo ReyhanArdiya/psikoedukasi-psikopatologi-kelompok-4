@@ -25,6 +25,7 @@ const ReferenceItem = styled(Li)`
  * @returns
  */
 const ReferenceList = ({ references }) => {
+	// TODO should i make this two columns on big screen?
 	const referenceItems = references
 		.sort((a, b) => a > b ? 1 : -1)
 		.map(
