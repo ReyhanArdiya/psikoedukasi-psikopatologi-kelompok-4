@@ -44,7 +44,7 @@ const ProfileLinks = ({ links, className }) => {
 			>
 				<StyledLink
 					href={href}
-					target={0}
+					target="_blank"
 				>
 					<StyledFa icon={icon}/>
 				</StyledLink>
