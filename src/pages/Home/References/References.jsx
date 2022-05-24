@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BlurToClear from "../../../components/UI/Animations/BlurToClear";
 import { H2 } from "../../../components/UI/Content/Texts";
 import Intermezzo from "../Intermezzo";
 import ReferenceList from "./ReferenceList";
@@ -15,7 +16,9 @@ const Container = styled(Intermezzo)`
 const References = ({ references }) => {
 	return (
 		<Container id="references">
-			<H2>REFERENCES</H2>
+			<BlurToClear>
+				<H2>REFERENCES</H2>
+			</BlurToClear>
 			<ReferenceList references={references}/>
 		</Container>
 	);

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Li from "../../../components/UI/Layouts/List/Li";
 import Ol from "../../../components/UI/Layouts/List/Ol";
 import { v4 as uuidv4 } from "uuid";
+import BlurToClear from "../../../components/UI/Animations/BlurToClear";
 
 const Container = styled(Ol)`
 	padding: 0;
@@ -27,9 +28,12 @@ const ReferenceList = ({ references }) => {
 	const referenceItems = references
 		.sort((a, b) => a > b ? 1 : -1)
 		.map(
-			reference => <ReferenceItem key={uuidv4()}>
-				{reference}
-			</ReferenceItem>
+			reference => <BlurToClear>
+				<ReferenceItem key={uuidv4()}>
+					{reference}
+				</ReferenceItem>
+			</BlurToClear>
+
 		);
 
 	return <Container>{referenceItems}</Container>;
