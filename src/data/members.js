@@ -25,6 +25,7 @@ const members = [
 		{
 			alt   : "Member Alissa",
 			img   : alissa,
+			pos   : "center",
 			title : "Member Alissa"
 		},
 		"member-alissa"
@@ -41,6 +42,7 @@ const members = [
 		{
 			alt   : "Member Fithrah",
 			img   : fithrah,
+			pos   : "center",
 			title : "Member Fithrah"
 		},
 		"member-fithrah"
@@ -57,12 +59,13 @@ const members = [
 		{
 			alt   : "Member Wawan",
 			img   : wawan,
+			pos   : "bottom",
 			title : "Member Wawan"
 		},
 		"member-wawan"
 	),
 	new Member(
-		"M. Reyhan Ardiya P.W.",
+		"M. Reyhan A.P.W",
 		"15000120120008",
 		[
 			{
@@ -81,6 +84,7 @@ const members = [
 		{
 			alt   : "Member Reyhan",
 			img   : reyhan,
+			pos   : "100% 30%",
 			title : "Member Reyhan"
 		},
 		"member-reyhan"
@@ -97,6 +101,7 @@ const members = [
 		{
 			alt   : "Member Novita",
 			img   : novita,
+			pos   : "center",
 			title : "Member Novita"
 		},
 		"member-novita"
@@ -113,6 +118,7 @@ const members = [
 		{
 			alt   : "Member Rifqi",
 			img   : rifqi,
+			pos   : "center",
 			title : "Member Rifqi"
 		},
 		"member-rifqi"
@@ -124,6 +130,7 @@ const members = [
 		{
 			alt   : "Dosen Kartika Sari Dewi, S.Psi., M.Psi.",
 			img   : kartika,
+			pos   : "center",
 			title : "Dosen Kartika Sari Dewi, S.Psi., M.Psi."
 		},
 		"dosen-kartika"
