@@ -17,7 +17,7 @@ const Intermezzo = ({ children, id = "", className = "" }) => {
 	return (
 		<Container
 			className={className}
-			id={`intermezzo-${idCounter++}`}
+			id={id || `intermezzo-${idCounter++}`}
 		>
 			{children}
 		</Container>

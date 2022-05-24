@@ -13,6 +13,8 @@ import whiteFlowerSm from "../../images/content/small/white-flower-640w.jpg";
 import { Text } from "../../components/UI/Content/Texts";
 import StatueIntermezzo from "./StatueIntermezzo";
 import Credits from "./Credits/Credits";
+import References from "./References/References";
+import contentReferences from "../../data/content-references";
 
 const Container = styled.div`
 	/* CMT Im still on the fence about this */
@@ -156,6 +158,8 @@ const Home = () => {
 					<Text>bye.</Text>
 				</BlurToClear>
 			</Intermezzo>
+
+			<References references={contentReferences}/>
 
 			<Credits/>
 

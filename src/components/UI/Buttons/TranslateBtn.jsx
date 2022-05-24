@@ -7,8 +7,11 @@ const Button = styled.button`
 	${({ theme }) => theme.text.titleCard}
     ${({ theme }) => theme.others.borderRadius}
 
-    border: none;
-	outline: none;
+    &:not(:focus-visible) {
+		border: none;
+		outline: none;
+	}
+
 	margin: 0;
 	padding: 0;
 	color: ${({ theme }) => theme.colors.primary[2]};
