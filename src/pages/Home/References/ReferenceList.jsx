@@ -16,6 +16,9 @@ const ReferenceItem = styled(Li)`
 	--indentation: 3em;
 	padding-left: var(--indentation);
 	text-indent: calc(-1 * var(--indentation));
+	i {
+		font-style: italic;
+	}
 `;
 
 /**
@@ -30,9 +33,9 @@ const ReferenceList = ({ references }) => {
 		.sort((a, b) => a > b ? 1 : -1)
 		.map(
 			reference => <BlurToClear key={uuidv4()}>
-				<ReferenceItem>
-					{reference}
-				</ReferenceItem>
+				<ReferenceItem dangerouslySetInnerHTML={
+					{ __html : reference }}
+				/>
 			</BlurToClear>
 
 		);
