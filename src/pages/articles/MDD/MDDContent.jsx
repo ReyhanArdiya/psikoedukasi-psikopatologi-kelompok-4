@@ -25,7 +25,7 @@ const MDDContent = () => {
 			<BlurToClear>
 				<Text>
 					Menurut Oltmans & Emery (dalam Chandrawijaya & Yunanto,
-					2019) Major Depressive Disorder (MDD) merupakan salah satu
+					2021) Major Depressive Disorder (MDD) merupakan salah satu
 					bentuk gangguan mood (suasana hati) dimana kondisi individu
 					didominasi oleh perasaan tertekan (depresi).
 				</Text>
