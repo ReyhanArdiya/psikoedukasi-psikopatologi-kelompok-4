@@ -36,17 +36,18 @@ const BDContent = () => {
 			</BlurToClear>
 			<BlurToClear>
 				<Text>
-					Gangguan bipolar/mood swing disorder merupakan gangguan mood
-					dimana pasien memiliki periode gangguan depresi maupun
-					gangguan manik, (Aziz, dkk. dalam Nasution & Firdausi,
-					2021).
+					Gangguan bipolar/<i>mood swing disorder</i> merupakan
+					gangguan mood dimana pasien memiliki periode gangguan
+					depresi maupun gangguan manik, (Aziz, dkk. dalam Nasution &
+					Firdausi, 2021).
 				</Text>
 			</BlurToClear>
 			<BlurToClear>
 				<Text>
-					Ada 2 macam Bipolar Disorders, yaitu: Bipolar Disorders I &
-					Bipolar Disorders II. Mendiagnosa bipolar harus dilakukan
-					oleh profesional, tidak disarankan self-diagnose, ya!
+					Ada 2 macam <i>Bipolar Disorders</i>, yaitu:{" "}
+					<i>Bipolar Disorders</i> I &<i>Bipolar Disorders</i> II.
+					Mendiagnosa bipolar harus dilakukan oleh profesional, tidak
+					disarankan <i>self-diagnose</i>, ya!
 				</Text>
 			</BlurToClear>
 

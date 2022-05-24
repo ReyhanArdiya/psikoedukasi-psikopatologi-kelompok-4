@@ -25,8 +25,8 @@ const DepressiveDisorders = () => {
 				smallImg={bloomSm}
 				title="MDD"
 			>
-				Major Depressive Disorder merupakan kondisi ketika individu
-				didominasi oleh depresi.
+				<i>Major Depressive Disorder</i> merupakan kondisi ketika
+				individu didominasi oleh depresi.
 			</Layout>
 			<Layout
 				bigImg={walkingBg}
@@ -36,8 +36,8 @@ const DepressiveDisorders = () => {
 				smallImg={walkingSm}
 				title="DYSTHYMIA"
 			>
-				Ketika depresi berlangsung bertahun-tahun, itu disebut
-				“Dysthymia”.
+				Ketika depresi berlangsung bertahun-tahun, itu disebut{" "}
+				<i>Dysthymia</i>.
 			</Layout>
 			<Layout
 				bigImg={whiteRosesBg}
