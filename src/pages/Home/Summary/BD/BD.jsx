@@ -16,11 +16,11 @@ const Container = styled(Section)`
 
 const Content = styled(Text)`
 	grid-area: content;
-    align-self: center;
-    height: max-content;
-    justify-self: center;
-    text-align: center;
-    width: 16.5715em;
+	align-self: center;
+	height: max-content;
+	justify-self: center;
+	text-align: center;
+	width: 16.5715em;
 `;
 
 const BD = () => {
@@ -29,8 +29,8 @@ const BD = () => {
 			<BDHeader />
 			<BlurToClear>
 				<Content id="BD-content">
-                    Bipolar Disorder &#40;BD&#41; merupakan gangguan mood dimana
-                    pasien memiliki periode depresi dan manik
+					<i>Bipolar Disorder</i> &#40;BD&#41; merupakan gangguan mood
+					dimana pasien memiliki periode depresi dan manik.
 				</Content>
 			</BlurToClear>
 			<BDFooter />

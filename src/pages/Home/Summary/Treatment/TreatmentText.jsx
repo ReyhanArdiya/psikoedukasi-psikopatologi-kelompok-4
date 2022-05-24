@@ -52,7 +52,7 @@ const TreatmentText = () => {
 			</BlurToClear>
 			<BlurToClear>
 				<StyledText>
-					...yang diharapkan bisa membantu mengatasi mereka
+					...yang diharapkan bisa membantu mengatasi mereka.
 				</StyledText>
 			</BlurToClear>
 		</Container>

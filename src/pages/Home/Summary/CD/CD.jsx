@@ -52,8 +52,9 @@ const CD = () => {
 			<TitleCard>CD</TitleCard>
 			<BlurToClear>
 				<StyledText id="CD-text">
-					Cyclothymia Disorder &#40;CD&#41; adalah keadaan ketika
-					perasaan seseorang berubah-ubah sesuai siklus yang berlaku.
+					<i>Cyclothymia Disorder</i> &#40;CD&#41; adalah keadaan
+					ketika perasaan seseorang berubah-ubah sesuai siklus yang
+					berlaku.
 				</StyledText>
 			</BlurToClear>
 			<ReadMore path="/articles/CD" />

@@ -16,9 +16,6 @@ const ReferenceItem = styled(Li)`
 	--indentation: 3em;
 	padding-left: var(--indentation);
 	text-indent: calc(-1 * var(--indentation));
-	i {
-		font-style: italic;
-	}
 `;
 
 /**

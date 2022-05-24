@@ -151,6 +151,10 @@ const cssReset = css`
         makes working with em easier. */
 		font-size: 1rem;
 	}
+
+	i {
+		font-style: italic;
+	}
 `;
 
 export default cssReset;

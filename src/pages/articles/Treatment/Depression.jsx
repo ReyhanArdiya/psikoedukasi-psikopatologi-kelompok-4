@@ -34,7 +34,7 @@ const Depression = () => {
 					<BlurToClear>
 						<Text>
 							Salah satu model penanganan psikodinamika adalah
-							Interpersonal Psychotherapy (IPT). Terapi ini
+							<i>Interpersonal Psychotherapy</i> (IPT). Terapi ini
 							berfokus pada masalah interpersonal dalam depresi
 							dan membantu klien membuat hubungan yang sehat.
 							Terapis akan membantu klien untuk mengidentifikasi
@@ -49,11 +49,11 @@ const Depression = () => {
 					</BlurToClear>
 					<BlurToClear>
 						<Text>
-							Salah satu model terapi perilaku adalah Behavioral
-							Activation. Terapi ini berfokus untuk membantu
-							mengembangkan kemampuan sosial atau interpersonal
-							yang lebih efektif dan meningkatkan partisipasinya
-							dalam kegiatan yang menyenangkan.
+							Salah satu model terapi perilaku adalah{" "}
+							<i>Behavioral Activation</i>. Terapi ini berfokus
+							untuk membantu mengembangkan kemampuan sosial atau
+							interpersonal yang lebih efektif dan meningkatkan
+							partisipasinya dalam kegiatan yang menyenangkan.
 						</Text>
 					</BlurToClear>
 				</Subsection>
@@ -63,8 +63,8 @@ const Depression = () => {
 					</BlurToClear>
 					<BlurToClear>
 						<Text>
-							Salah satu model terapi kognitif perilaku adalah
-							Cognitive Behavior Therapy (CBT). Terapi ini
+							Salah satu model terapi kognitif perilaku adalah{" "}
+							<i>Cognitive Behavior Therapy</i> (CBT). Terapi ini
 							berfokus untuk membantu individu mengenali dan
 							memperbaiki pola pikir yang disfungsional.
 							Hakikatnya, individu yang depresi akan lebih
