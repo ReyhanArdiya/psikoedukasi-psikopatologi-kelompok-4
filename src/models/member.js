@@ -14,6 +14,7 @@ class Member {
 	 * @param {{
 	 * alt: string,
 	 * img: HTMLImageElement,
+	 * pos : string,
 	 * title: string
 	 * }} profilePic
 	 *
@@ -23,7 +24,7 @@ class Member {
 		name,
 		nim,
 		links,
-		{ alt, img, title },
+		{ alt, img, pos, title },
 		id = `member-${name}`
 	) {
 		this.name = name;
@@ -32,6 +33,7 @@ class Member {
 		this.profilePic = {
 			alt,
 			img,
+			pos,
 			title
 		};
 		this.id = id;
