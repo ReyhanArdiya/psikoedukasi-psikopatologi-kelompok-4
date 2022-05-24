@@ -28,8 +28,8 @@ const ReferenceList = ({ references }) => {
 	const referenceItems = references
 		.sort((a, b) => a > b ? 1 : -1)
 		.map(
-			reference => <BlurToClear>
-				<ReferenceItem key={uuidv4()}>
+			reference => <BlurToClear key={uuidv4()}>
+				<ReferenceItem>
 					{reference}
 				</ReferenceItem>
 			</BlurToClear>
