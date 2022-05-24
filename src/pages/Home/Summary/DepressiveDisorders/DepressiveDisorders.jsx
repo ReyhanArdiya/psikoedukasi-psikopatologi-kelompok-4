@@ -29,15 +29,15 @@ const DepressiveDisorders = () => {
 				didominasi oleh depresi.
 			</Layout>
 			<Layout
-				bigImg={walkingBg }
+				bigImg={walkingBg}
 				id="DYSTHYMIA"
 				imgLoc="left"
 				readTo="/articles/Dysthymia"
 				smallImg={walkingSm}
 				title="DYSTHYMIA"
 			>
-				Major Depressive Disorder merupakan kondisi ketika individu
-				didominasi oleh depresi.
+				Ketika depresi berlangsung bertahun-tahun, itu disebut
+				“Dysthymia”.
 			</Layout>
 			<Layout
 				bigImg={whiteRosesBg}
